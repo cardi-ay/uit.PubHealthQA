@@ -1,0 +1,9 @@
+2025-04-21 03:00:15,199 - INFO - Đã nhập thư viện (sử dụng FAISS) và cấu hình logging.
+2025-04-21 03:00:15,319 - INFO - Đã thiết lập các tham số cấu hình.
+2025-04-21 03:00:15,424 - INFO - Đã định nghĩa hàm load_json_data.
+2025-04-21 03:00:15,478 - INFO - Đã định nghĩa hàm parse_document_id.
+2025-04-21 03:00:15,503 - INFO - Đã định nghĩa hàm parse_effective_date.
+2025-04-21 03:00:15,560 - INFO - Đã định nghĩa hàm find_structural_elements.
+2025-04-21 03:00:15,584 - INFO - Đã định nghĩa hàm get_contextual_structure.
+2025-04-21 03:00:15,607 - INFO - Đã định nghĩa hàm preprocess_text_for_embedding (cải thiện xử lý dấu chấm và gạch nối).
+2025-04-21 03:00:15,635 - INFO - --- Khởi tạo Model Embedding ---
