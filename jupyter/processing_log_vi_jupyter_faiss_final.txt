@@ -7,3 +7,53 @@
 2025-04-21 03:00:15,584 - INFO - Đã định nghĩa hàm get_contextual_structure.
 2025-04-21 03:00:15,607 - INFO - Đã định nghĩa hàm preprocess_text_for_embedding (cải thiện xử lý dấu chấm và gạch nối).
 2025-04-21 03:00:15,635 - INFO - --- Khởi tạo Model Embedding ---
+2025-04-21 03:00:30,237 - WARNING - From c:\Users\phamd\AppData\Local\Programs\Python\Python312\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-04-21 03:00:30,640 - INFO - PyTorch version 2.6.0.dev20241206+cu126 available.
+2025-04-21 03:00:30,644 - INFO - TensorFlow version 2.18.0 available.
+2025-04-21 03:00:31,269 - INFO - Load pretrained SentenceTransformer: bkai-foundation-models/vietnamese-bi-encoder
+2025-04-21 03:00:36,617 - INFO - Model Embedding 'bkai-foundation-models/vietnamese-bi-encoder' đã sẵn sàng.
+2025-04-21 03:00:36,617 - INFO - Đã khởi tạo Text Splitter với chunk_size=1000, chunk_overlap=150
+2025-04-21 03:00:36,621 - INFO - Chưa có index FAISS tại: db_faiss_phapluat_yte_full_final. Index sẽ được tạo mới.
+2025-04-21 03:00:36,621 - INFO - Embedding đã sẵn sàng.
+2025-04-21 03:00:36,623 - INFO - Vector store FAISS sẽ được tạo mới.
+2025-04-21 03:00:36,664 - INFO - --- Bắt đầu tải dữ liệu từ data_vbpl_boyte_full_details.json ---
+2025-04-21 03:00:36,826 - INFO - Đã tải thành công 614 văn bản từ data_vbpl_boyte_full_details.json
+2025-04-21 03:00:36,827 - INFO - Tổng số văn bản sẽ được xử lý: 614
+2025-04-21 03:00:36,858 - INFO - --- Bắt đầu xử lý 614 văn bản để tạo chunks ---
+2025-04-21 03:00:39,175 - WARNING - Nội dung chính quá ngắn (9 chars) sau khi làm sạch. Kiểm tra lại VB: Toàn quốc...
+2025-04-21 03:00:44,546 - INFO - --- Vòng lặp xử lý hoàn tất ---
+2025-04-21 03:00:44,549 - INFO - Số văn bản đã xử lý thành công (để tạo chunk): 612
+2025-04-21 03:00:44,550 - INFO - Số văn bản bị bỏ qua/lỗi: 2
+2025-04-21 03:00:44,551 - INFO - Tổng số đoạn (chunks) đã chuẩn bị: 15498
+2025-04-21 03:00:44,603 - INFO - --- Bắt đầu kiểm tra embedding cho 15498 chunks đã chuẩn bị ---
+2025-04-21 03:47:51,379 - INFO - --- Kiểm tra embedding tất cả các chunk sau tiền xử lý thành công ---
+2025-04-21 03:47:51,433 - INFO - --- Bắt đầu tạo hoặc cập nhật index FAISS từ 15498 chunks đã chuẩn bị ---
+2025-04-21 03:47:51,438 - INFO - Đang tạo index FAISS mới từ đầu...
+2025-04-21 04:23:43,657 - INFO - Loading faiss with AVX2 support.
+2025-04-21 04:23:43,682 - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-21 04:23:43,698 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-21 04:23:44,897 - INFO - Tạo index FAISS mới thành công với 15498 vectors.
+2025-04-21 04:23:44,899 - INFO - --- Lưu trữ index FAISS vào thư mục 'db_faiss_phapluat_yte_full_final' ---
+2025-04-21 04:23:45,053 - INFO - Lưu trữ FAISS thành công sau 0.15 giây.
+2025-04-21 04:23:45,053 - INFO - Hoàn tất quá trình tạo/cập nhật/lưu index FAISS sau 2153.62 giây.
+2025-04-21 04:23:45,086 - INFO - --- Kiểm tra cuối cùng ---
+2025-04-21 04:23:45,089 - INFO - Đang tải lại index FAISS từ 'db_faiss_phapluat_yte_full_final' để kiểm tra...
+2025-04-21 04:23:45,265 - INFO - Index FAISS tải thành công. Tổng số đoạn (chunks/vectors): 15498
+2025-04-21 04:23:45,265 - INFO - Thực hiện truy vấn thử nghiệm...
+2025-04-21 04:23:45,322 - INFO - Truy vấn hoàn tất sau 0.057 giây.
+2025-04-21 04:23:45,323 - INFO - Truy vấn thử 'Điều kiện cấp giấy chứng nhận thực phẩm xuất khẩu' tìm thấy 5 kết quả (top 5):
+2025-04-21 04:23:45,363 - INFO - --- Bắt đầu kiểm tra và truy xuất từ FAISS ---
+2025-04-21 04:23:45,379 - INFO - Đang tải lại index FAISS từ 'db_faiss_phapluat_yte_full_final'...
+2025-04-21 04:23:45,507 - INFO - Index FAISS tải thành công. Tổng số đoạn (chunks/vectors): 15498
+2025-04-21 04:23:45,518 - INFO - 
+--- Bắt đầu thực hiện truy vấn ---
+2025-04-21 04:23:45,520 - INFO - 
+[Truy vấn 1: similarity_search(k=4)]
+2025-04-21 04:23:45,563 - INFO - Thời gian truy vấn: 0.043 giây
+2025-04-21 04:23:45,563 - INFO - 
+[Truy vấn 2: similarity_search_with_score(k=3)]
+2025-04-21 04:23:45,603 - INFO - Thời gian truy vấn: 0.041 giây
+2025-04-21 04:23:45,605 - INFO - 
+[Truy vấn 3: max_marginal_relevance_search(k=4, fetch_k=20)]
+2025-04-21 04:23:45,651 - INFO - Thời gian truy vấn: 0.046 giây
