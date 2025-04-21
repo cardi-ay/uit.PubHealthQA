@@ -122,3 +122,67 @@
 2025-04-21 23:29:16,414 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 19.66 giây
 2025-04-21 23:29:16,415 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Chính sách bảo hiểm y tế'
 2025-04-21 23:29:16,420 - question_generator - INFO - Đã lưu kết quả sinh câu hỏi và câu trả lời vào file ..\outputs\question_generation\questions_with_answers_groq_20250421_232916.json
+2025-04-21 23:56:34,728 - question_generator - INFO - Đã khởi tạo Groq Client với model 'llama3-70b-8192'
+2025-04-21 23:56:34,740 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:56:34,820 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:56:35,748 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 0.93 giây
+2025-04-21 23:56:35,750 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:56:37,228 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 1.48 giây
+2025-04-21 23:56:37,228 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:56:38,439 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 1.20 giây
+2025-04-21 23:56:38,442 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:56:38,489 - question_generator - INFO - Bắt đầu quá trình sinh câu hỏi từ các chủ đề
+2025-04-21 23:56:38,493 - question_generator - INFO - Đã đọc 5 chủ đề từ file ..\data\sample_topics.txt
+2025-04-21 23:56:41,860 - question_generator - INFO - Đã tải vector database thành công. Số lượng vectors: 15498
+2025-04-21 23:56:42,248 - question_generator - INFO - Đã khởi tạo Groq Client với model 'llama3-70b-8192'
+2025-04-21 23:56:42,250 - question_generator - INFO - Xử lý chủ đề 1/5: 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:56:42,251 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:56:42,329 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:56:43,449 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 1.12 giây
+2025-04-21 23:56:43,453 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:56:54,301 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 10.85 giây
+2025-04-21 23:56:54,306 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:57:10,816 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 16.51 giây
+2025-04-21 23:57:10,818 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:57:10,819 - question_generator - INFO - Xử lý chủ đề 2/5: 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:57:10,822 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:57:10,907 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:57:27,068 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 16.16 giây
+2025-04-21 23:57:27,069 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:57:42,359 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 15.29 giây
+2025-04-21 23:57:42,361 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:57:58,169 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 15.81 giây
+2025-04-21 23:57:58,169 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-04-21 23:57:58,173 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:57:58,175 - question_generator - INFO - Xử lý chủ đề 3/5: 'Chính sách y tế học đường'
+2025-04-21 23:57:58,176 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Chính sách y tế học đường'
+2025-04-21 23:57:58,248 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Chính sách y tế học đường'
+2025-04-21 23:58:16,349 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 18.10 giây
+2025-04-21 23:58:16,351 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Chính sách y tế học đường'
+2025-04-21 23:58:33,038 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 16.69 giây
+2025-04-21 23:58:33,038 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Chính sách y tế học đường'
+2025-04-21 23:58:50,971 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 17.93 giây
+2025-04-21 23:58:50,972 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Chính sách y tế học đường'
+2025-04-21 23:58:50,975 - question_generator - INFO - Xử lý chủ đề 4/5: 'Quy định về an toàn thực phẩm'
+2025-04-21 23:58:50,975 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Quy định về an toàn thực phẩm'
+2025-04-21 23:58:51,040 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-04-21 23:59:09,831 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 18.79 giây
+2025-04-21 23:59:09,831 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-04-21 23:59:25,453 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 15.62 giây
+2025-04-21 23:59:25,459 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-04-21 23:59:42,149 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 16.69 giây
+2025-04-21 23:59:42,152 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-04-21 23:59:42,155 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-04-21 23:59:42,158 - question_generator - INFO - Xử lý chủ đề 5/5: 'Chính sách bảo hiểm y tế'
+2025-04-21 23:59:42,159 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Chính sách bảo hiểm y tế'
+2025-04-21 23:59:42,252 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-04-22 00:00:01,496 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 19.24 giây
+2025-04-22 00:00:01,498 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-04-22 00:00:18,947 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 17.45 giây
+2025-04-22 00:00:18,951 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-04-22 00:00:37,401 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 18.45 giây
+2025-04-22 00:00:37,401 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-04-22 00:00:37,404 - question_generator - INFO - Đã lưu kết quả sinh câu hỏi và câu trả lời vào file ..\outputs\question_generation\questions_with_answers_groq_20250422_000037.json
+2025-04-22 00:13:06,631 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-04-22 00:13:27,306 - question_generator - INFO - Đã khởi tạo Groq Client với model 'llama3-70b-8192'
+2025-04-22 00:13:27,320 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Luật Bảo vệ sức khỏe cộng đồng'
