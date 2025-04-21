@@ -1,0 +1,64 @@
+2025-04-21 22:45:37,679 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-04-21 22:46:36,628 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-04-21 22:58:34,428 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-04-21 23:00:11,741 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-04-21 23:00:51,126 - question_generator - INFO - Đã khởi tạo Groq Client với model 'llama3-70b-8192'
+2025-04-21 23:00:55,375 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:00:55,534 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:00:56,418 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ remember: 0.88 giây
+2025-04-21 23:00:56,420 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ remember cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:00:57,197 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ understand: 0.78 giây
+2025-04-21 23:00:57,197 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ understand cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:00:58,166 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ apply: 0.96 giây
+2025-04-21 23:00:58,168 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ apply cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:01:38,878 - question_generator - INFO - Bắt đầu quá trình sinh câu hỏi từ các chủ đề
+2025-04-21 23:01:38,880 - question_generator - INFO - Đã đọc 5 chủ đề từ file ..\data\sample_topics.txt
+2025-04-21 23:01:42,173 - question_generator - INFO - Đã tải vector database thành công. Số lượng vectors: 15498
+2025-04-21 23:01:42,572 - question_generator - INFO - Đã khởi tạo Groq Client với model 'llama3-70b-8192'
+2025-04-21 23:01:42,572 - question_generator - INFO - Xử lý chủ đề 1/5: 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:01:42,575 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:01:42,663 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:01:43,599 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ remember: 0.94 giây
+2025-04-21 23:01:43,604 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ remember cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:01:44,385 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ understand: 0.78 giây
+2025-04-21 23:01:44,387 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ understand cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:01:45,800 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ apply: 1.41 giây
+2025-04-21 23:01:45,801 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ apply cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-04-21 23:01:45,802 - question_generator - INFO - Xử lý chủ đề 2/5: 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:01:45,804 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:01:45,869 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:01:47,054 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ remember: 1.18 giây
+2025-04-21 23:01:47,055 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ remember cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:01:53,110 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ understand: 6.05 giây
+2025-04-21 23:01:53,112 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ understand cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:02:07,559 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ apply: 14.44 giây
+2025-04-21 23:02:07,559 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ apply cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-04-21 23:02:07,561 - question_generator - INFO - Xử lý chủ đề 3/5: 'Chính sách y tế học đường'
+2025-04-21 23:02:07,562 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Chính sách y tế học đường'
+2025-04-21 23:02:07,650 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Chính sách y tế học đường'
+2025-04-21 23:02:22,674 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ remember: 15.02 giây
+2025-04-21 23:02:22,676 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ remember cho chủ đề 'Chính sách y tế học đường'
+2025-04-21 23:02:36,777 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ understand: 14.10 giây
+2025-04-21 23:02:36,777 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ understand cho chủ đề 'Chính sách y tế học đường'
+2025-04-21 23:02:52,090 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ apply: 15.31 giây
+2025-04-21 23:02:52,092 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ apply cho chủ đề 'Chính sách y tế học đường'
+2025-04-21 23:02:52,092 - question_generator - INFO - Xử lý chủ đề 4/5: 'Quy định về an toàn thực phẩm'
+2025-04-21 23:02:52,092 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Quy định về an toàn thực phẩm'
+2025-04-21 23:02:52,178 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-04-21 23:03:07,195 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ remember: 15.01 giây
+2025-04-21 23:03:07,199 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ remember cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-04-21 23:03:20,364 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ understand: 13.16 giây
+2025-04-21 23:03:20,367 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ understand cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-04-21 23:03:34,647 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ apply: 14.28 giây
+2025-04-21 23:03:34,647 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ apply cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-04-21 23:03:34,650 - question_generator - INFO - Xử lý chủ đề 5/5: 'Chính sách bảo hiểm y tế'
+2025-04-21 23:03:34,651 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Chính sách bảo hiểm y tế'
+2025-04-21 23:03:34,715 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-04-21 23:03:50,790 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ remember: 16.07 giây
+2025-04-21 23:03:50,791 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ remember cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-04-21 23:04:07,123 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ understand: 16.33 giây
+2025-04-21 23:04:07,123 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ understand cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-04-21 23:04:23,448 - question_generator - INFO - Thời gian sinh câu hỏi cấp độ apply: 16.32 giây
+2025-04-21 23:04:23,448 - question_generator - INFO - Đã sinh 2 câu hỏi cấp độ apply cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-04-21 23:04:23,448 - question_generator - INFO - Đã lưu kết quả sinh câu hỏi vào file ..\outputs\question_generation\questions_groq_20250421_230423.json
+2025-04-21 23:23:42,907 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.

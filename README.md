@@ -1,9 +1,11 @@
 # [UIT@PubHealthQA] HCM Public Health Office Procedure Q&A Dataset
 
 ## Table of Contents
-- [Overview](#-overview)
-- [Project Structure](#%EF%B8%8F-project-structure)
-- [Acknowledgement](#acknowledgement)
+- [\[UIT@PubHealthQA\] HCM Public Health Office Procedure Q\&A Dataset](#uitpubhealthqa-hcm-public-health-office-procedure-qa-dataset)
+  - [Table of Contents](#table-of-contents)
+  - [🧾 Overview](#-overview)
+  - [🗂️ Project Structure](#️-project-structure)
+  - [Acknowledgement](#acknowledgement)
 
 ## 🧾 Overview
 The **HCM Public Health Office Procedure Q&A Dataset** - `UIT@PubHealthQA` is a structured collection of questions and answers related to public health topics in Ho Chi Minh City (HCM), Vietnam. This dataset is designed to support natural language processing (NLP) research and applications, especially in areas such as:
@@ -54,7 +56,9 @@ dataset-building-project/
 ├── requirements.txt              # Python dependencies
 ├── README.md                     # Project documentation
 ├── .gitignore                    # Git ignore rules
-└── LICENSE                       # License (e.g., MIT)
+├── LICENSE                       # License (e.g., MIT)
+├──setup_olla.bat                 # Click to setup OLLAMA and model
+
 ```
 
 ## Acknowledgement

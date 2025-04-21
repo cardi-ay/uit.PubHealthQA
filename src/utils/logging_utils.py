@@ -67,3 +67,63 @@ def setup_logging(
         logging.info(f"File log: {log_file_path}")
         
     return None
+
+def setup_logger(
+    name: str, 
+    log_file: Optional[Union[str, Path]] = None,
+    log_level: int = logging.INFO,
+    console_output: bool = True,
+    mode: str = 'a'
+) -> logging.Logger:
+    """
+    Tạo và thiết lập một logger cụ thể.
+    
+    Args:
+        name: Tên của logger
+        log_file: Đường dẫn đến file log
+        log_level: Mức độ log (INFO, WARNING, ERROR, etc.)
+        console_output: Có hiển thị log trên console không
+        mode: Chế độ mở file log ('w' để ghi đè, 'a' để thêm vào)
+        
+    Returns:
+        Logger đã được cấu hình
+    """
+    # Tạo logger
+    logger = logging.getLogger(name)
+    logger.setLevel(log_level)
+    
+    # Xóa handler cũ nếu có
+    if logger.hasHandlers():
+        for handler in logger.handlers[:]:
+            handler.close()
+            logger.removeHandler(handler)
+    
+    # Format chuẩn cho các log message
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    
+    # Thêm handler cho file log nếu được chỉ định
+    if log_file:
+        # Chuyển đổi sang Path nếu là string
+        if isinstance(log_file, str):
+            log_file = Path(log_file)
+            
+        # Đảm bảo thư mục chứa file log tồn tại
+        log_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Tạo handler cho file log
+        file_handler = logging.FileHandler(
+            log_file, mode=mode, encoding='utf-8'
+        )
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
+    
+    # Thêm handler cho console nếu được yêu cầu
+    if console_output:
+        console_handler = logging.StreamHandler()
+        console_handler.setFormatter(formatter)
+        logger.addHandler(console_handler)
+    
+    # Log thông báo khởi tạo
+    logger.info(f"Logger '{name}' đã được khởi tạo.")
+    
+    return logger

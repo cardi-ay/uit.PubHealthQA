@@ -1,28 +1,13 @@
-2025-04-21 16:48:57,685 - INFO - Đã thiết lập cấu hình logging.
-2025-04-21 16:48:57,687 - INFO - File log: ..\outputs\logs\rag_usage_log.txt
-2025-04-21 16:49:49,900 - WARNING - From c:\Users\phamd\AppData\Local\Programs\Python\Python312\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
-
-2025-04-21 16:49:50,652 - INFO - PyTorch version 2.6.0.dev20241206+cu126 available.
-2025-04-21 16:49:50,652 - INFO - TensorFlow version 2.18.0 available.
-2025-04-21 16:49:52,090 - INFO - Load pretrained SentenceTransformer: bkai-foundation-models/vietnamese-bi-encoder
-2025-04-21 16:49:56,130 - INFO - Model Embedding 'bkai-foundation-models/vietnamese-bi-encoder' đã sẵn sàng.
-2025-04-21 16:49:56,140 - INFO - Loading faiss with AVX2 support.
-2025-04-21 16:49:56,461 - INFO - Successfully loaded faiss with AVX2 support.
-2025-04-21 16:49:56,470 - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
-2025-04-21 16:49:56,801 - INFO - Đã tải index FAISS thành công. Số lượng vector hiện tại: 15498
-2025-04-21 16:49:56,876 - INFO - Đã tiền xử lý query: 'Quy định về đăng ký thuốc mới'
-2025-04-21 16:49:58,070 - INFO - Truy vấn 'Quy định về đăng ký thuốc mới' hoàn tất sau 1.241 giây. Tìm thấy 3 kết quả.
-2025-04-21 16:49:58,093 - INFO - Đã tiền xử lý query: 'Thẩm quyền thu hồi giấy chứng nhận'
-2025-04-21 16:49:58,157 - INFO - Truy vấn 'Thẩm quyền thu hồi giấy chứng nhận' hoàn tất sau 0.064 giây. Tìm thấy 3 kết quả.
-2025-04-21 16:49:58,173 - INFO - Đã tiền xử lý query: 'Nội dung giấy chứng nhận cần có thông tin gì?'
-2025-04-21 16:49:58,244 - INFO - Truy vấn 'Nội dung giấy chứng nhận cần có thông tin gì?' hoàn tất sau 0.071 giây. Tìm thấy 4 kết quả.
-2025-04-21 16:50:27,463 - INFO - Đã tiền xử lý query: 'bảo hiểm y tế'
-2025-04-21 16:50:27,515 - INFO - Truy vấn 'bảo hiểm y tế' hoàn tất sau 0.053 giây. Tìm thấy 2 kết quả.
-2025-04-21 16:50:58,738 - ERROR - Lỗi khi thực hiện truy vấn: invalid literal for int() with base 10: 'exit'
-Traceback (most recent call last):
-  File "C:\Users\phamd\AppData\Local\Temp\ipykernel_6744\3263814769.py", line 14, in interactive_search
-    k = int(input(f"Số lượng kết quả (mặc định: 3): ") or "3")
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-ValueError: invalid literal for int() with base 10: 'exit'
-2025-04-21 16:51:04,263 - INFO - Đã tiền xử lý query: ''
-2025-04-21 16:51:04,310 - INFO - Truy vấn '' hoàn tất sau 0.047 giây. Tìm thấy 3 kết quả.
+2025-04-21 22:43:38,196 - INFO - Đã thiết lập cấu hình logging.
+2025-04-21 22:43:38,196 - INFO - File log: ..\outputs\logs\rag_usage_log.txt
+2025-04-21 22:43:38,240 - INFO - Load pretrained SentenceTransformer: bkai-foundation-models/vietnamese-bi-encoder
+2025-04-21 22:43:42,473 - INFO - Model Embedding 'bkai-foundation-models/vietnamese-bi-encoder' đã sẵn sàng.
+2025-04-21 22:43:42,631 - INFO - Đã tải index FAISS thành công. Số lượng vector hiện tại: 15498
+2025-04-21 22:43:42,686 - INFO - Đã tiền xử lý query: 'Quy định về đăng ký thuốc mới'
+2025-04-21 22:43:42,775 - INFO - Truy vấn 'Quy định về đăng ký thuốc mới' hoàn tất sau 0.089 giây. Tìm thấy 3 kết quả.
+2025-04-21 22:43:42,786 - INFO - Đã tiền xử lý query: 'an toàn sinh học'
+2025-04-21 22:43:42,838 - INFO - Truy vấn 'an toàn sinh học' hoàn tất sau 0.052 giây. Tìm thấy 5 kết quả.
+2025-04-21 22:43:42,850 - INFO - Đã tiền xử lý query: 'Nội dung giấy chứng nhận cần có thông tin gì?'
+2025-04-21 22:43:42,905 - INFO - Truy vấn 'Nội dung giấy chứng nhận cần có thông tin gì?' hoàn tất sau 0.055 giây. Tìm thấy 4 kết quả.
+2025-04-21 22:43:52,966 - INFO - Đã tiền xử lý query: 'Trình tự thực hiện tự công bố cơ sở đủ điều kiện tiêm chủng như thế nào?'
+2025-04-21 22:43:53,034 - INFO - Truy vấn 'Trình tự thực hiện tự công bố cơ sở đủ điều kiện tiêm chủng như thế nào?' hoàn tất sau 0.068 giây. Tìm thấy 10 kết quả.
