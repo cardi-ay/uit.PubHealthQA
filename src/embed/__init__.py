@@ -12,6 +12,6 @@ from .faiss_manager import (
     initialize_vector_db,
     save_vector_db,
     load_vector_db,
-    create_or_update_vector_db,
+    create_faiss_vectordb,  
     query_vector_db
 )

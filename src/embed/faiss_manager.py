@@ -177,7 +177,7 @@ def load_vector_db(persist_directory: Union[str, Path], embeddings: HuggingFaceE
         logging.error(f"Lỗi khi tải index FAISS: {e}", exc_info=True)
         return None
 
-def create_or_update_vector_db(documents: List[Document], 
+def create_faiss_vectordb(documents: List[Document], 
                                embeddings: HuggingFaceEmbeddings,
                                persist_directory: Union[str, Path],
                                existing_vector_db=None, 
