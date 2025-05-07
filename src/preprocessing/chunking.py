@@ -15,7 +15,7 @@ from typing import List, Dict, Any, Optional
 from langchain_core.documents import Document
 
 from src.utils.logging_utils import setup_logging
-from src.preprocess.document_processor import (
+from src.preprocessing.document_processor import (
     parse_document_id,
     parse_effective_date,
     clean_content,
@@ -23,8 +23,8 @@ from src.preprocess.document_processor import (
     get_contextual_structure,
     preprocess_text_for_embedding
 )
-from src.preprocess.text_splitter import initialize_text_splitter
-from src.embed.faiss_manager import (
+from src.preprocessing.text_splitter import initialize_text_splitter
+from src.vector_store.faiss_manager import (
     initialize_embedding_model,
     initialize_vector_db,
     create_faiss_vectordb,

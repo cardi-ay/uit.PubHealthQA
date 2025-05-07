@@ -17,8 +17,8 @@ import groq
 from langchain_core.documents import Document
 
 from ..utils.logging_utils import setup_logger
-from ..retriever.faiss_retriever import query_documents
-from ..embed.faiss_manager import initialize_embedding_model, load_vector_db
+from ..vector_store.faiss_retriever import query_documents
+from ..vector_store.faiss_manager import initialize_embedding_model, load_vector_db
 
 # Load environment variables from .env file
 load_dotenv()

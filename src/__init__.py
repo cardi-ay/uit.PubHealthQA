@@ -2,10 +2,10 @@
 Module chứa các thành phần cốt lõi của hệ thống RAG UIT@PubHealthQA.
 
 Các module con:
-- embed: Xử lý embedding và vector database
-- ingest: Thu thập dữ liệu từ nguồn
-- preprocess: Tiền xử lý dữ liệu
-- retriever: Truy xuất thông tin từ vector database
+- data_acquisition: Thu thập dữ liệu từ nguồn (bao gồm crawling và ingest)
+- preprocessing: Tiền xử lý và phân đoạn (chunking) dữ liệu
+- vector_store: Xử lý embedding và truy xuất thông tin từ vector database
+- generation: Tạo câu hỏi và câu trả lời dựa trên RAG
 - utils: Các tiện ích chung
 """
 

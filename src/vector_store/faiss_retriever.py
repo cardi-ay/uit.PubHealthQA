@@ -48,7 +48,7 @@ def query_documents(
         if preprocess_query:
             # Import function xử lý từ module preprocess
             try:
-                from ..preprocess.document_processor import preprocess_text_for_embedding
+                from ..preprocessing.document_processor import preprocess_text_for_embedding
                 query = preprocess_text_for_embedding(query)
                 logging.info(f"Đã tiền xử lý query: '{query}'")
             except ImportError:
@@ -175,7 +175,7 @@ def ensemble_retrieval(
     processed_query = query
     if preprocess_query:
         try:
-            from ..preprocess.document_processor import preprocess_text_for_embedding
+            from ..preprocessing.document_processor import preprocess_text_for_embedding
             processed_query = preprocess_text_for_embedding(query)
         except ImportError:
             logging.warning("Không thể import hàm tiền xử lý. Sử dụng query gốc.")

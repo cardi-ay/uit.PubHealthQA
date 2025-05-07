@@ -8,8 +8,8 @@ import re
 project_root = Path(__file__).parent.parent.absolute()
 sys.path.insert(0, str(project_root))
 
-from src.embed.faiss_manager import initialize_embedding_model, load_vector_db
-from src.retriever.faiss_retriever import (
+from src.vector_store.faiss_manager import initialize_embedding_model, load_vector_db
+from src.vector_store.faiss_retriever import (
     query_documents, 
     ensemble_retrieval, 
     create_retrieval_function, 
