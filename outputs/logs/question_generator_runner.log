@@ -1,0 +1,9 @@
+2025-05-07 20:11:42,263 - question_generator_runner - INFO - Logger 'question_generator_runner' đã được khởi tạo.
+2025-05-07 20:11:42,265 - question_generator_runner - INFO - Đã đọc 23 chủ đề từ file data\topics.txt
+2025-05-07 20:12:02,750 - question_generator_runner - INFO - Đã tải vector database thành công
+2025-05-07 20:12:03,277 - question_generator_runner - INFO - Xử lý chủ đề 1/23: 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 20:12:16,663 - question_generator_runner - INFO - Đã lưu kết quả cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế' vào file outputs\question_generation\questions_1_Thủ_tục_hành_chính_lĩnh_vực_Bả_20250507_201216.json
+2025-05-07 20:12:16,667 - question_generator_runner - INFO - Đang chờ 60 giây trước khi xử lý chủ đề tiếp theo...
+2025-05-07 20:13:16,669 - question_generator_runner - INFO - Xử lý chủ đề 2/23: 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 20:13:21,575 - question_generator_runner - INFO - Đã lưu kết quả cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế' vào file outputs\question_generation\questions_2_Thủ_tục_hành_chính_lĩnh_vực_Hợ_20250507_201321.json
+2025-05-07 20:13:21,576 - question_generator_runner - INFO - Đang chờ 60 giây trước khi xử lý chủ đề tiếp theo...

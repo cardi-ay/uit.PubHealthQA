@@ -1,0 +1,2536 @@
+[
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Hợp tác quốc tế",
+    "level": "remember",
+    "question": "Trong thủ tục hành chính lĩnh vực Hợp tác quốc tế, cơ quan nào có trách nhiệm cho ý kiến góp ý đối với quy định về thủ tục hành chính trong dự thảo văn bản quy phạm pháp luật thuộc thẩm quyền ban hành của Bộ trưởng Bộ Y tế?",
+    "answer": "Vụ Pháp chế có trách nhiệm cho ý kiến góp ý đối với quy định về thủ tục hành chính trong dự thảo văn bản quy phạm pháp luật thuộc thẩm quyền ban hành của Bộ trưởng Bộ Y tế. Theo Khoản 2 Điều 9 Nghị định số 63/2010/NĐ-CP.",
+    "citations": "Nghị định số 63/2010/NĐ-CP",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "22/2014/TT-BYT",
+          "document_type": null,
+          "effective_date": "2014-08-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=37939&Keyword=",
+          "domain": null,
+          "Chương": "III",
+          "Điều": "15",
+          "Khoản": "2",
+          "location_detail": "Chương III: SOẠN THẢO VĂN BẢN QUY PHẠM PHÁP LUẬT VỀ Y TẾ... -> Điều 15: Lấy ý kiến đối với quy định về thủ tục hành chính... -> Khoản 2",
+          "start_index_in_main": 21940
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:46:58.809356",
+      "model": "llama3-70b-8192",
+      "question_length": 223,
+      "answer_length": 220
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Hợp tác quốc tế",
+    "level": "remember",
+    "question": "Trong thủ tục hành chính lĩnh vực Hợp tác quốc tế, hằng quý, Trung tâm hợp tác chuyên gia và nhân lực y tế với nước ngoài có trách nhiệm gửi danh sách công chức, viên chức đi chuyên gia và lao động y tế trở về nước tới đâu?",
+    "answer": "Vụ Tổ chức cán bộ để kiểm tra, theo dõi và Vụ Hợp tác quốc tế để biết và phối hợp quản lý.",
+    "citations": "Thông tư của Bộ Y tế",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "15/2005/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2005-06-11",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=18246&Keyword=",
+          "domain": "",
+          "Khoản": "5",
+          "location_detail": "Khoản 5",
+          "start_index_in_main": 3377
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:46:58.809356",
+      "model": "llama3-70b-8192",
+      "question_length": 223,
+      "answer_length": 90
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Hợp tác quốc tế",
+    "level": "understand",
+    "question": "Giải thích quy trình xây dựng văn bản thuộc thẩm quyền ban hành thuộc lĩnh vực phụ trách?",
+    "answer": "Quy trình xây dựng văn bản thuộc thẩm quyền ban hành thuộc lĩnh vực phụ trách bao gồm xây dựng các văn bản pháp quy, các văn bản về chuyên môn, nghiệp vụ, biên soạn các tài liệu hướng dẫn nghiệp vụ thuộc ngành hoặc lĩnh vực được phân công và đảm bảo quy trình công tác và theo đúng kế hoạch về tiến độ, chất lượng và hiệu quả công việc. Theo [Chunk 1].",
+    "citations": "Không có",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "19/2023/TT-BYT",
+          "document_type": null,
+          "effective_date": "...",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=166209&Keyword=",
+          "domain": null,
+          "Điều": "7",
+          "Khoản": "2",
+          "location_detail": "Điều 7: Hiệu lực và trách nhiệm thi hành... -> Khoản 2",
+          "start_index_in_main": 99991
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:46:58.809356",
+      "model": "llama3-70b-8192",
+      "question_length": 89,
+      "answer_length": 352
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Hợp tác quốc tế",
+    "level": "understand",
+    "question": "Giải thích trách nhiệm của Vụ Pháp chế trong quy trình xây dựng văn bản thuộc thẩm quyền ban hành của Bộ trưởng Bộ Y tế?",
+    "answer": "Vụ Pháp chế có trách nhiệm cho ý kiến góp ý đối với quy định về thủ tục hành chính trong dự thảo văn bản quy phạm pháp luật thuộc thẩm quyền ban hành của Bộ trưởng Bộ Y tế trong thời gian 10 ngày làm việc. Theo [Chunk 4].",
+    "citations": "Không có",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "22/2014/TT-BYT",
+          "document_type": null,
+          "effective_date": "2014-08-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=37939&Keyword=",
+          "domain": null,
+          "Chương": "III",
+          "Điều": "15",
+          "Khoản": "2",
+          "location_detail": "Chương III: SOẠN THẢO VĂN BẢN QUY PHẠM PHÁP LUẬT VỀ Y TẾ... -> Điều 15: Lấy ý kiến đối với quy định về thủ tục hành chính... -> Khoản 2",
+          "start_index_in_main": 21940
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:46:58.809356",
+      "model": "llama3-70b-8192",
+      "question_length": 120,
+      "answer_length": 221
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Hợp tác quốc tế",
+    "level": "apply",
+    "question": "Một công chức, viên chức y tế đi chuyên gia và lao động trở về nước, Trung tâm hợp tác chuyên gia và nhân lực y tế với nước ngoài có trách nhiệm gửi danh sách công chức, viên chức đi chuyên gia và lao động y tế trở về nước tới đâu?",
+    "answer": "Theo quy định tại Thông tư này, Trung tâm hợp tác chuyên gia và nhân lực y tế với nước ngoài có trách nhiệm gửi danh sách công chức, viên chức đi chuyên gia và lao động y tế trở về nước tới Vụ Tổ chức cán bộ để kiểm tra, theo dõi và Vụ Hợp tác quốc tế để biết và phối hợp quản lý.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "15/2005/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2005-06-11",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=18246&Keyword=",
+          "domain": "",
+          "Khoản": "5",
+          "location_detail": "Khoản 5",
+          "start_index_in_main": 3377
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:46:58.809356",
+      "model": "llama3-70b-8192",
+      "question_length": 231,
+      "answer_length": 280
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Hợp tác quốc tế",
+    "level": "apply",
+    "question": "Trong thời gian bao lâu, Vụ Pháp chế có trách nhiệm cho ý kiến góp ý đối với quy định về thủ tục hành chính trong dự thảo văn bản quy phạm pháp luật thuộc thẩm quyền ban hành của Bộ trưởng Bộ Y tế?",
+    "answer": "Theo quy định tại Khoản 2 Điều 9 Nghị định số 63/2010/NĐ-CP, trong thời gian 10 ngày làm việc, Vụ Pháp chế có trách nhiệm cho ý kiến góp ý đối với quy định về thủ tục hành chính trong dự thảo văn bản quy phạm pháp luật thuộc thẩm quyền ban hành của Bộ trưởng Bộ Y tế.",
+    "citations": "Nghị định số 63/2010/NĐ-CP",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "22/2014/TT-BYT",
+          "document_type": null,
+          "effective_date": "2014-08-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=37939&Keyword=",
+          "domain": null,
+          "Chương": "III",
+          "Điều": "15",
+          "Khoản": "2",
+          "location_detail": "Chương III: SOẠN THẢO VĂN BẢN QUY PHẠM PHÁP LUẬT VỀ Y TẾ... -> Điều 15: Lấy ý kiến đối với quy định về thủ tục hành chính... -> Khoản 2",
+          "start_index_in_main": 21940
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:46:58.809356",
+      "model": "llama3-70b-8192",
+      "question_length": 197,
+      "answer_length": 267
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng",
+    "level": "remember",
+    "question": "Nhiệm vụ của khoa Dinh dưỡng hoặc bộ phận Dinh dưỡng trong bệnh viện là gì?",
+    "answer": "Nhiệm vụ của khoa Dinh dưỡng hoặc bộ phận Dinh dưỡng trong bệnh viện là tham mưu cho lãnh đạo bệnh viện về hoạt động dinh dưỡng trong bệnh viện, xây dựng, triển khai quy trình kỹ thuật chuyên môn về dinh dưỡng lâm sàng trong bệnh viện, tổ chức thực hiện các hoạt động khám, tư vấn và điều trị bằng chế độ dinh dưỡng phù hợp với tình trạng dinh dưỡng và bệnh lý cho người bệnh,... Theo Điều 9 của Thông tư này.",
+    "citations": "Thông tư về hướng dẫn thực hiện quản lý an toàn vệ sinh thực phẩm trong kinh doanh, dịch vụ và phục vụ ăn uống",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "18/2020/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2021-01-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=147192&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh",
+          "Chương": "IV",
+          "Điều": "9",
+          "location_detail": "Chương IV: TRÁCH NHIỆM THỰC HIỆN... -> Điều 9: Nhiệm vụ của khoa Dinh dưỡng hoặc bộ phận Dinh dưỡng...",
+          "start_index_in_main": 5326
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:48:04.692146",
+      "model": "llama3-70b-8192",
+      "question_length": 75,
+      "answer_length": 409
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng",
+    "level": "remember",
+    "question": "Các cơ sở sản xuất, kinh doanh thực phẩm chức năng, thực phẩm tăng cường vi chất dinh dưỡng, phụ gia thực phẩm, chất hỗ trợ chế biến, nước khoáng thiên nhiên, nước uống đóng chai và bao bì, dụng cụ tiếp xúc trực tiếp với thực phẩm thuộc phạm vi quản lý của Bộ Y tế bao gồm những cơ sở nào?",
+    "answer": "Các cơ sở sản xuất, kinh doanh thực phẩm chức năng, thực phẩm tăng cường vi chất dinh dưỡng, phụ gia thực phẩm, chất hỗ trợ chế biến, nước khoáng thiên nhiên, nước uống đóng chai và bao bì, dụng cụ tiếp xúc trực tiếp với thực phẩm thuộc phạm vi quản lý của Bộ Y tế bao gồm cơ sở sản xuất thực phẩm chức năng ban đầu nhỏ lẻ, cơ sở kinh doanh nhỏ lẻ không có yêu cầu bảo quản sản phẩm đặc biệt, cơ sở bán hàng rong, cơ sở kinh doanh bao gói sẵn không yêu cầu điều kiện bảo quản đặc biệt, cơ sở kinh doanh bao bì, dụng cụ tiếp xúc trực tiếp với thực phẩm và nhà thuốc đã được cấp Giấy chứng nhận đạt GPP có kinh doanh thực phẩm chức năng, thực phẩm tăng cường vi chất dinh dưỡng. Theo Điều 9 của Thông tư này.",
+    "citations": "Thông tư về hướng dẫn thực hiện quản lý an toàn vệ sinh thực phẩm trong kinh doanh, dịch vụ và phục vụ ăn uống",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "26/2012/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2012-01-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=28010&Keyword=",
+          "domain": "Vệ sinh an toàn và dinh dưỡng",
+          "Chương": "III",
+          "location_detail": "Chương III: QUY ĐỊNH ĐỐI VỚI CÁC CƠ SỞ SẢN XUẤT, KINH DOANH THỰC PHẨM...",
+          "start_index_in_main": 8428
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:48:04.692146",
+      "model": "llama3-70b-8192",
+      "question_length": 289,
+      "answer_length": 706
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng",
+    "level": "apply",
+    "question": "Trong bệnh viện, khoa Dinh dưỡng hoặc bộ phận Dinh dưỡng có trách nhiệm gì trong việc quản lý thực phẩm và sản phẩm dinh dưỡng?",
+    "answer": "Trong bệnh viện, khoa Dinh dưỡng hoặc bộ phận Dinh dưỡng có trách nhiệm tham mưu cho lãnh đạo bệnh viện về hoạt động dinh dưỡng trong bệnh viện, xây dựng, triển khai quy trình kỹ thuật chuyên môn về dinh dưỡng lâm sàng trong bệnh viện, tổ chức thực hiện các hoạt động khám, tư vấn và điều trị bằng chế độ dinh dưỡng phù hợp với tình trạng dinh dưỡng và bệnh lý cho người bệnh, và kiểm tra, giám sát an toàn thực phẩm trong bệnh viện. Theo Điều 9 của Thông tư này.",
+    "citations": "Thông tư hướng dẫn thực hiện quản lý an toàn vệ sinh thực phẩm trong kinh doanh, dịch vụ và phục vụ ăn uống",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "18/2020/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2021-01-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=147192&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh",
+          "Chương": "IV",
+          "Điều": "9",
+          "location_detail": "Chương IV: TRÁCH NHIỆM THỰC HIỆN... -> Điều 9: Nhiệm vụ của khoa Dinh dưỡng hoặc bộ phận Dinh dưỡng...",
+          "start_index_in_main": 5326
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:48:04.692146",
+      "model": "llama3-70b-8192",
+      "question_length": 127,
+      "answer_length": 463
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng",
+    "level": "apply",
+    "question": "Một cơ sở sản xuất thực phẩm chức năng ban đầu nhỏ lẻ có phải cấp Giấy chứng nhận không?",
+    "answer": "Không, cơ sở sản xuất thực phẩm chức năng ban đầu nhỏ lẻ thuộc đối tượng không phải cấp Giấy chứng nhận. Theo Điều 9 của Thông tư này.",
+    "citations": "Thông tư hướng dẫn thực hiện quản lý an toàn vệ sinh thực phẩm trong kinh doanh, dịch vụ và phục vụ ăn uống",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "26/2012/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2012-01-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=28010&Keyword=",
+          "domain": "Vệ sinh an toàn và dinh dưỡng",
+          "Chương": "III",
+          "location_detail": "Chương III: QUY ĐỊNH ĐỐI VỚI CÁC CƠ SỞ SẢN XUẤT, KINH DOANH THỰC PHẨM...",
+          "start_index_in_main": 8428
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:48:04.692146",
+      "model": "llama3-70b-8192",
+      "question_length": 88,
+      "answer_length": 134
+    }
+  },
+  {
+    "topic": "Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính",
+    "level": "remember",
+    "question": "Thành phần của đoàn thẩm định cấp giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính gồm những ai?",
+    "answer": "Thành phần của đoàn thẩm định cấp giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính gồm: Đại diện Lãnh đạo Cục Phòng, chống HIV/AIDS làm trưởng đoàn; Cán bộ phụ trách hoạt động xét nghiệm HIV thuộc Cục Phòng, chống HIV/AIDS; Chuyên gia về xét nghiệm HIV có ít nhất 5 năm kinh nghiệm thực hiện xét nghiệm khẳng định HIV dương tính bằng kỹ thuật phù hợp với kỹ thuật cơ sở y tế đề nghị thẩm định; và các thành viên khác trong trường hợp cần thiết. Theo Điều 3 của Thông tư này.",
+    "citations": "Thông tư về Hướng dẫn về xét nghiệm khẳng định các trường hợp HIV dương tính",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "04/2019/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2019-05-30",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=135498&Keyword=",
+          "domain": "Phòng, chống HIV/AIDS",
+          "Điều": "3",
+          "location_detail": "Điều 3: Hướng dẫn về đoàn thẩm định cấp giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HI...",
+          "start_index_in_main": 1086
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:49:13.061999",
+      "model": "llama3-70b-8192",
+      "question_length": 128,
+      "answer_length": 506
+    }
+  },
+  {
+    "topic": "Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính",
+    "level": "remember",
+    "question": "Các trường hợp nào cần cấp lại giấy chứng nhận phòng xét nghiệm khẳng định HIV?",
+    "answer": "Các trường hợp cần cấp lại giấy chứng nhận phòng xét nghiệm khẳng định HIV gồm: Giấy chứng nhận hết hạn; Giấy chứng nhận bị mất hoặc hư hỏng; Thay đổi người phụ trách hoặc nhân viên trực tiếp thực hiện kỹ thuật xét nghiệm HIV; Thay đổi về vị trí cơ sở xét nghiệm; Bổ sung kỹ thuật xét nghiệm HIV; và Giấy chứng nhận bị thu hồi. Theo Điều 20 của Thông tư này.",
+    "citations": "Thông tư về Hướng dẫn về xét nghiệm khẳng định các trường hợp HIV dương tính",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "15/2013/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2013-07-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=39762&Keyword=",
+          "domain": "Phòng, chống HIV/AIDS",
+          "Chương": "IV",
+          "Mục": "2",
+          "Điều": "20",
+          "location_detail": "Chương IV: HỒ SƠ, TRÌNH TỰ, THỦ TỤC THẨM QUYỀN TIẾP NHẬN, CÔNG NHẬN PHÒNG XÉT NGHIỆM HIV... -> Mục 2: HỒ SƠ, THỦ TỤC CẤP MỚI, CẤP LẠI GIẤY CHỨNG NHẬN PHÒNG XÉT NGHIỆM KHẲNG ĐỊNH HIV... -> Điều 20: Hồ sơ, thủ tục cấp lại giấy chứng nhận phòng xét nghiệm khẳng định HIV...",
+          "start_index_in_main": 29601
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:49:13.061999",
+      "model": "llama3-70b-8192",
+      "question_length": 79,
+      "answer_length": 358
+    }
+  },
+  {
+    "topic": "Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính",
+    "level": "understand",
+    "question": "Giải thích quy trình thẩm định cấp giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính?",
+    "answer": "Quy trình thẩm định cấp giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính gồm các thành viên: đại diện Lãnh đạo Cục Phòng, chống HIV/AIDS làm trưởng đoàn; cán bộ phụ trách hoạt động xét nghiệm HIV thuộc Cục Phòng, chống HIV/AIDS; chuyên gia về xét nghiệm HIV có ít nhất 5 năm kinh nghiệm thực hiện xét nghiệm khẳng định HIV dương tính bằng kỹ thuật phù hợp với kỹ thuật cơ sở y tế đề nghị thẩm định. Theo Điều 3 của Thông tư này.",
+    "citations": "Thông tư này",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "04/2019/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2019-05-30",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=135498&Keyword=",
+          "domain": "Phòng, chống HIV/AIDS",
+          "Điều": "3",
+          "location_detail": "Điều 3: Hướng dẫn về đoàn thẩm định cấp giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HI...",
+          "start_index_in_main": 1086
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:49:13.061999",
+      "model": "llama3-70b-8192",
+      "question_length": 116,
+      "answer_length": 460
+    }
+  },
+  {
+    "topic": "Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính",
+    "level": "understand",
+    "question": "Giải thích thủ tục công bố phòng xét nghiệm đủ điều kiện thực hiện xét nghiệm sàng lọc HIV?",
+    "answer": "Thủ tục công bố đủ điều kiện xét nghiệm HIV được thực hiện cùng thời điểm thực hiện việc đề nghị cấp Giấy phép hoạt động của cơ sở. Đối với phòng xét nghiệm thuộc các cơ sở khám bệnh, chữa bệnh. Theo Điều 18 của Thông tư này.",
+    "citations": "Thông tư này",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "15/2013/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2013-07-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=39762&Keyword=",
+          "domain": "Phòng, chống HIV/AIDS",
+          "Chương": "IV",
+          "Mục": "1",
+          "Điều": "18",
+          "location_detail": "Chương IV: HỒ SƠ, TRÌNH TỰ, THỦ TỤC THẨM QUYỀN TIẾP NHẬN, CÔNG NHẬN PHÒNG XÉT NGHIỆM HIV... -> Mục 1: THỦ TỤC CÔNG BỐ PHÒNG XÉT NGHIỆM SÀNG LỌC HIV... -> Điều 18: Thủ tục công bố phòng xét nghiệm đủ điều kiện thực hiện xét nghiệm sàng lọc HIV...",
+          "start_index_in_main": 21656
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:49:13.061999",
+      "model": "llama3-70b-8192",
+      "question_length": 91,
+      "answer_length": 225
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh",
+    "level": "understand",
+    "question": "Giải thích phạm vi hành nghề của dịch vụ tiêm chích, thay băng và dịch vụ làm răng giả?",
+    "answer": "Dịch vụ tiêm chích, thay băng chỉ thực hiện theo đơn của bác sỹ, không được khám bệnh, kê đơn. Dịch vụ làm răng giả chỉ thực hiện làm răng giả, không được khám chữa bệnh về răng, nhổ răng. Theo [Chunk 2].",
+    "citations": "Chunk 2",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "15/1999/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "1999-08-14",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=6664&Keyword=",
+          "domain": "",
+          "Chương": "II",
+          "Điều": "20",
+          "Khoản": "3",
+          "location_detail": "Chương II: TIÊU CHUẨN, ĐIỀU KIỆN VÀ PHẠM VI HÀNH NGHỀ... -> Điều 20: : Dịch vụ y tế:  Dịch vụ y tế trong Thông tư này là các dịch vụ y tế được thực hiện theo đơn của ngư... -> Khoản 3",
+          "start_index_in_main": 16292
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:50:13.104370",
+      "model": "llama3-70b-8192",
+      "question_length": 87,
+      "answer_length": 204
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh",
+    "level": "understand",
+    "question": "Giải thích hồ sơ đề nghị cấp chứng chỉ hành nghề đối với người Việt Nam?",
+    "answer": "Hồ sơ đề nghị cấp chứng chỉ hành nghề đối với người Việt Nam bao gồm họ tên, năm sinh và địa chỉ thường trú của người đăng ký hành nghề, nội dung chuyên môn xin phép được hành nghề, biện pháp bảo vệ môi trường, bản sao văn bằng, chứng chỉ chuyên môn có chứng nhận của công chứng Nhà nước, sơ yếu lý lịch có xác nhận của Uỷ ban nhân dân xã, phường, thị trấn nơi đương sự đăng ký thường trú, giấy xác nhận đã qua thực hành 5 năm ở các cơ sở khám bệnh, chữa bệnh, phiếu khám sức khoẻ, giấy cho phép làm ngoài giờ của Thủ trưởng cơ quan, đơn vị nếu người xin đăng ký hành nghề đang làm việc trong các cơ sở y, dược của Nhà nước, bản diễn giải về địa điểm, cơ sở vật chất kỹ thuật, trang thiết bị kỹ thuật chuyên môn. Theo [Chunk 4].",
+    "citations": "Chunk 4",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "7/BYT-TT",
+          "document_type": null,
+          "effective_date": "1994-04-30",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=10345&Keyword=",
+          "domain": null,
+          "Khoản": "1",
+          "location_detail": "Khoản 1",
+          "start_index_in_main": 5345
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:50:13.104370",
+      "model": "llama3-70b-8192",
+      "question_length": 72,
+      "answer_length": 728
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh",
+    "level": "apply",
+    "question": "Theo quy định, trong giai đoạn chuyển tiếp, người làm việc tại cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Y tế cần nộp hồ sơ đề nghị cấp giấy phép hành nghề từ ngày nào?",
+    "answer": "Người làm việc tại cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Y tế cần nộp hồ sơ đề nghị cấp giấy phép hành nghề từ ngày 01 tháng 01 năm 2024. Theo Điều 1 của [Luật Khám bệnh, chữa bệnh]",
+    "citations": "Luật Khám bệnh, chữa bệnh",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "57/2024/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2025-03-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=174192&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh",
+          "Điều": "1",
+          "location_detail": "Điều 1: Phân cấp giải quyết thủ tục hành chính trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền quản lý ...",
+          "start_index_in_main": 0
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:50:13.104370",
+      "model": "llama3-70b-8192",
+      "question_length": 167,
+      "answer_length": 184
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh",
+    "level": "apply",
+    "question": "Theo quy định, hồ sơ đề nghị cấp chứng chỉ hành nghề đối với người Việt Nam bao gồm những gì?",
+    "answer": "Hồ sơ đề nghị cấp chứng chỉ hành nghề đối với người Việt Nam bao gồm họ tên, năm sinh và địa chỉ thường trú của người đăng ký hành nghề; nội dung chuyên môn xin phép được hành nghề; biện pháp bảo vệ môi trường; bản sao văn bằng, chứng chỉ chuyên môn có chứng nhận của công chứng Nhà nước; sơ yếu lý lịch có xác nhận của Uỷ ban nhân dân xã, phường, thị trấn nơi đương sự đăng ký thường trú; giấy xác nhận đã qua thực hành 5 năm ở các cơ sở khám bệnh, chữa bệnh; phiếu khám sức khoẻ; giấy cho phép làm ngoài giờ của Thủ trưởng cơ quan, đơn vị nếu người xin đăng ký hành nghề đang làm việc trong các cơ sở y, dược của Nhà nước; bản diễn giải về địa điểm, cơ sở vật chất kỹ thuật, trang thiết bị kỹ thuật chuyên môn. Theo Khoản 5 Điều 5 của [Luật Khám bệnh, chữa bệnh]",
+    "citations": "Luật Khám bệnh, chữa bệnh",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "41/2015/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-01-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=98739&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh",
+          "Điều": "1",
+          "Khoản": "3",
+          "location_detail": "Điều 1: Sửa đổi, bổ sung một số điều của Thông tư số 41/2011/TT-BYT ngày 14/11/2011... -> Khoản 3",
+          "start_index_in_main": 4212
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "7/BYT-TT",
+          "document_type": null,
+          "effective_date": "1994-04-30",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=10345&Keyword=",
+          "domain": null,
+          "Khoản": "1",
+          "location_detail": "Khoản 1",
+          "start_index_in_main": 5345
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:50:13.104370",
+      "model": "llama3-70b-8192",
+      "question_length": 93,
+      "answer_length": 764
+    }
+  },
+  {
+    "topic": "Về nhập khẩu mẫu bệnh phẩm",
+    "level": "apply",
+    "question": "Một công ty nhập khẩu muốn nhập khẩu mẫu bệnh phẩm để nghiên cứu. Theo quy định, công ty cần nộp hồ sơ nào và gửi đến đâu?",
+    "answer": "Theo quy định, công ty cần nộp hồ sơ đề nghị nhập khẩu mẫu bệnh phẩm, bao gồm công văn đề nghị nhập khẩu, và gửi đến Bộ Y tế (Cục Y tế dự phòng). Theo Điều 2.2.3 của Thông tư này, hồ sơ đề nghị nhập khẩu mẫu bệnh phẩm để nghiên cứu phải bao gồm công văn đề nghị nhập khẩu.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "08/2006/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2006-07-09",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=15841&Keyword=",
+          "domain": "",
+          "Khoản": "2",
+          "location_detail": "Khoản 2",
+          "start_index_in_main": 9226
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "43/2011/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2012-01-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=27048&Keyword=",
+          "domain": "Y tế dự phòng",
+          "Chương": "II",
+          "location_detail": "Chương II: QUY ĐỊNH VỀ THU THẬP, BẢO QUẢN, ĐÓNG GÓI, VẬN CHUYỂN, LƯU GIỮ, SỬ DỤNG, NGHIÊN CỨU, TRAO ĐỔI, TIÊU H...",
+          "start_index_in_main": 2141
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:51:17.437661",
+      "model": "llama3-70b-8192",
+      "question_length": 122,
+      "answer_length": 272
+    }
+  },
+  {
+    "topic": "Về nhập khẩu mẫu bệnh phẩm",
+    "level": "apply",
+    "question": "Một tổ chức muốn nhập khẩu mẫu bệnh phẩm để sử dụng cho mục đích nghiên cứu tại các cơ sở có chức năng nghiên cứu. Theo quy định, tổ chức cần thực hiện thủ tục nào?",
+    "answer": "Theo quy định, tổ chức cần nộp hồ sơ đề nghị nhập khẩu mẫu bệnh phẩm, bao gồm công văn xin nhập khẩu, và gửi đến Bộ Y tế (Cục Y tế dự phòng). Theo Điều 2.2.2 của Thông tư này, trong vòng 15 ngày làm việc kể từ ngày nhận đủ hồ sơ hợp lệ, Bộ Y tế (Cục Y tế dự phòng) tiến hành xem xét và trả lời bằng văn bản về việc đồng ý hoặc không đồng ý cấp giấy phép nhập khẩu.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "08/2006/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2006-07-09",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=15841&Keyword=",
+          "domain": "",
+          "Khoản": "2",
+          "location_detail": "Khoản 2",
+          "start_index_in_main": 9226
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "43/2011/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2012-01-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=27048&Keyword=",
+          "domain": "Y tế dự phòng",
+          "Chương": "II",
+          "location_detail": "Chương II: QUY ĐỊNH VỀ THU THẬP, BẢO QUẢN, ĐÓNG GÓI, VẬN CHUYỂN, LƯU GIỮ, SỬ DỤNG, NGHIÊN CỨU, TRAO ĐỔI, TIÊU H...",
+          "start_index_in_main": 2141
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:51:17.437661",
+      "model": "llama3-70b-8192",
+      "question_length": 164,
+      "answer_length": 364
+    }
+  },
+  {
+    "topic": "Về tiêm chủng",
+    "level": "remember",
+    "question": "Tiêm chủng là gì?",
+    "answer": "Tiêm chủng là việc đưa vắc xin vào cơ thể con người với mục đích tạo cho cơ thể khả năng đáp ứng miễn dịch để dự phòng bệnh tật. Theo Thông tư về tiêm chủng...",
+    "citations": "Thông tư về tiêm chủng]",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "12/2014/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2014-06-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=38054&Keyword=",
+          "domain": "Y tế dự phòng",
+          "Chương": "I",
+          "Điều": "2",
+          "location_detail": "Chương I: NHỮNG QUY ĐỊNH CHUNG... -> Điều 2: Giải thích từ ngữ...",
+          "start_index_in_main": 503
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:53:18.934196",
+      "model": "llama3-70b-8192",
+      "question_length": 17,
+      "answer_length": 159
+    }
+  },
+  {
+    "topic": "Về tiêm chủng",
+    "level": "remember",
+    "question": "Các dịch vụ tiêm chủng bao gồm những nội dung gì?",
+    "answer": "Các dịch vụ tiêm chủng bao gồm tư vấn trước tiêm chủng, khám sàng lọc, tiêm chủng, theo dõi phản ứng sau tiêm chủng, quản lý đối tượng, thống kê báo cáo. Theo Điều 25 của Thông tư về tiêm chủng...",
+    "citations": "Thông tư về tiêm chủng",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "30/2024/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2024-12-19",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=171150&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh\nY tế dự phòng",
+          "Điều": "5",
+          "Khoản": "5",
+          "location_detail": "Điều 5: Điều khoản tham chiếu... -> Khoản 5",
+          "start_index_in_main": 46177
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:53:18.934196",
+      "model": "llama3-70b-8192",
+      "question_length": 49,
+      "answer_length": 196
+    }
+  },
+  {
+    "topic": "Về tiêm chủng",
+    "level": "understand",
+    "question": "Giải thích khái niệm về tiêm chủng và dây chuyền lạnh trong tiêm chủng?",
+    "answer": "Tiêm chủng là việc đưa vắc xin vào cơ thể con người với mục đích tạo cho cơ thể khả năng đáp ứng miễn dịch để dự phòng bệnh tật. Dây chuyền lạnh là hệ thống thiết bị nhằm bảo quản và vận chuyển vắc xin theo đúng nhiệt độ quy định từ nhà sản xuất đến người sử dụng, bao gồm buồng lạnh, xe lạnh, tủ lạnh, tủ đá, hòm lạnh, phích vắc xin. Theo Thông tư này.",
+    "citations": "Thông tư này",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "12/2014/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2014-06-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=38054&Keyword=",
+          "domain": "Y tế dự phòng",
+          "Chương": "I",
+          "Điều": "2",
+          "location_detail": "Chương I: NHỮNG QUY ĐỊNH CHUNG... -> Điều 2: Giải thích từ ngữ...",
+          "start_index_in_main": 503
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:53:18.934196",
+      "model": "llama3-70b-8192",
+      "question_length": 71,
+      "answer_length": 353
+    }
+  },
+  {
+    "topic": "Về tiêm chủng",
+    "level": "understand",
+    "question": "Trình bày các bước trong tổ chức tiêm chủng và địa điểm thực hiện tiêm chủng?",
+    "answer": "Các bước trong tổ chức tiêm chủng bao gồm tư vấn trước tiêm chủng, khám sàng lọc, tiêm chủng, theo dõi phản ứng sau tiêm chủng, quản lý đối tượng, thống kê báo cáo. Địa điểm thực hiện tiêm chủng là tại Trạm Y tế xã hoặc tại cơ sở y tế hoặc điểm cung cấp dịch vụ tiêm chủng tại cộng đồng hoặc tại nhà. Theo Thông tư này.",
+    "citations": "Thông tư này",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "30/2024/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2024-12-19",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=171150&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh\nY tế dự phòng",
+          "Điều": "5",
+          "Khoản": "5",
+          "location_detail": "Điều 5: Điều khoản tham chiếu... -> Khoản 5",
+          "start_index_in_main": 46177
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:53:18.934196",
+      "model": "llama3-70b-8192",
+      "question_length": 77,
+      "answer_length": 319
+    }
+  },
+  {
+    "topic": "Về tiêm chủng",
+    "level": "apply",
+    "question": "Một cơ sở y tế muốn tổ chức chiến dịch tiêm chủng. Theo quy định, cơ sở này phải đáp ứng những yêu cầu gì?",
+    "answer": "Theo Điều 12 của Thông tư này, chỉ những cơ sở tiêm chủng được cấp giấy chứng nhận đủ điều kiện tiêm chủng mới được phép thực hiện chiến dịch tiêm chủng. Ngoài ra, cơ sở này phải tuân thủ các hướng dẫn riêng của Bộ Y tế đối với từng chiến dịch.",
+    "citations": "Thông tư về tiêm chủng",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "30/2024/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2024-12-19",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=171150&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh\nY tế dự phòng",
+          "Điều": "5",
+          "Khoản": "5",
+          "location_detail": "Điều 5: Điều khoản tham chiếu... -> Khoản 5",
+          "start_index_in_main": 46177
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "12/2014/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2014-06-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=38054&Keyword=",
+          "domain": "Y tế dự phòng",
+          "Chương": "IV",
+          "Điều": "11",
+          "location_detail": "Chương IV: TỔ CHỨC TIÊM CHỦNG... -> Điều 11: Liều lượng, đường dùng vắc xin...",
+          "start_index_in_main": 10222
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:53:18.934196",
+      "model": "llama3-70b-8192",
+      "question_length": 106,
+      "answer_length": 244
+    }
+  },
+  {
+    "topic": "Về tiêm chủng",
+    "level": "apply",
+    "question": "Một người mẹ muốn tiêm chủng cho con mình. Tại đâu có thể thực hiện tiêm chủng và bao gồm những nội dung nào?",
+    "answer": "Theo Điều 25 của Thông tư này, địa điểm thực hiện tiêm chủng có thể tại Trạm Y tế xã, cơ sở y tế, điểm cung cấp dịch vụ tiêm chủng tại cộng đồng hoặc tại nhà. Nội dung bao gồm tư vấn trước tiêm chủng, khám sàng lọc, tiêm chủng, theo dõi phản ứng sau tiêm chủng, quản lý đối tượng, thống kê báo cáo.",
+    "citations": "Thông tư về tiêm chủng",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "12/2014/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2014-06-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=38054&Keyword=",
+          "domain": "Y tế dự phòng",
+          "Chương": "I",
+          "Điều": "2",
+          "location_detail": "Chương I: NHỮNG QUY ĐỊNH CHUNG... -> Điều 2: Giải thích từ ngữ...",
+          "start_index_in_main": 503
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "30/2024/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2024-12-19",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=171150&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh\nY tế dự phòng",
+          "Điều": "5",
+          "Khoản": "5",
+          "location_detail": "Điều 5: Điều khoản tham chiếu... -> Khoản 5",
+          "start_index_in_main": 46177
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:53:18.934196",
+      "model": "llama3-70b-8192",
+      "question_length": 109,
+      "answer_length": 298
+    }
+  },
+  {
+    "topic": "Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO",
+    "level": "understand",
+    "question": "Giải thích hiệu lực của Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO?",
+    "answer": "Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO có hiệu lực đến hết thời hạn của Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo GACP-WHO. Theo Điều 17 Thông tư này, cơ sở thực hiện việc cấp lại Giấy chứng nhận dược liệu đạt GACP theo quy định.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "19/2019/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2019-09-26",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=138051&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "V",
+          "Điều": "21",
+          "Khoản": "2",
+          "Điểm": "a",
+          "location_detail": "Chương V: ĐIỀU KHOẢN THI HÀNH... -> Điều 21: Điều khoản chuyển tiếp... -> Khoản 2 -> Điểm a",
+          "start_index_in_main": 26673
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:54:17.917367",
+      "model": "llama3-70b-8192",
+      "question_length": 96,
+      "answer_length": 272
+    }
+  },
+  {
+    "topic": "Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO",
+    "level": "understand",
+    "question": "Giải thích quy trình trồng trọt, thu hái, chế biến dược liệu trong lĩnh vực GACP-WHO?",
+    "answer": "Quy trình trồng trọt, thu hái, chế biến dược liệu là tài liệu kỹ thuật gồm các nội dung: chọn vùng đất, xác định thời gian trồng trọt và thời vụ thu hoạch; chọn giống, nhân giống; xử lý đất trồng, gieo giống; chăm bón, tưới tiêu; phòng ngừa sâu bệnh; thu hái, sơ chế, chế biến; đóng gói, ghi nhãn, bảo quản; yêu cầu chất lượng và phương pháp kiểm tra, kiểm soát chất lượng sản phẩm.",
+    "citations": "Không có",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "14/2009/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2009-10-18",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=23599&Keyword=",
+          "domain": "",
+          "Chương": "I",
+          "Điều": "3",
+          "Khoản": "5",
+          "location_detail": "Chương I: QUY ĐỊNH CHUNG... -> Điều 3: Giải thích từ ngữ... -> Khoản 5",
+          "start_index_in_main": 2190
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:54:17.917367",
+      "model": "llama3-70b-8192",
+      "question_length": 85,
+      "answer_length": 382
+    }
+  },
+  {
+    "topic": "Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO",
+    "level": "apply",
+    "question": "Một cơ sở sản xuất dược liệu đã được cấp Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo GACP-WHO. Nếu cơ sở đề nghị cấp Giấy chứng nhận dược liệu đạt GACP thay cho Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo GACP-WHO còn hiệu lực, thì cơ sở phải thực hiện thủ tục gì?",
+    "answer": "Cơ sở phải thực hiện việc cấp lại Giấy chứng nhận dược liệu đạt GACP theo quy định tại Điều 17 Thông tư này. Theo Điều 17 Thông tư này], Giấy chứng nhận dược liệu đạt GACP có hiệu lực đến hết thời hạn của Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo GACP-WHO trước đó.",
+    "citations": "Thông tư này",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "19/2019/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2019-09-26",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=138051&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "V",
+          "Điều": "21",
+          "Khoản": "2",
+          "Điểm": "a",
+          "location_detail": "Chương V: ĐIỀU KHOẢN THI HÀNH... -> Điều 21: Điều khoản chuyển tiếp... -> Khoản 2 -> Điểm a",
+          "start_index_in_main": 26673
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:54:17.917367",
+      "model": "llama3-70b-8192",
+      "question_length": 280,
+      "answer_length": 275
+    }
+  },
+  {
+    "topic": "Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO",
+    "level": "apply",
+    "question": "Một tổ chức đánh giá sự phù hợp trong lĩnh vực GACP-WHO muốn tham gia vào quá trình cấp Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo GACP-WHO. Theo quy định, tổ chức này phải đáp ứng điều kiện gì?",
+    "answer": "Tổ chức phải là tổ chức có đủ điều kiện quy định do Bộ Y tế chỉ định. Theo quy định, tổ chức này phải đáp ứng các điều kiện về quy trình trồng trọt, thu hái, chế biến dược liệu và các nội dung khác liên quan.",
+    "citations": "Thông tư này",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "14/2009/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2009-10-18",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=23599&Keyword=",
+          "domain": "",
+          "Chương": "I",
+          "Điều": "3",
+          "Khoản": "5",
+          "location_detail": "Chương I: QUY ĐỊNH CHUNG... -> Điều 3: Giải thích từ ngữ... -> Khoản 5",
+          "start_index_in_main": 2190
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:54:17.917367",
+      "model": "llama3-70b-8192",
+      "question_length": 203,
+      "answer_length": 208
+    }
+  },
+  {
+    "topic": "Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền",
+    "level": "understand",
+    "question": "Giải thích thẩm quyền cấp, cấp lại, thu hồi giấy chứng nhận người có bài thuốc gia truyền, giấy chứng nhận người có phương pháp chữa bệnh gia truyền?",
+    "answer": "Theo Điều 20, người đứng đầu cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh cấp, cấp lại, thu hồi giấy chứng nhận người có bài thuốc gia truyền, giấy chứng nhận người có phương pháp chữa bệnh gia truyền.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "02/2024/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2024-03-12",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=166665&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh",
+          "Chương": "II",
+          "location_detail": "Chương II: CẤP GIẤY CHỨNG NHẬN NGƯỜI CÓ BÀI THUỐC GIA TRUYỀN, GIẤY CHỨNG NHẬN NGƯỜI CÓ PHƯƠNG PHÁP CHỮA BỆNH GI...",
+          "start_index_in_main": 23227
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:55:15.958159",
+      "model": "llama3-70b-8192",
+      "question_length": 149,
+      "answer_length": 214
+    }
+  },
+  {
+    "topic": "Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền",
+    "level": "understand",
+    "question": "Giải thích các điều kiện được cấp Giấy chứng nhận là lương y đối với đối tượng quy định?",
+    "answer": "Theo Điều 6, các điều kiện được cấp Giấy chứng nhận là lương y bao gồm có giấy xác nhận đã tham dự lớp bồi dưỡng về y học cổ truyền và có kinh nghiệm khám bệnh, chữa bệnh bằng phương pháp y học cổ truyền.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "29/2015/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2015-11-26",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=87106&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "I",
+          "Điều": "6",
+          "location_detail": "Chương I: ĐỐI TƯỢNG, ĐIỀU KIỆN CẤP GIẤY CHỨNG NHẬN LÀ LƯƠNG Y... -> Điều 6: Điều kiện được cấp Giấy chứng nhận là lương y đối với đối tượng quy định Khoản 5 Điều 1 Thông tư này...",
+          "start_index_in_main": 6491
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:55:15.958159",
+      "model": "llama3-70b-8192",
+      "question_length": 88,
+      "answer_length": 204
+    }
+  },
+  {
+    "topic": "Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền",
+    "level": "apply",
+    "question": "Một người có bài thuốc gia truyền muốn được cấp Giấy chứng nhận người có bài thuốc gia truyền. Theo quy định, người đứng đầu cơ quan nào cấp Giấy chứng nhận này?",
+    "answer": "Theo Điều 20, người đứng đầu cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh cấp Giấy chứng nhận người có bài thuốc gia truyền.",
+    "citations": "Thông tư XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "02/2024/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2024-03-12",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=166665&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh",
+          "Chương": "II",
+          "location_detail": "Chương II: CẤP GIẤY CHỨNG NHẬN NGƯỜI CÓ BÀI THUỐC GIA TRUYỀN, GIẤY CHỨNG NHẬN NGƯỜI CÓ PHƯƠNG PHÁP CHỮA BỆNH GI...",
+          "start_index_in_main": 23227
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:55:15.958159",
+      "model": "llama3-70b-8192",
+      "question_length": 161,
+      "answer_length": 137
+    }
+  },
+  {
+    "topic": "Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền",
+    "level": "apply",
+    "question": "Một lương y có phương pháp chữa bệnh gia truyền muốn được cấp Giấy chứng nhận người có phương pháp chữa bệnh gia truyền. Ngoài đơn đề nghị, bản thuyết minh và các giấy tờ khác, lương y cần nộp thêm gì?",
+    "answer": "Theo Điều 21, ngoài đơn đề nghị, bản thuyết minh và các giấy tờ khác, lương y cần nộp bản sao hợp lệ kết quả thử độc tính cấp và bán trường diễn đối với bài thuốc gia truyền, và 02 ảnh chân dung cỡ 04 x 06 cm.",
+    "citations": "Thông tư XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "02/2024/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2024-03-12",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=166665&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh",
+          "Chương": "II",
+          "Điều": "21",
+          "location_detail": "Chương II: CẤP GIẤY CHỨNG NHẬN NGƯỜI CÓ BÀI THUỐC GIA TRUYỀN, GIẤY CHỨNG NHẬN NGƯỜI CÓ PHƯƠNG PHÁP CHỮA BỆNH GI... -> Điều 21: Hồ sơ đề nghị cấp giấy chứng nhận người có bài thuốc gia truyền, giấy chứng nhận người có phương phá...",
+          "start_index_in_main": 23694
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:55:15.958159",
+      "model": "llama3-70b-8192",
+      "question_length": 201,
+      "answer_length": 209
+    }
+  },
+  {
+    "topic": "Cấp phép đơn hàng nhập khẩu dược liệu",
+    "level": "remember",
+    "question": "Cơ quan nào cấp Giấy phép nhập khẩu dược liệu?",
+    "answer": "Cục trưởng Cục Quản lý Y, Dược cổ truyền Bộ Y tế cấp Giấy phép nhập khẩu dược liệu. Theo Điều 26 Thông tư này...",
+    "citations": "Thông tư về quản lý dược liệu",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "03/2016/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-03-06",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=97385&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "IV",
+          "Mục": "2",
+          "Điều": "26",
+          "location_detail": "Chương IV: THẨM QUYỀN, HỒ SƠ, THỦ TỤC CẤP GIẤY CHỨNG NHẬN ĐỦ ĐIỀU KIỆN KINH DOANH THUỐC... -> Mục 2: HỒ SƠ, THẨM QUYỀN, THỦ TỤC CẤP GIẤY PHÉP NHẬP KHẨU DƯỢC LIỆU... -> Điều 26: Thẩm quyền, thủ tục cấp Giấy phép nhập khẩu dược liệu...",
+          "start_index_in_main": 25333
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:57:23.403809",
+      "model": "llama3-70b-8192",
+      "question_length": 46,
+      "answer_length": 112
+    }
+  },
+  {
+    "topic": "Cấp phép đơn hàng nhập khẩu dược liệu",
+    "level": "remember",
+    "question": "Tài liệu chứng minh nguồn gốc của dược liệu nhập khẩu bao gồm những gì?",
+    "answer": "Tài liệu chứng minh nguồn gốc của dược liệu nhập khẩu bao gồm Giấy chứng nhận nguồn gốc, xuất xứ của từng lô dược liệu do cơ quan nhà nước có thẩm quyền của nước xuất khẩu cấp (Giấy C/O); Giấy chứng nhận chất lượng phù hợp với tiêu chuẩn của nước sản xuất hoặc các tiêu chuẩn quốc tế (C/Q) kèm theo bản dịch ra Tiếng Việt) đối với từng lô dược liệu và Phiếu kiểm nghiệm kèm theo bản dịch ra Tiếng Việt) đối với từng lô dược liệu. Theo Điều 14 Thông tư này...",
+    "citations": "Thông tư về quản lý dược liệu",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "13/2018/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2018-06-30",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=129501&Keyword=",
+          "domain": "Quản lý dược\nQuản lý Khám, chữa bệnh",
+          "Chương": "IV",
+          "Điều": "14",
+          "location_detail": "Chương IV: NGUỒN GỐC, XUẤT XỨ CỦA DƯỢC LIỆU, THUỐC CỔ TRUYỀN... -> Điều 14: Tài liệu chứng minh nguồn gốc của dược liệu, thuốc cổ truyền...",
+          "start_index_in_main": 21058
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:57:23.403809",
+      "model": "llama3-70b-8192",
+      "question_length": 71,
+      "answer_length": 458
+    }
+  },
+  {
+    "topic": "Cấp phép đơn hàng nhập khẩu dược liệu",
+    "level": "apply",
+    "question": "Một cơ sở nhập khẩu dược liệu cần nộp hồ sơ xin phép nhập khẩu dược liệu đến đâu?",
+    "answer": "Theo Điều 26 của Thông tư này, cơ sở nhập khẩu cần nộp hồ sơ xin phép nhập khẩu dược liệu đến Cục Quản lý Y, Dược cổ truyền - Bộ Y tế.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "03/2016/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-03-06",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=97385&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "IV",
+          "Mục": "2",
+          "Điều": "26",
+          "location_detail": "Chương IV: THẨM QUYỀN, HỒ SƠ, THỦ TỤC CẤP GIẤY CHỨNG NHẬN ĐỦ ĐIỀU KIỆN KINH DOANH THUỐC... -> Mục 2: HỒ SƠ, THẨM QUYỀN, THỦ TỤC CẤP GIẤY PHÉP NHẬP KHẨU DƯỢC LIỆU... -> Điều 26: Thẩm quyền, thủ tục cấp Giấy phép nhập khẩu dược liệu...",
+          "start_index_in_main": 25333
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:57:23.403809",
+      "model": "llama3-70b-8192",
+      "question_length": 81,
+      "answer_length": 134
+    }
+  },
+  {
+    "topic": "Cấp phép đơn hàng nhập khẩu dược liệu",
+    "level": "apply",
+    "question": "Trong thời hạn bao lâu kể từ khi nhận được hồ sơ đầy đủ và hợp lệ, Cục Quản lý Y, Dược cổ truyền - Bộ Y tế sẽ cấp giấy phép nhập khẩu dược liệu?",
+    "answer": "Trong thời hạn 07 ngày làm việc, kể từ khi nhận hồ sơ đầy đủ và hợp lệ, Cục Quản lý Y, Dược cổ truyền - Bộ Y tế sẽ cấp giấy phép nhập khẩu dược liệu theo mẫu quy định tại Phụ lục số 06 ban hành kèm theo Thông tư này.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "03/2016/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-03-06",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=97385&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "IV",
+          "Mục": "2",
+          "Điều": "26",
+          "location_detail": "Chương IV: THẨM QUYỀN, HỒ SƠ, THỦ TỤC CẤP GIẤY CHỨNG NHẬN ĐỦ ĐIỀU KIỆN KINH DOANH THUỐC... -> Mục 2: HỒ SƠ, THẨM QUYỀN, THỦ TỤC CẤP GIẤY PHÉP NHẬP KHẨU DƯỢC LIỆU... -> Điều 26: Thẩm quyền, thủ tục cấp Giấy phép nhập khẩu dược liệu...",
+          "start_index_in_main": 25333
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:57:23.403809",
+      "model": "llama3-70b-8192",
+      "question_length": 144,
+      "answer_length": 216
+    }
+  },
+  {
+    "topic": "Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)",
+    "level": "understand",
+    "question": "Giải thích quy định về nhập khẩu thuốc và nguyên liệu để sản xuất thuốc của các cơ sở sản xuất thuốc đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh thuốc và Giấy chứng nhận đạt tiêu chuẩn Thực hành tốt sản xuất thuốc?",
+    "answer": "Theo quy định tại điểm c Khoản 1 Điều 3 Thông tư số 47/2010/TT-BYT ngày 29/12/2010 của Bộ trưởng Bộ Y tế, các cơ sở sản xuất thuốc đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh thuốc và Giấy chứng nhận đạt tiêu chuẩn Thực hành tốt sản xuất thuốc (GMP) được nhập khẩu nguyên liệu để sản xuất thuốc của chính doanh nghiệp và bán cho các cơ sở sản xuất thuốc khác.",
+    "citations": "Thông tư số 47/2010/TT-BYT ngày 29/12/2010 của Bộ trưởng Bộ Y tế",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "10/2013/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2013-05-14",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=46947&Keyword=",
+          "domain": "Dược - Mỹ phẩm",
+          "Điều": "2",
+          "Khoản": "3",
+          "location_detail": "Điều 2: Điều khoản chuyển tiếp... -> Khoản 3",
+          "start_index_in_main": 13792
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:58:25.653717",
+      "model": "llama3-70b-8192",
+      "question_length": 222,
+      "answer_length": 367
+    }
+  },
+  {
+    "topic": "Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)",
+    "level": "understand",
+    "question": "Theo quy định, các cơ sở sản xuất thuốc từ dược liệu thành lập mới, bổ sung phạm vi kinh doanh thuốc, hoặc gia hạn giấy chứng nhận đủ điều kiện kinh doanh thuốc phải đáp ứng các nguyên tắc sản xuất thuốc quy định tại đâu?",
+    "answer": "Theo quy định tại Chương II Thông tư này, các cơ sở sản xuất thuốc từ dược liệu thành lập mới, bổ sung phạm vi kinh doanh thuốc, hoặc gia hạn giấy chứng nhận đủ điều kiện kinh doanh thuốc phải đáp ứng các nguyên tắc sản xuất thuốc.",
+    "citations": "Thông tư số ... (không rõ số thông tư)",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "16/2011/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2011-06-08",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=26548&Keyword=",
+          "domain": "",
+          "Chương": "IV",
+          "Điều": "15",
+          "location_detail": "Chương IV: LỘ TRÌNH ÁP DỤNG NGUYÊN TẮC, TIÊU CHUẨN THỰC HÀNH TỐT SẢN XUẤT THUỐC (GMP) ĐỐI VỚI CƠ SỞ SẢN XUẤT TH... -> Điều 15: Lộ trình triển khai áp dụng nguyên tắc, tiêu chuẩn “Thực hành tốt sản xuất thuốc (GMP) đối với các c...",
+          "start_index_in_main": 42323
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:58:25.653717",
+      "model": "llama3-70b-8192",
+      "question_length": 221,
+      "answer_length": 231
+    }
+  },
+  {
+    "topic": "Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)",
+    "level": "remember",
+    "question": "Giấy chứng nhận đủ điều kiện kinh doanh dược có kho bảo quản dược liệu đạt GSP có giá trị trong bao lâu?",
+    "answer": "Giấy chứng nhận đủ điều kiện kinh doanh dược có kho bảo quản dược liệu đạt GSP có giá trị trong 3 năm kể từ ngày công bố trên Trang thông tin điện tử của Cục Quản lý Y, Dược cổ truyền. Theo Thông tư số 03/2016/TT-BYT ngày 21 tháng 01 năm 2016 của Bộ trưởng Bộ Y tế.",
+    "citations": "Thông tư số 03/2016/TT-BYT ngày 21 tháng 01 năm 2016 của Bộ trưởng Bộ Y tế",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "36/2018/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2019-01-10",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=135494&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "VII",
+          "Điều": "21",
+          "Khoản": "4",
+          "location_detail": "Chương VII: ĐIỀU KHOẢN THI HÀNH... -> Điều 21: Điều khoản chuyển tiếp... -> Khoản 4",
+          "start_index_in_main": 42325
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:59:33.324291",
+      "model": "llama3-70b-8192",
+      "question_length": 104,
+      "answer_length": 265
+    }
+  },
+  {
+    "topic": "Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)",
+    "level": "remember",
+    "question": "Giấy chứng nhận đủ điều kiện kinh doanh dược liệu nào là bắt buộc phải có đối với cơ sở nhập khẩu dược liệu?",
+    "answer": "Giấy chứng nhận đạt GSP (Thực hành tốt bảo quản thuốc, nguyên liệu làm thuốc, phạm vi bảo quản dược liệu) là bắt buộc phải có đối với cơ sở nhập khẩu dược liệu. Theo Điều 16 của Thông tư này.",
+    "citations": "Thông tư số 16/2011/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "07/2024/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2024-05-17",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=168238&Keyword=",
+          "domain": "Kế hoạch tài chính",
+          "Chương": "II",
+          "location_detail": "Chương II: BẢNG DỮ LIỆU ĐẤU THẦU...",
+          "start_index_in_main": 208832
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "03/2016/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-03-06",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=97385&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "II",
+          "Điều": "4",
+          "location_detail": "Chương II: XUẤT KHẨU, NHẬP KHẨU, BÁN BUÔN, BÁN LẺ VÀ DỊCH VỤ BẢO QUẢN DƯỢC LIỆU... -> Điều 4: Điều kiện chung đối với cơ sở xuất khẩu, nhập khẩu, bán buôn, bán lẻ và dịch vụ bảo quản dược liệu...",
+          "start_index_in_main": 1766
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:59:33.324291",
+      "model": "llama3-70b-8192",
+      "question_length": 108,
+      "answer_length": 191
+    }
+  },
+  {
+    "topic": "Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)",
+    "level": "understand",
+    "question": "Giải thích quy định về cơ sở kinh doanh dược liệu đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh dược có kho bảo quản dược liệu đạt GSP?",
+    "answer": "Theo quy định, cơ sở kinh doanh đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh dược có kho bảo quản dược liệu đạt GSP đã được Cục Quản lý Y, Dược cổ truyền kiểm tra và công bố trên Trang thông tin điện tử của Cục Quản lý Y, Dược cổ truyền sẽ được tiếp tục hoạt động bảo quản dược liệu xuất nhập khẩu đến hết 03 năm kể từ ngày công bố trên Trang thông tin điện tử. Theo Thông tư số 03/2016/TT-BYT ngày 21 tháng 01 năm 2016 của Bộ trưởng Bộ Y tế quy định về hoạt động kinh doanh dược liệu.",
+    "citations": "Thông tư số 03/2016/TT-BYT ngày 21 tháng 01 năm 2016 của Bộ trưởng Bộ Y tế",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "36/2018/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2019-01-10",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=135494&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "VII",
+          "Điều": "21",
+          "Khoản": "4",
+          "location_detail": "Chương VII: ĐIỀU KHOẢN THI HÀNH... -> Điều 21: Điều khoản chuyển tiếp... -> Khoản 4",
+          "start_index_in_main": 42325
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:59:33.324291",
+      "model": "llama3-70b-8192",
+      "question_length": 141,
+      "answer_length": 492
+    }
+  },
+  {
+    "topic": "Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)",
+    "level": "understand",
+    "question": "Giải thích các tài liệu cần thiết để chứng minh năng lực và kinh nghiệm của nhà thầu trong phạm vi kinh doanh dược liệu?",
+    "answer": "Theo quy định, các tài liệu cần thiết để chứng minh năng lực và kinh nghiệm của nhà thầu bao gồm Giấy chứng nhận đủ điều kiện kinh doanh dược liệu, Thông tin về đáp ứng nguyên tắc, tiêu chuẩn Thực hành tốt theo từng loại hình kinh doanh, cụ thể là Giấy chứng nhận đạt GSP đối với cơ sở nhập khẩu dược liệu, vị thuốc cổ truyền. Theo Thông tư số 16/2011/TT-BYT, các cơ sở kinh doanh dược liệu phải đáp ứng các điều kiện tương ứng đối với từng loại hình kinh doanh.",
+    "citations": "Thông tư số 16/2011/TT-BYT, Thông tư số 03/2016/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "07/2024/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2024-05-17",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=168238&Keyword=",
+          "domain": "Kế hoạch tài chính",
+          "Chương": "II",
+          "location_detail": "Chương II: BẢNG DỮ LIỆU ĐẤU THẦU...",
+          "start_index_in_main": 208832
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "03/2016/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-03-06",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=97385&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "II",
+          "Điều": "4",
+          "location_detail": "Chương II: XUẤT KHẨU, NHẬP KHẨU, BÁN BUÔN, BÁN LẺ VÀ DỊCH VỤ BẢO QUẢN DƯỢC LIỆU... -> Điều 4: Điều kiện chung đối với cơ sở xuất khẩu, nhập khẩu, bán buôn, bán lẻ và dịch vụ bảo quản dược liệu...",
+          "start_index_in_main": 1766
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T19:59:33.324291",
+      "model": "llama3-70b-8192",
+      "question_length": 120,
+      "answer_length": 462
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng",
+    "level": "understand",
+    "question": "Giải thích các hoạt động hỗ trợ nghiên cứu thử nghiệm lâm sàng?",
+    "answer": "Các hoạt động hỗ trợ nghiên cứu thử nghiệm lâm sàng bao gồm xây dựng, phát triển đề cương nghiên cứu và các tài liệu nghiên cứu; dán nhãn sản phẩm nghiên cứu theo đúng tiêu chuẩn, quy định hiện hành; đánh giá, lựa chọn cơ sở nghiên cứu và nghiên cứu viên đủ tiêu chuẩn; chuẩn bị hồ sơ, tài liệu trình các cơ quan có thẩm quyền thẩm định nghiên cứu; và nhiều hoạt động khác. Theo Điều 15 của [Thông tư số XX/20XX/TT-BYT],",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "08/2014/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2014-05-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=38751&Keyword=",
+          "domain": "Đào tạo và nghiên cứu y dược",
+          "Chương": "IV",
+          "Điều": "15",
+          "location_detail": "Chương IV: PHẠM VI, QUYỀN VÀ TRÁCH NHIỆM CỦA TỔ CHỨC HỖ TRỢ NGHIÊN CỨU THỬ NGHIỆM LÂM SÀNG... -> Điều 15: Phạm vi hoạt động hỗ trợ nghiên cứu thử nghiệm lâm sàng...",
+          "start_index_in_main": 14026
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:00:28.819231",
+      "model": "llama3-70b-8192",
+      "question_length": 63,
+      "answer_length": 420
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng",
+    "level": "understand",
+    "question": "Giải thích các hoạt động đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng trong bệnh viện?",
+    "answer": "Các hoạt động đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng trong bệnh viện bao gồm nghiên cứu, khảo sát phát hiện các nội dung cần cải thiện trong quản lý và tổ chức thực hiện các hoạt động điều dưỡng; thường xuyên đánh giá, đề xuất và thử nghiệm các giải pháp nâng cao chất lượng hoạt động điều dưỡng; tham gia xây dựng kế hoạch và thực hiện đào tạo nâng cao năng lực hoạt động điều dưỡng cho tuyến dưới; và nhiều hoạt động khác. Theo [Chunk 5],",
+    "citations": "",
+    "source_chunks": [
+      {
+        "chunk_id": 5,
+        "metadata": {
+          "document_id": "31/2021/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2022-02-27",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=152956&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh",
+          "Chương": "III",
+          "Điều": "10",
+          "Khoản": "4",
+          "location_detail": "Chương III: TỔ CHỨC HOẠT ĐỘNG ĐIỀU DƯỠNG VÀ NHIỆM VỤ CỦA CÁC CHỨC DANH CHUYÊN MÔN TRONG CHĂM SÓC... -> Điều 10: Nhiệm vụ của phòng điều dưỡng... -> Khoản 4",
+          "start_index_in_main": 12211
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:00:28.819231",
+      "model": "llama3-70b-8192",
+      "question_length": 93,
+      "answer_length": 453
+    }
+  },
+  {
+    "topic": "Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần",
+    "level": "remember",
+    "question": "Ai là người giám định pháp y tâm thần?",
+    "answer": "Người giám định pháp y tâm thần là bác sỹ chuyên ngành tâm thần, đã được cấp có thẩm quyền bổ nhiệm là giám định viên pháp y tâm thần hoặc là người giám định pháp y tâm thần theo vụ việc. Theo Quy trình giám định pháp y tâm thần ban hành kèm theo Thông tư số 18/2015/TT-BYT ngày 14 tháng 07 năm 2015 của Bộ trưởng Bộ Y tế.",
+    "citations": "Thông tư số 18/2015/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "18/2015/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2015-08-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=75946&Keyword=",
+          "domain": "Quản lý Khám, chữa bệnh",
+          "Điều": "5",
+          "Khoản": "2",
+          "location_detail": "Điều 5: Trách nhiệm thi hành... -> Khoản 2",
+          "start_index_in_main": 1412
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:01:32.971577",
+      "model": "llama3-70b-8192",
+      "question_length": 38,
+      "answer_length": 322
+    }
+  },
+  {
+    "topic": "Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần",
+    "level": "remember",
+    "question": "Trung ương có trách nhiệm gì trong thủ tục bổ nhiệm giám định viên pháp y và giám định viên pháp y tâm thần?",
+    "answer": "Trung ương có trách nhiệm xem xét, lựa chọn, hoàn thiện hồ sơ để tổng hợp gửi Bộ Y tế. Theo Điều 4 của Quy trình giám định pháp y và giám định pháp y tâm thần.",
+    "citations": "Quy trình giám định pháp y và giám định pháp y tâm thần",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "02/2014/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2014-03-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=33575&Keyword=",
+          "domain": "Giám định y khoa, pháp y, pháp y tâm thần",
+          "Điều": "4",
+          "location_detail": "Điều 4: Thủ tục bổ nhiệm giám định viên pháp y và giám định viên pháp y tâm thần...",
+          "start_index_in_main": 3213
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:01:32.971577",
+      "model": "llama3-70b-8192",
+      "question_length": 108,
+      "answer_length": 159
+    }
+  },
+  {
+    "topic": "Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần",
+    "level": "understand",
+    "question": "Giải thích quy trình bổ nhiệm giám định viên pháp y và giám định viên pháp y tâm thần?",
+    "answer": "Quy trình bổ nhiệm giám định viên pháp y và giám định viên pháp y tâm thần bao gồm các bước: Trung ương xem xét, lựa chọn, hoàn thiện hồ sơ và gửi về Bộ Y tế. Vụ Tổ chức cán bộ - Bộ Y tế tiếp nhận và kiểm tra tính hợp pháp của hồ sơ. Sau đó, Vụ Tổ chức cán bộ chủ trì, phối hợp với Cục Quản lý Khám, chữa bệnh, Vụ Pháp chế thẩm định hồ sơ đề nghị bổ nhiệm giám định viên pháp y, giám định viên pháp y tâm thần, trình Bộ trưởng Bộ Y tế xem xét quyết định bổ nhiệm. Theo Điều 4 của Thông tư số 18/2015/TT-BYT ngày 14 tháng 07 năm 2015 của Bộ trưởng Bộ Y tế.",
+    "citations": "Thông tư số 18/2015/TT-BYT ngày 14 tháng 07 năm 2015 của Bộ trưởng Bộ Y tế",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "02/2014/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2014-03-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=33575&Keyword=",
+          "domain": "Giám định y khoa, pháp y, pháp y tâm thần",
+          "Điều": "4",
+          "location_detail": "Điều 4: Thủ tục bổ nhiệm giám định viên pháp y và giám định viên pháp y tâm thần...",
+          "start_index_in_main": 3213
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:01:32.971577",
+      "model": "llama3-70b-8192",
+      "question_length": 86,
+      "answer_length": 555
+    }
+  },
+  {
+    "topic": "Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần",
+    "level": "understand",
+    "question": "Giải thích thành phần và quy trình hoạt động của Hội đồng giám định y khoa phúc quyết lần cuối?",
+    "answer": "Hội đồng giám định y khoa phúc quyết lần cuối có tối thiểu 05 thành viên, hoạt động theo cơ chế kiêm nhiệm, bao gồm các chức danh: Chủ tịch, Phó Chủ tịch, Ủy viên thường trực và Ủy viên chuyên môn. Các thành viên Hội đồng giám định y khoa, giám định viên đã tham gia giám định y khoa cho đối tượng thì không tham gia Hội đồng giám định y khoa phúc quyết lần cuối. Theo quy định tại Điều 4 của Thông tư số 18/2015/TT-BYT ngày 14 tháng 07 năm 2015 của Bộ trưởng Bộ Y tế.",
+    "citations": "Thông tư số 18/2015/TT-BYT ngày 14 tháng 07 năm 2015 của Bộ trưởng Bộ Y tế",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "01/2023/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2023-04-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=160121&Keyword=",
+          "domain": "Giám định y khoa, pháp y, pháp y tâm thần",
+          "Chương": "I",
+          "Mục": "1",
+          "Điều": "1",
+          "Khoản": "3",
+          "Điểm": "b",
+          "location_detail": "Chương I: TỔ CHỨC HỘI ĐỒNG GIÁM ĐỊNH Y KHOA CÁC CẤP... -> Mục 1: HỘI ĐỒNG GIÁM ĐỊNH Y KHOA... -> Điều 1: Nguyên tắc thành lập Hội đồng giám định y khoa... -> Khoản 3 -> Điểm b",
+          "start_index_in_main": 887
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:01:32.971577",
+      "model": "llama3-70b-8192",
+      "question_length": 95,
+      "answer_length": 468
+    }
+  },
+  {
+    "topic": "Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần",
+    "level": "apply",
+    "question": "Một bác sỹ chuyên ngành tâm thần muốn trở thành giám định viên pháp y tâm thần. Theo quy trình bổ nhiệm giám định viên pháp y và giám định viên pháp y tâm thần, bước đầu tiên là gì?",
+    "answer": "Bước đầu tiên là Trung ương sẽ xem xét, lựa chọn, hoàn thiện hồ sơ để tổng hợp gửi Bộ Y tế. Theo Điều 4 của Thông tư số 18/2015/TT-BYT ngày 14 tháng 7 năm 2015 của Bộ trưởng Bộ Y tế.",
+    "citations": "Thông tư số 18/2015/TT-BYT ngày 14 tháng 7 năm 2015 của Bộ trưởng Bộ Y tế",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "02/2014/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2014-03-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=33575&Keyword=",
+          "domain": "Giám định y khoa, pháp y, pháp y tâm thần",
+          "Điều": "4",
+          "location_detail": "Điều 4: Thủ tục bổ nhiệm giám định viên pháp y và giám định viên pháp y tâm thần...",
+          "start_index_in_main": 3213
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:01:32.971577",
+      "model": "llama3-70b-8192",
+      "question_length": 181,
+      "answer_length": 182
+    }
+  },
+  {
+    "topic": "Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần",
+    "level": "apply",
+    "question": "Một bác sỹ đã có văn bằng đúng chuyên ngành về Pháp y, Pháp y Tâm thần và đã có chứng chỉ đào tạo ngắn hạn đúng chuyên ngành về pháp y, pháp y tâm thần với thời gian tối thiểu từ đủ 03 tháng trở lên trước ngày Thông tư này có hiệu lực. Theo quy định, bác sỹ này có cần qua đào tạo để cấp chứng chỉ nghiệp vụ giám định pháp y, pháp y tâm thần không?",
+    "answer": "Không, vì bác sỹ đã có văn bằng đúng chuyên ngành về Pháp y, Pháp y Tâm thần và đã có chứng chỉ đào tạo ngắn hạn đúng chuyên ngành về pháp y, pháp y tâm thần với thời gian tối thiểu từ đủ 03 tháng trở lên trước ngày Thông tư này có hiệu lực. Theo Điều 10 của Thông tư số 18/2015/TT-BYT ngày 14 tháng 7 năm 2015 của Bộ trưởng Bộ Y tế.",
+    "citations": "Thông tư số 18/2015/TT-BYT ngày 14 tháng 7 năm 2015 của Bộ trưởng Bộ Y tế",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "06/2019/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2019-06-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=137236&Keyword=",
+          "domain": "Khoa học và đào tạo",
+          "Điều": "10",
+          "location_detail": "Điều 10: Điều khoản chuyển tiếp...",
+          "start_index_in_main": 3807
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:01:32.971577",
+      "model": "llama3-70b-8192",
+      "question_length": 348,
+      "answer_length": 333
+    }
+  },
+  {
+    "topic": "Trang thiết bị và sinh phẩm y tế",
+    "level": "remember",
+    "question": "Trang thiết bị y tế phục vụ cho công tác khám bệnh, chữa bệnh của Khoa Y, dược cổ truyền được thực hiện theo quy định nào?",
+    "answer": "Theo Quyết định số 1509/QĐ-BYT ngày 07 tháng 5 năm 2012 của Bộ trưởng Bộ Y tế ban hành Danh mục trang thiết bị y tế thiết yếu của Bệnh viện y học cổ truyền tuyến tỉnh phù hợp với quy mô và hoạt động của Khoa.",
+    "citations": "Quyết định số 1509/QĐ-BYT ngày 07 tháng 5 năm 2012",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "01/2014/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2014-03-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=33583&Keyword=",
+          "domain": "Y dược cổ truyền",
+          "Chương": "III",
+          "Điều": "8",
+          "location_detail": "Chương III: CƠ SỞ VẬT CHẤT VÀ TRANG THIẾT BỊ... -> Điều 8: Trang thiết bị y tế...",
+          "start_index_in_main": 8608
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:02:40.827168",
+      "model": "llama3-70b-8192",
+      "question_length": 122,
+      "answer_length": 208
+    }
+  },
+  {
+    "topic": "Trang thiết bị và sinh phẩm y tế",
+    "level": "remember",
+    "question": "Các mặt hàng trang thiết bị y tế được phép kinh doanh phải đạt các yêu cầu nào?",
+    "answer": "Phải đạt tiêu chuẩn chất lượng (tối thiểu là tiêu chuẩn cơ sở - TC) và qua thử nghiệm lâm sàng tại một số cơ sở y tế và có xác nhận kết quả hợp pháp.",
+    "citations": "Điều 5 của Thông tư",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "12-BYT/TT",
+          "document_type": null,
+          "effective_date": "1994-06-21",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=10028&Keyword=",
+          "domain": null,
+          "Điều": "5",
+          "location_detail": "Điều 5: Các mặt hàng trang thiết bị y tế được phép kinh doanh phải đạt các yêu cầu sau:...",
+          "start_index_in_main": 1721
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:02:40.827168",
+      "model": "llama3-70b-8192",
+      "question_length": 79,
+      "answer_length": 149
+    }
+  },
+  {
+    "topic": "Trang thiết bị và sinh phẩm y tế",
+    "level": "understand",
+    "question": "Giải thích yêu cầu đối với trang thiết bị y tế sản xuất trong nước?",
+    "answer": "Trang thiết bị y tế sản xuất trong nước phải đạt tiêu chuẩn chất lượng (tối thiểu là tiêu chuẩn cơ sở - TC), qua thử nghiệm lâm sàng tại một số cơ sở y tế và có xác nhận kết quả hợp pháp. Những thiết bị, dụng cụ có tiếp xúc trực tiếp với cơ thể con người phải được các cơ quan kiểm nghiệm hợp pháp xác nhận chất lượng và độ an toàn. Theo Điều 5 của Thông tư này.",
+    "citations": "Thông tư này",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "12-BYT/TT",
+          "document_type": null,
+          "effective_date": "1994-06-21",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=10028&Keyword=",
+          "domain": null,
+          "Điều": "5",
+          "location_detail": "Điều 5: Các mặt hàng trang thiết bị y tế được phép kinh doanh phải đạt các yêu cầu sau:...",
+          "start_index_in_main": 1721
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:02:40.827168",
+      "model": "llama3-70b-8192",
+      "question_length": 67,
+      "answer_length": 362
+    }
+  },
+  {
+    "topic": "Trang thiết bị và sinh phẩm y tế",
+    "level": "understand",
+    "question": "Loại trang thiết bị y tế nào được phép kinh doanh tại Việt Nam?",
+    "answer": "Trang thiết bị y tế thuộc loại B, C, D được mua, bán như các hàng hóa thông thường theo quy định tại khoản 1 Điều 42 Nghị định số 98/2021/NĐ-CP. Ví dụ như máy đo huyết áp cá nhân, máy hút mũi trẻ em, nhiệt kế điện tử, nhiệt kế hồng ngoại... Theo Danh mục trang thiết bị y tế.",
+    "citations": "Nghị định số 98/2021/NĐ-CP",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "05/2022/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2022-08-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=159338&Keyword=",
+          "domain": "Trang thiết bị y tế",
+          "Điều": "4",
+          "location_detail": "Điều 4",
+          "start_index_in_main": 2764
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:02:40.827168",
+      "model": "llama3-70b-8192",
+      "question_length": 63,
+      "answer_length": 275
+    }
+  },
+  {
+    "topic": "Trang thiết bị và sinh phẩm y tế",
+    "level": "apply",
+    "question": "A medical device company wants to import medical devices into Vietnam. What are the requirements for the company to follow?",
+    "answer": "The company must follow the requirements stated in Decision No. 1509/QĐ-BYT dated May 7, 2012, of the Minister of Health, which lists the essential medical devices for traditional medicine hospitals at the provincial level. Additionally, the company must comply with the regulations stated in Circular No. [Circular number] of the Ministry of Health. According to Article 5 of the Circular, the company must ensure that the imported medical devices are safe and effective, and comply with the technical regulations of Vietnam.",
+    "citations": "Decision No. 1509/QĐ-BYT dated May 7, 2012, Circular No. [Circular number]",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "01/2014/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2014-03-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=33583&Keyword=",
+          "domain": "Y dược cổ truyền",
+          "Chương": "III",
+          "Điều": "8",
+          "location_detail": "Chương III: CƠ SỞ VẬT CHẤT VÀ TRANG THIẾT BỊ... -> Điều 8: Trang thiết bị y tế...",
+          "start_index_in_main": 8608
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "15-BYT/TT",
+          "document_type": null,
+          "effective_date": "1992-11-18",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=10833&Keyword=",
+          "domain": null,
+          "Điều": "5",
+          "location_detail": "Điều 5",
+          "start_index_in_main": 2108
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:02:40.827168",
+      "model": "llama3-70b-8192",
+      "question_length": 123,
+      "answer_length": 526
+    }
+  },
+  {
+    "topic": "Trang thiết bị và sinh phẩm y tế",
+    "level": "apply",
+    "question": "A medical professional wants to purchase medical devices that are classified as Type B, C, or D medical devices. What are the requirements for the purchase of these devices?",
+    "answer": "The medical professional can purchase these devices like normal goods, according to Article 4 of [Decree number] of the Government. Examples of Type B, C, or D medical devices include personal blood glucose meters, blood pressure monitors, and thermometers.",
+    "citations": "Article 4 of Decree No. 98/2021/NĐ-CP",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "12-BYT/TT",
+          "document_type": null,
+          "effective_date": "1994-06-21",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=10028&Keyword=",
+          "domain": null,
+          "Điều": "5",
+          "location_detail": "Điều 5: Các mặt hàng trang thiết bị y tế được phép kinh doanh phải đạt các yêu cầu sau:...",
+          "start_index_in_main": 1721
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "05/2022/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2022-08-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=159338&Keyword=",
+          "domain": "Trang thiết bị y tế",
+          "Điều": "4",
+          "location_detail": "Điều 4",
+          "start_index_in_main": 2764
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:02:40.827168",
+      "model": "llama3-70b-8192",
+      "question_length": 173,
+      "answer_length": 257
+    }
+  },
+  {
+    "topic": "Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú",
+    "level": "remember",
+    "question": "Thầy thuốc được đề nghị xét tặng danh hiệu Thầy thuốc Nhân dân, Thầy thuốc Ưu tú phải đạt các tiêu chuẩn quy định tại đâu?",
+    "answer": "Theo Điều 5 của Thông tư này, Thầy thuốc được đề nghị xét tặng danh hiệu Thầy thuốc Nhân dân, Thầy thuốc Ưu tú phải đạt các tiêu chuẩn quy định tại Điều 8 Chương II (đối với Thầy thuốc Nhân dân) hoặc Điều 9 Chương II (đối với Thầy thuốc Ưu tú) của Thông tư này.",
+    "citations": "Thông tư hướng dẫn việc xét tặng danh hiệu Thầy thuốc Nhân dân, Thầy thuốc Ưu tú",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "30/2011/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2011-08-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=26888&Keyword=",
+          "domain": "",
+          "Chương": "I",
+          "Điều": "5",
+          "location_detail": "Chương I: NHỮNG QUY ĐỊNH CHUNG... -> Điều 5: Nguyên tắc xét tặng...",
+          "start_index_in_main": 3366
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:03:27.690524",
+      "model": "llama3-70b-8192",
+      "question_length": 122,
+      "answer_length": 261
+    }
+  },
+  {
+    "topic": "Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú",
+    "level": "remember",
+    "question": "Hồ sơ đề nghị xét tặng danh hiệu Thầy thuốc Nhân dân, Thầy thuốc Ưu tú gồm những tài liệu gì?",
+    "answer": "Theo Điều 4 của Thông tư này, hồ sơ đề nghị xét tặng danh hiệu Thầy thuốc Nhân dân, Thầy thuốc Ưu tú gồm những tài liệu như: Tờ trình đề nghị phong tặng danh hiệu Thầy thuốc Nhân dân, Tờ trình đề nghị phong tặng danh hiệu Thầy thuốc Ưu tú, Danh sách đề nghị xét tặng danh hiệu Thầy thuốc Nhân dân, Danh sách đề nghị xét tặng danh hiệu Thầy thuốc Ưu tú, Báo cáo về quy trình xét tặng danh hiệu Thầy thuốc Nhân dân và Thầy thuốc Ưu tú, và các tài liệu khác như quy định tại Phụ lục kèm theo Thông tư này.",
+    "citations": "Thông tư hướng dẫn việc xét tặng danh hiệu Thầy thuốc Nhân dân, Thầy thuốc Ưu tú",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "30/2011/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2011-08-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=26888&Keyword=",
+          "domain": "",
+          "Chương": "V",
+          "Điều": "21",
+          "Khoản": "2",
+          "location_detail": "Chương V: HỒ SƠ ĐỀ NGHỊ... -> Điều 21: Hồ sơ... -> Khoản 2",
+          "start_index_in_main": 22848
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:03:27.690524",
+      "model": "llama3-70b-8192",
+      "question_length": 93,
+      "answer_length": 502
+    }
+  },
+  {
+    "topic": "Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú",
+    "level": "understand",
+    "question": "Giải thích nguyên tắc xét tặng Thầy thuốc Nhân dân và Thầy thuốc Ưu tú?",
+    "answer": "Nguyên tắc xét tặng Thầy thuốc Nhân dân và Thầy thuốc Ưu tú là bảo đảm công khai, dân chủ trong xét tặng. Mỗi cá nhân chỉ được xét tặng một trong bốn danh hiệu vinh dự của Nhà nước. Thầy thuốc được đề nghị xét tặng danh hiệu Thầy thuốc Nhân dân, Thầy thuốc Ưu tú phải đạt các tiêu chuẩn quy định tại Điều 8 Chương II (đối với Thầy thuốc nhân dân) hoặc Điều 9 Chương II (đối với Thầy thuốc ưu tú) của Thông tư này và không trong thời gian bị thi hành kỷ luật từ hình thức cảnh cáo trở lên hoặc bị truy cứu trách nhiệm hình sự, bị xử phạt vi phạm hành chính về chuyên môn kỹ thuật trong lĩnh vực y tế.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "30/2011/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2011-08-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=26888&Keyword=",
+          "domain": "",
+          "Chương": "I",
+          "Điều": "5",
+          "location_detail": "Chương I: NHỮNG QUY ĐỊNH CHUNG... -> Điều 5: Nguyên tắc xét tặng...",
+          "start_index_in_main": 3366
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:03:27.690524",
+      "model": "llama3-70b-8192",
+      "question_length": 71,
+      "answer_length": 599
+    }
+  },
+  {
+    "topic": "Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú",
+    "level": "understand",
+    "question": "Tại sao phải thành lập Hội đồng xét tặng danh hiệu Thầy thuốc Nhân dân và Thầy thuốc Ưu tú?",
+    "answer": "Hội đồng xét tặng danh hiệu Thầy thuốc Nhân dân và Thầy thuốc Ưu tú được thành lập để giúp việc xét tặng danh hiệu Thầy thuốc Nhân dân và Thầy thuốc Ưu tú. Hội đồng gồm có: Thủ trưởng đơn vị là Chủ tịch Hội đồng, Chủ tịch công đoàn đơn vị là Phó Chủ tịch, các uỷ viên là: Trưởng phòng tổ chức cán bộ, trưởng phòng nghiệp vụ (hay y vụ), một số thầy thuốc nhân dân, thầy thuốc ưu tú (nếu có) hoặc các thầy thuốc có uy tín đại diện cho các khoa, phòng trong đơn vị.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "02-BYT/TT",
+          "document_type": null,
+          "effective_date": "1994-01-27",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=10032&Keyword=",
+          "domain": null,
+          "Khoản": "4",
+          "location_detail": "Khoản 4",
+          "start_index_in_main": 8355
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:03:27.690524",
+      "model": "llama3-70b-8192",
+      "question_length": 91,
+      "answer_length": 462
+    }
+  },
+  {
+    "topic": "Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số",
+    "level": "remember",
+    "question": "Cơ sở y tế nào được phép cấp Giấy chứng sinh?",
+    "answer": "Cơ sở y tế được phép cấp Giấy chứng sinh bao gồm Bệnh viện đa khoa có khoa sản; Bệnh viện chuyên khoa phụ sản, Bệnh viện sản - nhi; Nhà hộ sinh; Trạm y tế cấp xã; và các cơ sở khám bệnh, chữa bệnh hợp pháp khác được phép cung cấp dịch vụ đỡ đẻ. Theo Điều 2 của Thông tư này.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "17/2012/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2013-01-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=27907&Keyword=",
+          "domain": "",
+          "Điều": "2",
+          "location_detail": "Điều 2: Thẩm quyền và thủ tục cấp, cấp lại Giấy chứng sinh...",
+          "start_index_in_main": 217
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:04:09.605903",
+      "model": "llama3-70b-8192",
+      "question_length": 45,
+      "answer_length": 274
+    }
+  },
+  {
+    "topic": "Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số",
+    "level": "remember",
+    "question": "Xã nào đạt và vượt tỷ lệ 60% cặp vợ chồng trong độ tuổi sinh đẻ sinh đủ 02 con?",
+    "answer": "Xã 05 năm liên tục đạt và vượt tỷ lệ 60% cặp vợ chồng trong độ tuổi sinh đẻ sinh đủ 02 con được đề xuất Ủy ban nhân dân cấp tỉnh khen thưởng kèm theo hỗ trợ bằng tiền hoặc hiện vật. Theo Khoản 1, Điều 4 của Thông tư này.",
+    "citations": "Thông tư số XX/20XX/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "01/2021/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2021-03-10",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=148462&Keyword=",
+          "domain": "Dân số",
+          "Điều": "3",
+          "Khoản": "2",
+          "Điểm": "a",
+          "location_detail": "Điều 3: Một số nội dung khuyến khích duy trì vững chắc mức sinh thay thế... -> Khoản 2 -> Điểm a",
+          "start_index_in_main": 2473
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:04:09.605903",
+      "model": "llama3-70b-8192",
+      "question_length": 79,
+      "answer_length": 220
+    }
+  },
+  {
+    "topic": "Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số",
+    "level": "apply",
+    "question": "Một phụ nữ sinh đủ hai con trước 35 tuổi tại một xã thuộc vùng mức sinh thay thế. Theo thủ tục xét tặng, địa phương sẽ lựa chọn và quyết định khen thưởng, hỗ trợ tiền hoặc hiện vật?",
+    "answer": "Theo quy định tại Khoản 2, Điều 4 của Thông tư này, địa phương sẽ lựa chọn, quyết định khen thưởng, hỗ trợ tiền hoặc hiện vật cho cá nhân sinh đủ hai con trước 35 tuổi.",
+    "citations": "Thông tư về xét tặng Kỷ niệm chương Vì sự nghiệp Dân số",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "01/2021/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2021-03-10",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=148462&Keyword=",
+          "domain": "Dân số",
+          "Điều": "3",
+          "Khoản": "2",
+          "Điểm": "a",
+          "location_detail": "Điều 3: Một số nội dung khuyến khích duy trì vững chắc mức sinh thay thế... -> Khoản 2 -> Điểm a",
+          "start_index_in_main": 2473
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:04:09.605903",
+      "model": "llama3-70b-8192",
+      "question_length": 181,
+      "answer_length": 168
+    }
+  },
+  {
+    "topic": "Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số",
+    "level": "apply",
+    "question": "Một bệnh viện đa khoa có khoa sản đã cấp Giấy chứng sinh cho một trẻ sơ sinh. Theo thủ tục cấp Giấy chứng sinh, cơ sở khám bệnh, chữa bệnh có trách nhiệm gì?",
+    "answer": "Theo quy định tại Khoản 2, Khoản 1, cơ sở khám bệnh, chữa bệnh có trách nhiệm ghi đầy đủ các nội dung theo mẫu Giấy chứng sinh và làm thành 02 bản có giá trị pháp lý như nhau.",
+    "citations": "Thông tư về xét tặng Kỷ niệm chương Vì sự nghiệp Dân số",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "17/2012/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2013-01-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=27907&Keyword=",
+          "domain": "",
+          "Điều": "2",
+          "location_detail": "Điều 2: Thẩm quyền và thủ tục cấp, cấp lại Giấy chứng sinh...",
+          "start_index_in_main": 217
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:04:09.605903",
+      "model": "llama3-70b-8192",
+      "question_length": 157,
+      "answer_length": 175
+    }
+  },
+  {
+    "topic": "Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế",
+    "level": "understand",
+    "question": "Giải thích quy trình cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế?",
+    "answer": "Quy trình cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế được quy định tại Thông tư XX/YYYY/TT-BYT. Theo đó, Cục Quản lý môi trường y tế cấp giấy xác nhận nội dung quảng cáo hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế.",
+    "citations": "Thông tư XX/YYYY/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "12/2016/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-07-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=124269&Keyword=",
+          "domain": "Quản lý môi trường y tế",
+          "Điều": "1",
+          "location_detail": "Điều 1",
+          "start_index_in_main": 0
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "09/2015/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2015-07-16",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=67130&Keyword=",
+          "domain": "",
+          "Chương": "II",
+          "Điều": "12",
+          "Khoản": "1",
+          "Điểm": "đ",
+          "location_detail": "Chương II: ĐIỀU KIỆN, THẨM QUYỀN, HỒ SƠ, THỦ TỤC, XÁC NHẬN NỘI DUNG QUẢNG CÁO... -> Điều 12: Thẩm quyền cấp giấy xác nhận nội dung quảng cáo thuộc lĩnh vực quản lý của Bộ Y tế... -> Khoản 1 -> Điểm đ",
+          "start_index_in_main": 14934
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:05:13.130925",
+      "model": "llama3-70b-8192",
+      "question_length": 113,
+      "answer_length": 302
+    }
+  },
+  {
+    "topic": "Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế",
+    "level": "understand",
+    "question": "Giải thích vai trò của Cục Quản lý môi trường y tế trong quy trình cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế?",
+    "answer": "Cục Quản lý môi trường y tế có vai trò cấp giấy xác nhận nội dung quảng cáo hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế. Ngoài ra, Cục Quản lý môi trường y tế cũng có trách nhiệm trong quá trình thực hiện, nếu có vướng mắc, đề nghị phản ánh về Bộ Y tế (Cục Quản lý môi trường y tế) để nghiên cứu giải quyết.",
+    "citations": "Thông tư XX/YYYY/TT-BYT",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "12/2016/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-07-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=124269&Keyword=",
+          "domain": "Quản lý môi trường y tế",
+          "Điều": "1",
+          "location_detail": "Điều 1",
+          "start_index_in_main": 0
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "09/2015/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2015-07-16",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=67130&Keyword=",
+          "domain": "",
+          "Chương": "II",
+          "Điều": "12",
+          "Khoản": "1",
+          "Điểm": "đ",
+          "location_detail": "Chương II: ĐIỀU KIỆN, THẨM QUYỀN, HỒ SƠ, THỦ TỤC, XÁC NHẬN NỘI DUNG QUẢNG CÁO... -> Điều 12: Thẩm quyền cấp giấy xác nhận nội dung quảng cáo thuộc lĩnh vực quản lý của Bộ Y tế... -> Khoản 1 -> Điểm đ",
+          "start_index_in_main": 14934
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:05:13.130925",
+      "model": "llama3-70b-8192",
+      "question_length": 159,
+      "answer_length": 346
+    }
+  },
+  {
+    "topic": "Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế",
+    "level": "apply",
+    "question": "Một công ty sản xuất hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế muốn quảng cáo sản phẩm của mình. Theo quy định, cơ quan nào sẽ cấp giấy xác nhận nội dung quảng cáo?",
+    "answer": "Theo quy định, Cục Quản lý môi trường y tế sẽ cấp giấy xác nhận nội dung quảng cáo hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế. Theo Điều d của [Chunk 4], Cục Quản lý môi trường y tế cấp giấy xác nhận nội dung quảng cáo hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế.",
+    "citations": "Chunk 4",
+    "source_chunks": [
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "09/2015/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2015-07-16",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=67130&Keyword=",
+          "domain": "",
+          "Chương": "II",
+          "Điều": "12",
+          "Khoản": "1",
+          "Điểm": "đ",
+          "location_detail": "Chương II: ĐIỀU KIỆN, THẨM QUYỀN, HỒ SƠ, THỦ TỤC, XÁC NHẬN NỘI DUNG QUẢNG CÁO... -> Điều 12: Thẩm quyền cấp giấy xác nhận nội dung quảng cáo thuộc lĩnh vực quản lý của Bộ Y tế... -> Khoản 1 -> Điểm đ",
+          "start_index_in_main": 14934
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:05:13.130925",
+      "model": "llama3-70b-8192",
+      "question_length": 205,
+      "answer_length": 342
+    }
+  },
+  {
+    "topic": "Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế",
+    "level": "apply",
+    "question": "Một cơ sở y tế muốn sử dụng hóa chất, chế phẩm diệt côn trùng, diệt khuẩn trong lĩnh vực gia dụng và y tế. Theo quy định, cơ quan nào sẽ cấp phép sử dụng?",
+    "answer": "Theo quy định, Sở Y tế sẽ cấp phép sử dụng hóa chất, chế phẩm diệt côn trùng, diệt khuẩn trong lĩnh vực gia dụng và y tế. Theo Điều 12 của [Chunk 3], Sở Y tế sẽ cấp phép sử dụng hóa chất, chế phẩm diệt côn trùng, diệt khuẩn trong lĩnh vực gia dụng và y tế.",
+    "citations": "Chunk 3",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "26/2017/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2017-08-10",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=123254&Keyword=",
+          "domain": "Tổ chức cán bộ",
+          "Chương": "II",
+          "Điều": "4",
+          "Khoản": "11",
+          "location_detail": "Chương II: CHỨC NĂNG, NHIỆM VỤ, QUYỀN HẠN... -> Điều 4: Nhiệm vụ và quyền hạn... -> Khoản 11",
+          "start_index_in_main": 5479
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:05:13.130925",
+      "model": "llama3-70b-8192",
+      "question_length": 154,
+      "answer_length": 256
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Dược",
+    "level": "remember",
+    "question": "Cục Quản lý Dược có trách nhiệm gì trong việc thi hành Thông tư về dược?",
+    "answer": "Cục Quản lý Dược có trách nhiệm chủ trì, phối hợp với các đơn vị liên quan tổ chức phổ biến Thông tư; làm đầu mối, phối hợp với các đơn vị có liên quan hướng dẫn triển khai Thông tư cho Sở Y tế, Y tế ngành và cơ sở phân phối thuộc phạm vi chức năng, nhiệm vụ được giao. Theo Điều 18 của Thông tư này.",
+    "citations": "Thông tư về dược",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "03/2018/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2018-03-26",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=129486&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "VI",
+          "Điều": "18",
+          "location_detail": "Chương VI: ĐIỀU KHOẢN THI HÀNH... -> Điều 18: Trách nhiệm thi hành...",
+          "start_index_in_main": 29965
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:06:16.658524",
+      "model": "llama3-70b-8192",
+      "question_length": 72,
+      "answer_length": 300
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực Dược",
+    "level": "remember",
+    "question": "Thủ tục cấp, gia hạn, thay đổi, bổ sung giấy đăng ký lưu hành thuốc gia công, thuốc chuyển giao công nghệ là gì?",
+    "answer": "Thủ tục cấp giấy đăng ký lưu hành thuốc gia công, thuốc chuyển giao công nghệ trong trường hợp thuốc đặt gia công, thuốc trước chuyển giao công nghệ đã có giấy đăng ký lưu hành tại Việt Nam còn hiệu lực tại thời điểm nộp hồ sơ. Theo Điều 17 của Thông tư này.",
+    "citations": "Thông tư về dược",
+    "source_chunks": [
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "16/2023/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2023-10-01",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=162134&Keyword=",
+          "domain": "Quản lý dược",
+          "Chương": "IV",
+          "Điều": "17",
+          "location_detail": "Chương IV: HỒ SƠ, THỦ TỤC CẤP, GIA HẠN, THAY ĐỔI, BỔ SUNG, THU HỒI GIẤY ĐĂNG KÝ LƯU HÀNH THUỐC GIA CÔNG, THUỐC ... -> Điều 17: Thủ tục cấp, gia hạn, thay đổi, bổ sung giấy đăng ký lưu hành thuốc gia công, thuốc chuyển giao công...",
+          "start_index_in_main": 44330
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:06:16.658524",
+      "model": "llama3-70b-8192",
+      "question_length": 112,
+      "answer_length": 258
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính",
+    "level": "remember",
+    "question": "Thông tư nào quy định về tiêu chuẩn sức khỏe của người được thực hiện kỹ thuật thụ tinh trong ống nghiệm, mang thai và sinh con?",
+    "answer": "Thông tư quy định về tiêu chuẩn sức khỏe của người được thực hiện kỹ thuật thụ tinh trong ống nghiệm, mang thai và sinh con là Thông tư này. Theo Điều 1 của Thông tư này...",
+    "citations": "Thông tư quy định về tiêu chuẩn sức khỏe của người được thực hiện kỹ thuật thụ tinh trong ống nghiệm, mang thai và sinh con",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "57/2015/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-02-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=97365&Keyword=",
+          "domain": "",
+          "Chương": "I",
+          "location_detail": "Chương I: QUY ĐỊNH CHUNG...",
+          "start_index_in_main": 0
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:08:23.942581",
+      "model": "llama3-70b-8192",
+      "question_length": 128,
+      "answer_length": 172
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính",
+    "level": "remember",
+    "question": "Quy trình nào được sử dụng để trưởng thành noãn non trong thụ tinh trong ống nghiệm?",
+    "answer": "Quy trình trưởng thành noãn non trong thụ tinh trong ống nghiệm là IVM (Invitro Maturation). Theo Điều 25 của Thông tư...",
+    "citations": "Thông tư quy định về quy trình trưởng thành noãn non trong thụ tinh trong ống nghiệm",
+    "source_chunks": [
+      {
+        "chunk_id": 5,
+        "metadata": {
+          "document_id": "12/2012/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2012-08-20",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=27668&Keyword=",
+          "domain": "",
+          "Mục": "4",
+          "Điều": "25",
+          "location_detail": "Mục 4: QUY TRÌNH KỸ THUẬT THỤ TINH TRONG ỐNG NGHIỆM... -> Điều 25: Quy trình trưởng thành noãn non trong thụ tinh trong ống nghiệm (IVM-Invitro Maturation)...",
+          "start_index_in_main": 35046
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:08:23.942581",
+      "model": "llama3-70b-8192",
+      "question_length": 84,
+      "answer_length": 121
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính",
+    "level": "understand",
+    "question": "Giải thích về phạm vi điều chỉnh của Thông tư về kỹ thuật thụ tinh trong ống nghiệm?",
+    "answer": "Thông tư này quy định về tiêu chuẩn sức khỏe của người được thực hiện kỹ thuật thụ tinh trong ống nghiệm, mang thai và sinh con; cơ sở vật chất, trang thiết bị và nhân sự của cơ sở khám bệnh, chữa bệnh được phép thực hiện kỹ thuật thụ tinh trong ống nghiệm; quy trình khám, chẩn đoán vô sinh; quy trình kỹ thuật thụ tinh trong ống nghiệm; lưu giữ, chia sẻ thông tin. Theo Điều 1 của Thông tư này.",
+    "citations": "Thông tư về kỹ thuật thụ tinh trong ống nghiệm",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "57/2015/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-02-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=97365&Keyword=",
+          "domain": "",
+          "Chương": "I",
+          "location_detail": "Chương I: QUY ĐỊNH CHUNG...",
+          "start_index_in_main": 0
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:08:23.942581",
+      "model": "llama3-70b-8192",
+      "question_length": 84,
+      "answer_length": 396
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính",
+    "level": "understand",
+    "question": "Giải thích về quy trình trưởng thành noãn non trong thụ tinh trong ống nghiệm?",
+    "answer": "Trưởng thành noãn non trong thụ tinh trong ống nghiệm là kỹ thuật trong đó noãn được lấy ra khỏi buồng trứng từ giai đoạn sớm, sau đó được nuôi trưởng thành trong đĩa cấy và cho thụ tinh với tinh trùng bằng phương pháp tiêm tinh trùng vào bào tương noãn. Phôi thu được sẽ chuyển vào buồng tử cung người nhận hoặc trữ lạnh. Theo Điều 25 của Thông tư về kỹ thuật thụ tinh trong ống nghiệm",
+    "citations": "",
+    "source_chunks": [
+      {
+        "chunk_id": 5,
+        "metadata": {
+          "document_id": "12/2012/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2012-08-20",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=27668&Keyword=",
+          "domain": "",
+          "Mục": "4",
+          "Điều": "25",
+          "location_detail": "Mục 4: QUY TRÌNH KỸ THUẬT THỤ TINH TRONG ỐNG NGHIỆM... -> Điều 25: Quy trình trưởng thành noãn non trong thụ tinh trong ống nghiệm (IVM-Invitro Maturation)...",
+          "start_index_in_main": 35046
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:08:23.942581",
+      "model": "llama3-70b-8192",
+      "question_length": 78,
+      "answer_length": 386
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính",
+    "level": "apply",
+    "question": "Một cơ sở khám bệnh, chữa bệnh muốn thực hiện kỹ thuật thụ tinh trong ống nghiệm cần đáp ứng những điều kiện nào?",
+    "answer": "Theo Điều 2 của Thông tư này, cơ sở khám bệnh, chữa bệnh muốn thực hiện kỹ thuật thụ tinh trong ống nghiệm cần đáp ứng các điều kiện quy định tại Nghị định số 10/2015/NĐ-CP ngày 28 tháng 01 năm 2015 của Chính phủ quy định về sinh con bằng kỹ thuật thụ tinh trong ống nghiệm và điều kiện mang thai hộ vì mục đích nhân đạo.",
+    "citations": "Nghị định số 10/2015/NĐ-CP",
+    "source_chunks": [
+      {
+        "chunk_id": 1,
+        "metadata": {
+          "document_id": "57/2015/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-02-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=97365&Keyword=",
+          "domain": "",
+          "Chương": "I",
+          "location_detail": "Chương I: QUY ĐỊNH CHUNG...",
+          "start_index_in_main": 0
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 2,
+        "metadata": {
+          "document_id": "19/BYT-TT",
+          "document_type": null,
+          "effective_date": "1986-10-09",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=2874&Keyword=",
+          "domain": null,
+          "Khoản": "1",
+          "Điểm": "b",
+          "location_detail": "Khoản 1 -> Điểm b",
+          "start_index_in_main": 4321
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:08:23.942581",
+      "model": "llama3-70b-8192",
+      "question_length": 113,
+      "answer_length": 321
+    }
+  },
+  {
+    "topic": "Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính",
+    "level": "apply",
+    "question": "Một người phụ nữ mang thai có bất thường nghiêm trọng về hình thái, cấu trúc của bào thai cần được xem xét chấm dứt thai kỳ. Quy trình chấm dứt thai kỳ như thế nào?",
+    "answer": "Theo Quy định về chấm dứt thai kỳ vì lý do dị tật bào thai, việc chấm dứt thai kỳ chỉ được xem xét khi có bất thường nghiêm trọng về hình thái, cấu trúc của bào thai. Cơ sở khám bệnh, chữa bệnh có Giấy phép hoạt động và có phạm vi hoạt động chuyên môn kỹ thuật được cấp có thẩm quyền phê duyệt về thực hiện các kỹ thuật chấm dứt thai kỳ phải tổ chức hội chẩn các chuyên khoa liên quan để xem xét việc chấm dứt thai kỳ.",
+    "citations": "Nghị định số 10/2015/NĐ-CP",
+    "source_chunks": [
+      {
+        "chunk_id": 3,
+        "metadata": {
+          "document_id": "57/2015/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2016-02-15",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=97365&Keyword=",
+          "domain": "",
+          "Chương": "IV",
+          "Điều": "11",
+          "Khoản": "2",
+          "Điểm": "k",
+          "location_detail": "Chương IV: QUY TRÌNH KỸ THUẬT THỤ TINH TRONG ỐNG NGHIỆM... -> Điều 11: Quy trình thụ tinh trong ống nghiệm (IVF)... -> Khoản 2 -> Điểm k",
+          "start_index_in_main": 8461
+        },
+        "score": 1.0
+      },
+      {
+        "chunk_id": 4,
+        "metadata": {
+          "document_id": "34/2017/TT-BYT",
+          "document_type": "Thông tư",
+          "effective_date": "2017-10-02",
+          "source_link": "https://vbpl.vn/boyte/Pages/vbpq-toanvan.aspx?ItemID=132220&Keyword=",
+          "domain": "Dân số - Kế hoạch hóa gia đình",
+          "Chương": "II",
+          "Điều": "6",
+          "Khoản": "3",
+          "location_detail": "Chương II: TƯ VẤN, SÀNG LỌC, CHẨN ĐOÁN ĐIỀU TRỊ TRƯỚC SINH VÀ SƠ SINH... -> Điều 6: Điều trị trước sinh... -> Khoản 3",
+          "start_index_in_main": 5734
+        },
+        "score": 1.0
+      }
+    ],
+    "metadata": {
+      "generated_at": "2025-05-07T20:08:23.942581",
+      "model": "llama3-70b-8192",
+      "question_length": 164,
+      "answer_length": 418
+    }
+  }
+]

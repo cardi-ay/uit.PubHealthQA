@@ -1,0 +1,497 @@
+2025-05-07 19:14:16,942 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-05-07 19:14:16,943 - question_generator - INFO - Bắt đầu quá trình sinh câu hỏi từ các chủ đề
+2025-05-07 19:14:16,943 - question_generator - INFO - Đã đọc 5 chủ đề từ file data\sample_topics.txt
+2025-05-07 19:15:14,927 - question_generator - INFO - Đã tải vector database thành công. Số lượng vectors: 15498
+2025-05-07 19:15:15,587 - question_generator - INFO - Đã khởi tạo Groq Client với model 'llama3-70b-8192'
+2025-05-07 19:15:15,588 - question_generator - INFO - Xử lý chủ đề 1/5: 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-05-07 19:15:15,591 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-05-07 19:15:16,751 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-05-07 19:15:17,994 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 1.24 giây
+2025-05-07 19:15:17,995 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-05-07 19:15:19,611 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 1.61 giây
+2025-05-07 19:15:19,612 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-05-07 19:15:21,081 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 1.47 giây
+2025-05-07 19:15:21,082 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Luật Bảo vệ sức khỏe cộng đồng'
+2025-05-07 19:15:21,083 - question_generator - INFO - Xử lý chủ đề 2/5: 'Quyền lợi y tế người cao tuổi'
+2025-05-07 19:15:21,083 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Quyền lợi y tế người cao tuổi'
+2025-05-07 19:15:21,145 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-05-07 19:15:34,853 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 13.71 giây
+2025-05-07 19:15:34,854 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:15:34,855 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-05-07 19:15:55,119 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.26 giây
+2025-05-07 19:15:55,120 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-05-07 19:16:16,444 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.32 giây
+2025-05-07 19:16:16,444 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Quyền lợi y tế người cao tuổi'
+2025-05-07 19:16:16,445 - question_generator - INFO - Xử lý chủ đề 3/5: 'Chính sách y tế học đường'
+2025-05-07 19:16:16,445 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Chính sách y tế học đường'
+2025-05-07 19:16:16,530 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Chính sách y tế học đường'
+2025-05-07 19:16:38,111 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 21.58 giây
+2025-05-07 19:16:38,111 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Chính sách y tế học đường'
+2025-05-07 19:16:58,984 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.87 giây
+2025-05-07 19:16:58,984 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:16:58,985 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Chính sách y tế học đường'
+2025-05-07 19:17:19,779 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 20.79 giây
+2025-05-07 19:17:19,781 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Chính sách y tế học đường'
+2025-05-07 19:17:19,781 - question_generator - INFO - Xử lý chủ đề 4/5: 'Quy định về an toàn thực phẩm'
+2025-05-07 19:17:19,782 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Quy định về an toàn thực phẩm'
+2025-05-07 19:17:19,847 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-05-07 19:17:39,755 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 19.91 giây
+2025-05-07 19:17:39,755 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-05-07 19:18:00,420 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.66 giây
+2025-05-07 19:18:00,420 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-05-07 19:18:19,267 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 18.84 giây
+2025-05-07 19:18:19,267 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Quy định về an toàn thực phẩm'
+2025-05-07 19:18:19,267 - question_generator - INFO - Xử lý chủ đề 5/5: 'Chính sách bảo hiểm y tế'
+2025-05-07 19:18:19,267 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Chính sách bảo hiểm y tế'
+2025-05-07 19:18:19,374 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-05-07 19:18:41,922 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 22.55 giây
+2025-05-07 19:18:41,922 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-05-07 19:19:03,648 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 21.73 giây
+2025-05-07 19:19:03,648 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-05-07 19:19:04,980 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 1.33 giây
+2025-05-07 19:19:04,981 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:19:04,981 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Chính sách bảo hiểm y tế'
+2025-05-07 19:19:04,986 - question_generator - INFO - Đã lưu kết quả sinh câu hỏi và câu trả lời có trích dẫn vào file outputs\question_generation\questions_with_citations_groq_20250507_191904.json
+2025-05-07 19:30:32,696 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-05-07 19:30:32,698 - question_generator - INFO - Bắt đầu quá trình sinh câu hỏi từ các chủ đề
+2025-05-07 19:30:32,698 - question_generator - INFO - Đã đọc 23 chủ đề từ file data\topics.txt
+2025-05-07 19:30:52,815 - question_generator - INFO - Đã tải vector database thành công. Số lượng vectors: 15498
+2025-05-07 19:30:53,388 - question_generator - INFO - Đã khởi tạo Groq Client với model 'llama3-70b-8192'
+2025-05-07 19:30:53,388 - question_generator - INFO - Xử lý chủ đề 1/23: 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:30:53,388 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:30:53,534 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:30:54,860 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 1.32 giây
+2025-05-07 19:30:54,860 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:30:54,866 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:30:56,124 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 1.26 giây
+2025-05-07 19:30:56,124 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:30:56,131 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:31:00,656 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 4.53 giây
+2025-05-07 19:31:00,658 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:31:00,658 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:31:00,658 - question_generator - INFO - Xử lý chủ đề 2/23: 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:31:00,659 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:31:00,736 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:31:19,052 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 18.32 giây
+2025-05-07 19:31:19,052 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:31:19,053 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:31:39,586 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.53 giây
+2025-05-07 19:31:39,586 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:31:39,586 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:31:55,956 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 16.37 giây
+2025-05-07 19:31:55,957 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:31:55,957 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:31:55,959 - question_generator - INFO - Xử lý chủ đề 3/23: 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:31:55,959 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:31:56,030 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:32:15,512 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 19.48 giây
+2025-05-07 19:32:15,512 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:32:15,513 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:32:34,824 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 19.31 giây
+2025-05-07 19:32:34,825 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:32:34,825 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:32:54,222 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 19.40 giây
+2025-05-07 19:32:54,222 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:32:54,225 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:32:54,225 - question_generator - INFO - Xử lý chủ đề 4/23: 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:32:54,226 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:32:54,307 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:33:15,812 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 21.50 giây
+2025-05-07 19:33:15,812 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:33:15,812 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:33:36,615 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.80 giây
+2025-05-07 19:33:36,615 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:33:36,615 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:33:58,002 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.38 giây
+2025-05-07 19:33:58,002 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:33:58,005 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:33:58,005 - question_generator - INFO - Xử lý chủ đề 5/23: 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:33:58,005 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:33:58,081 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:34:13,347 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 15.27 giây
+2025-05-07 19:34:13,348 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:34:13,349 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:34:31,879 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 18.53 giây
+2025-05-07 19:34:31,880 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:34:31,880 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:34:50,539 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 18.66 giây
+2025-05-07 19:34:50,539 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:34:50,539 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:34:50,554 - question_generator - INFO - Xử lý chủ đề 6/23: 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:34:50,554 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:34:50,627 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:35:09,906 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 19.28 giây
+2025-05-07 19:35:09,906 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:35:09,909 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:35:29,603 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 19.69 giây
+2025-05-07 19:35:29,603 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:35:29,604 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:35:49,063 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 19.46 giây
+2025-05-07 19:35:49,063 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:35:49,068 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:35:49,068 - question_generator - INFO - Xử lý chủ đề 7/23: 'Về an toàn sinh học'
+2025-05-07 19:35:49,068 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Về an toàn sinh học'
+2025-05-07 19:35:49,253 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Về an toàn sinh học'
+2025-05-07 19:36:09,672 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 20.42 giây
+2025-05-07 19:36:09,672 - question_generator - INFO - Đã sinh 1 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Về an toàn sinh học'
+2025-05-07 19:36:30,304 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.62 giây
+2025-05-07 19:36:30,304 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:36:30,304 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Về an toàn sinh học'
+2025-05-07 19:36:49,792 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 19.49 giây
+2025-05-07 19:36:49,792 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:36:49,802 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Về an toàn sinh học'
+2025-05-07 19:36:49,802 - question_generator - INFO - Xử lý chủ đề 8/23: 'Về tiêm chủng'
+2025-05-07 19:36:49,804 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Về tiêm chủng'
+2025-05-07 19:36:49,889 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Về tiêm chủng'
+2025-05-07 19:37:06,029 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 16.14 giây
+2025-05-07 19:37:06,038 - question_generator - INFO - Đã sinh 1 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Về tiêm chủng'
+2025-05-07 19:37:23,471 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 17.43 giây
+2025-05-07 19:37:23,472 - question_generator - INFO - Đã sinh 1 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Về tiêm chủng'
+2025-05-07 19:37:41,116 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 17.64 giây
+2025-05-07 19:37:41,117 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:37:41,118 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Về tiêm chủng'
+2025-05-07 19:37:41,118 - question_generator - INFO - Xử lý chủ đề 9/23: 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:37:41,118 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:37:41,287 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:37:59,823 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 18.54 giây
+2025-05-07 19:37:59,825 - question_generator - INFO - Đã sinh 1 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:38:18,363 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 18.54 giây
+2025-05-07 19:38:18,364 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:38:18,365 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:38:36,664 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 18.30 giây
+2025-05-07 19:38:36,665 - question_generator - INFO - Đã sinh 1 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:38:36,666 - question_generator - INFO - Xử lý chủ đề 10/23: 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:38:36,667 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:38:36,768 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:38:54,066 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 17.30 giây
+2025-05-07 19:38:54,066 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:38:54,067 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:39:11,563 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 17.49 giây
+2025-05-07 19:39:11,564 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:39:11,565 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:39:30,189 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 18.62 giây
+2025-05-07 19:39:30,189 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:39:30,189 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:39:30,189 - question_generator - INFO - Xử lý chủ đề 11/23: 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:39:30,196 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:39:30,297 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:39:49,854 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 19.56 giây
+2025-05-07 19:39:49,854 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:39:49,854 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:40:10,487 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.63 giây
+2025-05-07 19:40:10,488 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:40:10,488 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:40:29,773 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 19.28 giây
+2025-05-07 19:40:29,774 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:40:29,774 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:40:29,775 - question_generator - INFO - Xử lý chủ đề 12/23: 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:40:29,775 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:40:29,836 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:40:49,152 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 19.32 giây
+2025-05-07 19:40:49,153 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:40:49,153 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:41:09,736 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.58 giây
+2025-05-07 19:41:09,736 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:41:09,743 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:41:28,170 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 18.43 giây
+2025-05-07 19:41:28,171 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:41:28,172 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:41:28,174 - question_generator - INFO - Xử lý chủ đề 13/23: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:41:28,174 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:41:28,277 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:41:46,546 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 18.27 giây
+2025-05-07 19:41:46,546 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:41:46,550 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:42:04,943 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 18.39 giây
+2025-05-07 19:42:04,943 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting ',' delimiter: line 4 column 430 (char 686)
+2025-05-07 19:42:04,945 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:42:23,487 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 18.54 giây
+2025-05-07 19:42:23,487 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:42:23,489 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:42:23,489 - question_generator - INFO - Xử lý chủ đề 14/23: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:42:23,491 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:42:23,571 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:42:45,466 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 21.89 giây
+2025-05-07 19:42:45,469 - question_generator - INFO - Đã sinh 1 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:43:07,215 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 21.75 giây
+2025-05-07 19:43:07,215 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:43:07,216 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:43:26,956 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 19.74 giây
+2025-05-07 19:43:26,957 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:43:26,958 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:43:26,958 - question_generator - INFO - Xử lý chủ đề 15/23: 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 19:43:26,959 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 19:43:27,034 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 19:43:43,485 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 16.45 giây
+2025-05-07 19:43:43,485 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:43:43,486 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 19:44:00,923 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 17.44 giây
+2025-05-07 19:44:00,924 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:44:00,925 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 19:44:29,963 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-05-07 19:44:29,963 - question_generator - INFO - Bắt đầu quá trình sinh câu hỏi từ các chủ đề
+2025-05-07 19:44:29,963 - question_generator - INFO - Đã đọc 5 chủ đề từ file data\sample_topics.txt
+2025-05-07 19:45:25,639 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-05-07 19:45:25,639 - question_generator - INFO - Bắt đầu quá trình sinh câu hỏi từ các chủ đề
+2025-05-07 19:45:25,640 - question_generator - INFO - Đã đọc 23 chủ đề từ file data\topics.txt
+2025-05-07 19:45:43,249 - question_generator - INFO - Đã tải vector database thành công. Số lượng vectors: 15498
+2025-05-07 19:45:43,814 - question_generator - INFO - Đã khởi tạo Groq Client với model 'llama3-70b-8192'
+2025-05-07 19:45:43,814 - question_generator - INFO - Xử lý chủ đề 1/23: 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:45:43,825 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:45:43,967 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:45:45,429 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 1.46 giây
+2025-05-07 19:45:45,429 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:45:45,429 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:45:47,134 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 1.71 giây
+2025-05-07 19:45:47,134 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:45:47,134 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:45:58,124 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 10.98 giây
+2025-05-07 19:45:58,125 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:45:58,125 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 19:45:58,126 - question_generator - INFO - Xử lý chủ đề 2/23: 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:45:58,126 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:45:58,211 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:46:18,346 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 20.13 giây
+2025-05-07 19:46:18,347 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:46:38,971 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.62 giây
+2025-05-07 19:46:38,971 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:46:58,794 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 19.82 giây
+2025-05-07 19:46:58,809 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 19:46:58,809 - question_generator - INFO - Xử lý chủ đề 3/23: 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:46:58,809 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:46:58,884 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:47:20,108 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 21.22 giây
+2025-05-07 19:47:20,108 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:47:42,952 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 22.84 giây
+2025-05-07 19:47:42,953 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Invalid control character at: line 4 column 441 (char 549)
+2025-05-07 19:47:42,953 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:48:04,690 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.74 giây
+2025-05-07 19:48:04,691 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-07 19:48:04,692 - question_generator - INFO - Xử lý chủ đề 4/23: 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:48:04,693 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:48:04,794 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:48:28,676 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 23.88 giây
+2025-05-07 19:48:28,676 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:48:51,387 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 22.70 giây
+2025-05-07 19:48:51,388 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:49:13,058 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.67 giây
+2025-05-07 19:49:13,060 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:49:13,061 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-07 19:49:13,061 - question_generator - INFO - Xử lý chủ đề 5/23: 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:49:13,063 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:49:13,149 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:49:30,182 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 17.03 giây
+2025-05-07 19:49:30,182 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:49:30,183 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:49:52,111 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 21.93 giây
+2025-05-07 19:49:52,111 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:50:13,102 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 20.98 giây
+2025-05-07 19:50:13,102 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-07 19:50:13,104 - question_generator - INFO - Xử lý chủ đề 6/23: 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:50:13,104 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:50:13,185 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:50:34,855 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 21.67 giây
+2025-05-07 19:50:34,855 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:50:34,866 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:50:55,510 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.64 giây
+2025-05-07 19:50:55,525 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:50:55,525 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:51:17,432 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.91 giây
+2025-05-07 19:51:17,432 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-07 19:51:17,437 - question_generator - INFO - Xử lý chủ đề 7/23: 'Về an toàn sinh học'
+2025-05-07 19:51:17,438 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Về an toàn sinh học'
+2025-05-07 19:51:17,503 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Về an toàn sinh học'
+2025-05-07 19:51:38,923 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 21.42 giây
+2025-05-07 19:51:38,923 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting ':' delimiter: line 10 column 166 (char 556)
+2025-05-07 19:51:38,923 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Về an toàn sinh học'
+2025-05-07 19:51:59,962 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 21.03 giây
+2025-05-07 19:51:59,962 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:51:59,971 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Về an toàn sinh học'
+2025-05-07 19:52:22,934 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 22.96 giây
+2025-05-07 19:52:22,934 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:52:22,934 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Về an toàn sinh học'
+2025-05-07 19:52:22,937 - question_generator - INFO - Xử lý chủ đề 8/23: 'Về tiêm chủng'
+2025-05-07 19:52:22,937 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Về tiêm chủng'
+2025-05-07 19:52:22,994 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Về tiêm chủng'
+2025-05-07 19:52:41,530 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 18.54 giây
+2025-05-07 19:52:41,530 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Về tiêm chủng'
+2025-05-07 19:52:59,234 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 17.70 giây
+2025-05-07 19:52:59,234 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Về tiêm chủng'
+2025-05-07 19:53:18,925 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 19.69 giây
+2025-05-07 19:53:18,925 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Về tiêm chủng'
+2025-05-07 19:53:18,934 - question_generator - INFO - Xử lý chủ đề 9/23: 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:53:18,934 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:53:19,021 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:53:39,439 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 20.42 giây
+2025-05-07 19:53:39,439 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:53:39,441 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:53:58,127 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 18.68 giây
+2025-05-07 19:53:58,127 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:54:17,917 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 19.79 giây
+2025-05-07 19:54:17,917 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-07 19:54:17,917 - question_generator - INFO - Xử lý chủ đề 10/23: 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:54:17,917 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:54:18,025 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:54:37,785 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 19.76 giây
+2025-05-07 19:54:37,785 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:54:37,786 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:54:57,320 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 19.53 giây
+2025-05-07 19:54:57,320 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:55:15,958 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 18.63 giây
+2025-05-07 19:55:15,958 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-07 19:55:15,958 - question_generator - INFO - Xử lý chủ đề 11/23: 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:55:15,958 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:55:16,037 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:55:37,688 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 21.65 giây
+2025-05-07 19:55:37,688 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:55:37,703 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:55:57,692 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 19.99 giây
+2025-05-07 19:55:57,692 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:55:57,692 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:56:19,663 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.97 giây
+2025-05-07 19:56:19,663 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:56:19,676 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-07 19:56:19,676 - question_generator - INFO - Xử lý chủ đề 12/23: 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:56:19,676 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:56:19,739 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:56:41,284 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 21.54 giây
+2025-05-07 19:56:41,284 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:57:02,844 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 21.55 giây
+2025-05-07 19:57:02,844 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:57:02,853 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:57:23,402 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 20.55 giây
+2025-05-07 19:57:23,402 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-07 19:57:23,403 - question_generator - INFO - Xử lý chủ đề 13/23: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:57:23,403 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:57:23,483 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:57:42,766 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 19.28 giây
+2025-05-07 19:57:42,766 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:57:42,771 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:58:04,625 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 21.85 giây
+2025-05-07 19:58:04,625 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:58:25,653 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.03 giây
+2025-05-07 19:58:25,653 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:58:25,653 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-07 19:58:25,653 - question_generator - INFO - Xử lý chủ đề 14/23: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:58:25,664 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:58:25,749 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:58:48,367 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 22.62 giây
+2025-05-07 19:58:48,367 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:59:10,392 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 22.02 giây
+2025-05-07 19:59:10,396 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:59:33,307 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 22.91 giây
+2025-05-07 19:59:33,323 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:59:33,324 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-07 19:59:33,324 - question_generator - INFO - Xử lý chủ đề 15/23: 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 19:59:33,325 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 19:59:33,401 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 19:59:52,014 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 18.61 giây
+2025-05-07 19:59:52,014 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 19:59:52,016 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 20:00:10,200 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 18.18 giây
+2025-05-07 20:00:10,200 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 20:00:28,819 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 18.62 giây
+2025-05-07 20:00:28,819 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:00:28,819 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-07 20:00:28,819 - question_generator - INFO - Xử lý chủ đề 16/23: 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-07 20:00:28,819 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-07 20:00:28,916 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-07 20:00:49,496 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 20.58 giây
+2025-05-07 20:00:49,496 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-07 20:01:10,661 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 21.17 giây
+2025-05-07 20:01:10,661 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-07 20:01:32,965 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 22.30 giây
+2025-05-07 20:01:32,965 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-07 20:01:32,971 - question_generator - INFO - Xử lý chủ đề 17/23: 'Trang thiết bị và sinh phẩm y tế'
+2025-05-07 20:01:32,971 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Trang thiết bị và sinh phẩm y tế'
+2025-05-07 20:01:33,047 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Trang thiết bị và sinh phẩm y tế'
+2025-05-07 20:01:54,072 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 21.03 giây
+2025-05-07 20:01:54,072 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Trang thiết bị và sinh phẩm y tế'
+2025-05-07 20:02:16,814 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 22.74 giây
+2025-05-07 20:02:16,814 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Trang thiết bị và sinh phẩm y tế'
+2025-05-07 20:02:40,827 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 24.01 giây
+2025-05-07 20:02:40,827 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Trang thiết bị và sinh phẩm y tế'
+2025-05-07 20:02:40,827 - question_generator - INFO - Xử lý chủ đề 18/23: 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-07 20:02:40,832 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-07 20:02:40,927 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-07 20:03:03,856 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 22.93 giây
+2025-05-07 20:03:03,856 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-07 20:03:25,600 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 21.74 giây
+2025-05-07 20:03:25,600 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-07 20:03:27,686 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 2.07 giây
+2025-05-07 20:03:27,686 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:03:27,689 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-07 20:03:27,690 - question_generator - INFO - Xử lý chủ đề 19/23: 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-07 20:03:27,691 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-07 20:03:27,785 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-07 20:03:35,390 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 7.60 giây
+2025-05-07 20:03:35,391 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-07 20:03:47,997 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 12.61 giây
+2025-05-07 20:03:47,997 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:03:47,998 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-07 20:04:09,604 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.61 giây
+2025-05-07 20:04:09,604 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-07 20:04:09,605 - question_generator - INFO - Xử lý chủ đề 20/23: 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-07 20:04:09,606 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-07 20:04:09,744 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-07 20:04:30,442 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 20.70 giây
+2025-05-07 20:04:30,443 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:04:30,443 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-07 20:04:51,316 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.87 giây
+2025-05-07 20:04:51,316 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-07 20:05:13,128 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.81 giây
+2025-05-07 20:05:13,128 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-07 20:05:13,130 - question_generator - INFO - Xử lý chủ đề 21/23: 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-07 20:05:13,130 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-07 20:05:13,183 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-07 20:05:34,865 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 21.68 giây
+2025-05-07 20:05:34,874 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-07 20:05:55,610 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.74 giây
+2025-05-07 20:05:55,617 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:05:55,617 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-07 20:06:16,657 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.04 giây
+2025-05-07 20:06:16,658 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:06:16,658 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-07 20:06:16,658 - question_generator - INFO - Xử lý chủ đề 22/23: 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-07 20:06:16,660 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-07 20:06:16,717 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-07 20:06:39,339 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 22.62 giây
+2025-05-07 20:06:39,339 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:06:39,343 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-07 20:06:59,894 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 20.55 giây
+2025-05-07 20:06:59,894 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:06:59,894 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-07 20:07:21,508 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 21.60 giây
+2025-05-07 20:07:21,508 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:07:21,514 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-07 20:07:21,514 - question_generator - INFO - Xử lý chủ đề 23/23: 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-07 20:07:21,515 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-07 20:07:21,609 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-07 20:07:41,206 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 19.60 giây
+2025-05-07 20:07:41,206 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-07 20:08:03,022 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 21.80 giây
+2025-05-07 20:08:03,022 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-07 20:08:23,934 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 20.91 giây
+2025-05-07 20:08:23,934 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-07 20:08:23,945 - question_generator - INFO - Đã lưu kết quả sinh câu hỏi và câu trả lời có trích dẫn vào file outputs\question_generation\questions_with_citations_groq_20250507_200823.json
+2025-05-07 20:11:42,263 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-05-07 20:12:03,277 - question_generator - INFO - Đã khởi tạo Groq Client với model 'llama3-70b-8192'
+2025-05-07 20:12:03,277 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 20:12:03,430 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 20:12:04,866 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 1.44 giây
+2025-05-07 20:12:04,866 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 20:12:06,664 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 1.79 giây
+2025-05-07 20:12:06,664 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 20:12:16,651 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 9.98 giây
+2025-05-07 20:12:16,651 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting ',' delimiter: line 13 column 1 (char 1335)
+2025-05-07 20:12:16,661 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-07 20:13:16,669 - question_generator - INFO - Bắt đầu sinh câu hỏi cho chủ đề: 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 20:13:16,743 - question_generator - INFO - Đã trích xuất 5 chunks cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 20:13:18,326 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ remember: 1.58 giây
+2025-05-07 20:13:18,326 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:13:18,326 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ remember cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 20:13:19,754 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ understand: 1.42 giây
+2025-05-07 20:13:19,754 - question_generator - ERROR - Lỗi khi gọi Groq API hoặc xử lý kết quả: Expecting value: line 1 column 1 (char 0)
+2025-05-07 20:13:19,754 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-07 20:13:21,557 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 1.80 giây
+2025-05-07 20:13:21,572 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'

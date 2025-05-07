@@ -46,13 +46,13 @@ def query_documents(
         
         # Tiền xử lý query nếu cần
         if preprocess_query:
-            # Import function xử lý từ module preprocess
+            # Import function xử lý từ module preprocessing
             try:
                 from ..preprocessing.document_processor import preprocess_text_for_embedding
                 query = preprocess_text_for_embedding(query)
                 logging.info(f"Đã tiền xử lý query: '{query}'")
             except ImportError:
-                logging.warning("Không thể import hàm tiền xử lý từ module preprocess, sử dụng query gốc.")
+                logging.warning("Không thể import hàm tiền xử lý từ module preprocessing, sử dụng query gốc.")
         
         # Thực hiện truy vấn phù hợp
         if use_mmr:
@@ -384,6 +384,7 @@ def create_retrieval_function(
     else:
         logging.error(f"Loại retriever không hỗ trợ: {retrieval_type}")
         return lambda r, q: []
+
 def optimize_retrieval(
     vector_db,
     query: str,

@@ -15,7 +15,10 @@ from .faiss_manager import (
 )
 
 from .faiss_retriever import (
-    query_documents, 
+    query_documents
+)
+
+from ..preprocessing.document_processor import (
     preprocess_text_for_embedding
 )
 

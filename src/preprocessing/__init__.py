@@ -8,12 +8,12 @@ Bao gồm:
 """
 
 from .document_processor import preprocess_text_for_embedding
-from .text_splitter import split_text
+from .text_splitter import initialize_text_splitter
 
 __all__ = [
     "document_processor",
     "text_splitter",
     "chunking",
     "preprocess_text_for_embedding",
-    "split_text"
+    "initialize_text_splitter"
 ]
