@@ -160,3 +160,34 @@ Sử dụng script test để đánh giá hiệu suất của hệ thống tìm 
 ```bash
 python tests/test_evaluation_topics.py
 ```
+
+#### 4. Pipeline xử lý dữ liệu
+Sử dụng script `data_pipeline.py` để tự động hóa toàn bộ quy trình xử lý dữ liệu từ thu thập đến vector database:
+
+##### Chạy toàn bộ pipeline
+```bash
+python data_pipeline.py
+```
+
+##### Chỉ thu thập dữ liệu
+```bash
+python data_pipeline.py --mode crawl --source_url https://vbpl.vn/boyte --max_pages 20
+```
+
+##### Chỉ xử lý và phân đoạn dữ liệu
+```bash
+python data_pipeline.py --mode process --chunk_size 500 --chunk_overlap 100
+```
+
+##### Chỉ tạo vector database
+```bash
+python data_pipeline.py --mode vectorize --embedding_model bkai-foundation-models/vietnamese-bi-encoder
+```
+
+##### Các tham số tùy chỉnh
+- `--mode`: Chế độ chạy (`full`, `crawl`, `process`, `vectorize`)
+- `--source_url`: URL nguồn để thu thập dữ liệu
+- `--max_pages`: Số trang tối đa để thu thập
+- `--embedding_model`: Mô hình embedding sử dụng
+- `--chunk_size`: Kích thước chunk khi phân đoạn văn bản
+- `--chunk_overlap`: Độ chồng lấp giữa các chunk
