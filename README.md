@@ -15,11 +15,10 @@
       - [3. Tạo vector database](#3-tạo-vector-database)
       - [4. Sinh câu hỏi và câu trả lời](#4-sinh-câu-hỏi-và-câu-trả-lời)
       - [5. Chạy ứng dụng](#5-chạy-ứng-dụng)
-    - [API và Tích hợp](#api-và-tích-hợp)
     - [Đánh giá hiệu suất](#đánh-giá-hiệu-suất)
 
 ## 🧾 Tổng quan
-**UIT@PubHealthQA** là một hệ thống RAG (Retrieval-Augmented Generation) được phát triển để tìm kiếm và trả lời các câu hỏi liên quan đến luật y tế công cộng tại Việt Nam. Dự án này bao gồm:
+**UIT@PubHealthQA** là một hệ thống RAG (Retrieval-Augmented Generation) được phát triển để tìm kiếm và trả lời các câu hỏi liên quan đến luật y tế công cộng tại Việt Nam, đồng thời xây dựng bộ câu hỏi dựa theo 3 mức độ của thang đo Bloom cho LLMs. Dự án này bao gồm:
 
 1. **Thu thập dữ liệu (Data Acquisition)**: Thu thập các văn bản pháp luật về y tế từ các nguồn chính thống như vbpl.vn/boyte.
 
@@ -27,7 +26,7 @@
 
 3. **Vector Store**: Sử dụng FAISS để lưu trữ và truy xuất các vector embeddings từ văn bản đã được phân đoạn.
 
-4. **Generation**: Sinh câu hỏi và câu trả lời dựa trên các văn bản pháp luật, sử dụng các mô hình ngôn ngữ lớn (LLM).
+4. **Generation**: Sinh câu hỏi và câu trả lời dựa trên các văn bản pháp luật, sử dụng các mô hình ngôn ngữ lớn (LLM) theo 3 cấp độ thang đo Bloom(Apply, Remember, Understand)
 
 Hệ thống hỗ trợ các chức năng:
 - Tìm kiếm ngữ nghĩa (semantic search) trong văn bản pháp luật y tế
@@ -61,13 +60,10 @@ uit.PubHealthQA/
 │   └── topics.txt                 # Danh sách các chủ đề
 │
 ├── notebooks/                     # Jupyter notebooks để khám phá và xử lý
-│   ├── RAG.ipynb                  # Demo sử dụng RAG
-│   ├── extract.ipynb              # Trích xuất chủ đề từ dữ liệu
-│   ├── silver_data_eda.ipynb      # Phân tích khám phá dữ liệu silver
-│   └── question_answer_generation_groq.ipynb     # Sinh câu hỏi-đáp
+│   ├── extract.ipynb              # Trích xuất các chủ đề từ bộ câu hỏi thu được trên trang thông tin hỏi đáp của bộ y tế
+│   └── silver_data_eda.ipynb      # Phân tích khám phá dữ liệu silver
 │
 ├── src/                           # Mã nguồn Python cho xử lý dữ liệu theo module
-│   ├── __init__.py                # File khởi tạo package
 │   ├── data_acquisition/          # Thu thập dữ liệu
 │   │   ├── __init__.py
 │   │   ├── crawlLinks.py          # Thu thập links từ trang web
@@ -88,10 +84,7 @@ uit.PubHealthQA/
 │   ├── generation/                # Sinh câu hỏi và câu trả lời
 │   │   ├── __init__.py
 │   │   └── question_generator.py  # Sinh câu hỏi và câu trả lời
-│   │
-│   ├── api/                       # API cho hệ thống
-│   │   ├── __init__.py
-│   │   └── endpoints.py           # Các endpoints API
+│   │ 
 │   │
 │   └── utils/                     # Các tiện ích dùng chung
 │       ├── __init__.py
@@ -115,8 +108,8 @@ uit.PubHealthQA/
 ├── run_question_generator.py      # Script chạy module sinh câu hỏi
 ├── requirements.txt               # Các thư viện Python cần thiết
 ├── README.md                      # Tài liệu dự án
-└── .gitignore                     
-
+├── .gitignore                     
+└── setup_groq_key.py              # Cấu hình cho API key
 ```
 
 ## 🤝 Lời cảm ơn
@@ -124,7 +117,7 @@ Xin chân thành cảm ơn các cá nhân sau đã hướng dẫn và hỗ trợ
 - TS. Nguyễn Gia Tuấn Anh – Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
 - GVHD Trần Quốc Khánh – Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
 
-Chuyên môn và sự khích lệ của họ đã giúp chúng tôi vượt qua thách thức và đạt được mục tiêu.
+Chuyên môn và sự khích lệ của họ đã giúp chúng em vượt qua thách thức và đạt được mục tiêu.
 
 Xin gửi lời cảm ơn đến các thành viên trong nhóm đã đóng góp đáng kể vào sự thành công của dự án:
 - Hồ Tấn Dũng
@@ -158,7 +151,7 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-3. Cài đặt các thư viện cần thiết:
+3. Cài đặt các thư viện cần thiết (Đảm bảo thiết bị đã có cài đặt Python 3.8 trở lên):
 ```bash
 pip install -r requirements.txt
 ```
@@ -227,7 +220,15 @@ vector_db = create_vector_db(
 ```
 
 #### 4. Sinh câu hỏi và câu trả lời
-Tạo câu hỏi và câu trả lời từ các chủ đề:
+4.1 Thiết lập API Key:
+- Vào trang [Groq](https://console.groq.com/home) đăng ký và tạo API Key
+- Chạy lệnh sau đây và nhập API Key:
+
+```bash
+python setup_groq_key.py
+```
+
+4.2 Tạo câu hỏi và câu trả lời từ các chủ đề:
 
 ```bash
 python run_question_generator.py --topic_file data/topics.txt --vector_db data/gold/db_faiss_phapluat_yte_full_final --model llama3-70b-8192 --output_dir data/gold/qa_datasets
@@ -238,45 +239,23 @@ Hoặc sử dụng notebook:
 jupyter notebook notebooks/question_answer_generation_groq.ipynb
 ```
 
-#### 5. Chạy ứng dụng
+#### 5. Chạy ứng dụng 
+Thiết lập API Key Làm theo bước [4.2](#4-sinh-câu-hỏi-và-câu-trả-lời)
 Khởi động web app:
 
 ```bash
 python app.py
 ```
 
-Mặc định, ứng dụng sẽ chạy tại địa chỉ: http://localhost:5000
+Mặc định, ứng dụng sẽ chạy tại địa chỉ: http://localhost:8000
+Demo app:
+![Demo app](img/demo.png)
 
 Các tham số tùy chỉnh:
 ```bash
 python app.py --port 8080 --vector_db data/gold/db_faiss_phapluat_yte_full_final --embedding_model bkai-foundation-models/vietnamese-bi-encoder --llm_model llama3-8b-8192
 ```
 
-### API và Tích hợp
-Hệ thống cung cấp API RESTful để tích hợp với các ứng dụng khác:
-
-```bash
-# Khởi động API server
-python -m src.api.endpoints
-```
-
-Các endpoints chính:
-- `POST /api/query`: Truy vấn thông tin từ văn bản pháp luật
-- `POST /api/generate_questions`: Sinh câu hỏi từ chủ đề
-- `GET /api/topics`: Lấy danh sách chủ đề
-
-Ví dụ sử dụng:
-```python
-import requests
-import json
-
-# Truy vấn thông tin
-response = requests.post(
-    "http://localhost:5000/api/query",
-    json={"query": "Quy định về đăng ký thuốc mới", "k": 3}
-)
-results = json.loads(response.text)
-```
 
 ### Đánh giá hiệu suất
 Đánh giá hiệu suất hệ thống:
