@@ -81,11 +81,12 @@ uit.PubHealthQA/
 │   ├── test.py
 │   └── test_evaluation_topics.py
 │
+├── data_pipeline.py               # Pipeline tự động hóa quy trình xử lý dữ liệu
+├── run_question_generator.py      # Script chạy module sinh câu hỏi
 ├── requirements.txt               # Các thư viện Python cần thiết
 ├── README.md                      # Tài liệu dự án
 ├── .gitignore                     # Luật bỏ qua cho Git
 ├── LICENSE                        # Giấy phép (ví dụ: MIT)
-└── update_imports.py              # Script cập nhật đường dẫn imports
 ```
 
 ## Acknowledgement
