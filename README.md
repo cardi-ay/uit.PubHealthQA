@@ -100,8 +100,7 @@ uit.PubHealthQA/
 │
 ├── app/                           # Ứng dụng web
 │   ├── static/                    # Tài nguyên tĩnh (CSS, JS, hình ảnh)
-│   ├── templates/                 # Templates HTML
-│   └── components/                # Các thành phần của giao diện
+│   └──── templates/               # Templates HTML
 │
 ├── outputs/                       # Kết quả đầu ra như báo cáo, log
 │   ├── visualizations/
@@ -116,21 +115,20 @@ uit.PubHealthQA/
 ├── run_question_generator.py      # Script chạy module sinh câu hỏi
 ├── requirements.txt               # Các thư viện Python cần thiết
 ├── README.md                      # Tài liệu dự án
-├── .gitignore                     # Luật bỏ qua cho Git
-└── LICENSE                        # Giấy phép (ví dụ: MIT)
+└── .gitignore                     
+
 ```
 
 ## 🤝 Lời cảm ơn
 Xin chân thành cảm ơn các cá nhân sau đã hướng dẫn và hỗ trợ cho dự án này:
 - TS. Nguyễn Gia Tuấn Anh – Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
-- TS. Dương Ngọc Hảo - Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
-- ThS. Trần Quốc Khánh – Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
+- GVHD Trần Quốc Khánh – Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
 
 Chuyên môn và sự khích lệ của họ đã giúp chúng tôi vượt qua thách thức và đạt được mục tiêu.
 
 Xin gửi lời cảm ơn đến các thành viên trong nhóm đã đóng góp đáng kể vào sự thành công của dự án:
-- Hồ Tấn Dũng, 23520327@gm.uit.edu.vn
-- Phạm Đăng An, 22520027@gm.uit.edu.vn
+- Hồ Tấn Dũng
+- Nguyễn Hoàng Long 
 
 ## 🚀 Cài đặt & Sử dụng
 
