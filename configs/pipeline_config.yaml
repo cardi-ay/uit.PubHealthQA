@@ -1,0 +1,38 @@
+# Cấu hình cho pipeline xử lý dữ liệu UIT@PubHealthQA
+
+# Cấu hình cho thu thập dữ liệu
+crawling:
+  source_url: "https://vbpl.vn/boyte"
+  max_pages: 100
+  delay: 1.5  # Thời gian trễ giữa các request (giây)
+  timeout: 30  # Thời gian timeout cho mỗi request (giây)
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  output_file: "data/bronze/links_vbpl_boyte.json"
+  
+# Cấu hình cho tiền xử lý
+preprocessing:
+  chunk_size: 500
+  chunk_overlap: 100
+  input_file: "data/silver/data_vbpl_boyte_full_details.json"
+  output_file: "data/silver/processed_chunks.json"
+  
+# Cấu hình cho vector database
+vectorization:
+  embedding_model: "bkai-foundation-models/vietnamese-bi-encoder"
+  output_dir: "data/gold/db_faiss_phapluat_yte_full_final"
+  device: "cuda"  # hoặc "cpu" nếu không có GPU
+  batch_size: 32
+  
+# Cấu hình cho sinh câu hỏi
+question_generation:
+  topic_file: "data/topics.txt"
+  vector_db: "data/gold/db_faiss_phapluat_yte_full_final"
+  model: "llama3-70b-8192"
+  output_dir: "data/gold/qa_datasets"
+  num_questions_per_topic: 5
+  
+# Cấu hình logging
+logging:
+  level: "INFO"
+  file: "outputs/logs/pipeline.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s" 

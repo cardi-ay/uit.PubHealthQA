@@ -1,0 +1,567 @@
+/* PubHealthQA Chatbot CSS */
+
+/* Thiết lập font chung */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(33, 150, 243, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(33, 150, 243, 0.05) 0%, transparent 50%);
+}
+
+/* Thanh header */
+header {
+    background: linear-gradient(90deg, #1976d2, #2196f3) !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header i {
+    animation: pulse-light 2s infinite;
+}
+
+@keyframes pulse-light {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Vùng chat */
+#chat-messages {
+    background-color: #ffffff;
+    overflow-y: scroll !important; /* Đảm bảo luôn có thanh cuộn */
+    height: 65vh !important; /* Chiều cao cố định */
+    max-height: 100%;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #2196f3 #e3f2fd; /* Firefox */
+    -webkit-overflow-scrolling: touch; /* Safari/iOS */
+    background-image: 
+        radial-gradient(circle at 10% 10%, rgba(33, 150, 243, 0.03) 0%, transparent 30%),
+        radial-gradient(circle at 90% 90%, rgba(33, 150, 243, 0.03) 0%, transparent 30%);
+    transition: all 0.3s ease;
+    padding-bottom: 20px !important;
+}
+
+/* Tùy chỉnh thanh cuộn cho Chrome, Edge */
+#chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-messages::-webkit-scrollbar-track {
+    background: #e3f2fd;
+    border-radius: 10px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+    background-color: #2196f3;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#chat-messages::-webkit-scrollbar-thumb:hover {
+    background-color: #1976d2;
+}
+
+/* Tin nhắn */
+.message {
+    margin-bottom: 1.5rem;
+    max-width: 85%;
+    animation: fadeIn 0.5s ease-out;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message:hover {
+    transform: translateY(-2px);
+}
+
+.bot-message {
+    margin-right: auto;
+}
+
+.user-message {
+    margin-left: auto;
+}
+
+.message-content {
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.message-content:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.bot-message .message-content {
+    background-color: #f1f5f9;
+    border-left: 3px solid #2196f3;
+}
+
+.user-message .message-content {
+    width: fit-content;
+    margin-left: auto;
+    background-color: #e3f2fd;
+    border-right: 3px solid #64b5f6;
+    flex-direction: row-reverse;
+}
+
+.message-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.message-avatar::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    top: -100%;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.message-content:hover .message-avatar::after {
+    top: 0;
+}
+
+.bot-message .message-avatar {
+    background: linear-gradient(135deg, #1976d2, #2196f3);
+    color: white;
+}
+
+.user-message .message-avatar {
+    background: linear-gradient(135deg, #42a5f5, #64b5f6);
+    color: white;
+}
+
+.message-text {
+    padding: 1rem;
+    border-radius: 0 1rem 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.user-message .message-text {
+    border-radius: 1rem 0 0 1rem;
+    text-align: right;
+}
+
+.message-text p {
+    margin-bottom: 0.5rem;
+    opacity: 0.95;
+    transition: opacity 0.3s ease;
+}
+
+.message-content:hover .message-text p {
+    opacity: 1;
+}
+
+.message-text p:last-child {
+    margin-bottom: 0;
+}
+
+.message-text ul {
+    padding-left: 1.5rem;
+}
+
+/* Gợi ý câu hỏi */
+.suggestion-item {
+    background-color: #e3f2fd;
+    border: 1px solid #b3e5fc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.suggestion-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.8s ease;
+    z-index: -1;
+}
+
+.suggestion-item:hover {
+    background-color: #bbdefb;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #90caf9;
+}
+
+.suggestion-item:hover::before {
+    left: 100%;
+}
+
+.suggestion-item:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiệu ứng khi chọn gợi ý */
+.active-suggestion {
+    background-color: #bbdefb !important;
+    transform: scale(0.98) !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Thanh nhập liệu */
+#user-input {
+    resize: none;
+    overflow: hidden;
+    min-height: 38px;
+    max-height: 120px;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6;
+}
+
+#user-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+    border-color: #90caf9;
+}
+
+.input-group {
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng rung nhẹ khi gửi tin nhắn */
+.pulse-once {
+    animation: pulse-once 0.3s ease-out;
+}
+
+@keyframes pulse-once {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+form button {
+    border-radius: 0 20px 20px 0 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hiệu ứng khi gửi tin nhắn */
+form button.animate-send {
+    animation: send-animation 0.5s ease;
+}
+
+@keyframes send-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+        background-color: #1565c0 !important;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+form button:hover {
+    background-color: #1976d2 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+form button:hover::after {
+    left: 100%;
+}
+
+/* Hiệu ứng đang nhập */
+#typing-indicator {
+    background-color: #f8f9fa;
+    animation: fadeIn 0.5s ease;
+    transition: opacity 0.3s ease;
+}
+
+.typing-icon i {
+    animation: typing 1.5s infinite;
+}
+
+@keyframes typing {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+
+/* Panel nguồn */
+#sources-panel {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    max-height: 200px;
+    overflow-y: auto;
+    animation: slideUp 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.source-item {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border-left: 3px solid #2196f3;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease;
+    animation-fill-mode: both;
+}
+
+.source-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.source-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.source-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.source-item:hover {
+    background-color: #f8f9fa;
+    border-left-width: 5px;
+    transform: translateX(3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge styling */
+.badge {
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+/* Tùy chỉnh cho màn hình nhỏ */
+@media (max-width: 992px) {
+    .message {
+        max-width: 90%;
+    }
+    
+    #chat-messages {
+        height: 60vh !important;
+    }
+}
+
+/* Tùy chỉnh cho màn hình rất nhỏ */
+@media (max-width: 576px) {
+    .message {
+        max-width: 95%;
+    }
+    
+    #chat-messages {
+        height: 55vh !important;
+    }
+}
+
+/* Hiệu ứng load */
+.loading {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 13px;
+}
+
+.loading div {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1976d2, #2196f3);
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.loading div:nth-child(1) {
+    left: 8px;
+    animation: loading1 0.6s infinite;
+}
+
+.loading div:nth-child(2) {
+    left: 8px;
+    animation: loading2 0.6s infinite;
+}
+
+.loading div:nth-child(3) {
+    left: 32px;
+    animation: loading2 0.6s infinite;
+}
+
+.loading div:nth-child(4) {
+    left: 56px;
+    animation: loading3 0.6s infinite;
+}
+
+@keyframes loading1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes loading3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes loading2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+/* Hiệu ứng ripple khi click */
+.ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s;
+}
+
+.ripple:active:after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+}
+
+/* Hiệu ứng ripple hiệu quả hơn với JavaScript */
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    pointer-events: none;
+    animation: ripple-animation 0.6s linear;
+    transform: scale(0);
+    opacity: 1;
+}
+
+@keyframes ripple-animation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+} 

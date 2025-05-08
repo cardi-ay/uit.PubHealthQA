@@ -1,0 +1,35 @@
+# Cấu hình cho ứng dụng web UIT@PubHealthQA
+
+# Cài đặt ứng dụng Flask
+app:
+  host: "0.0.0.0"
+  port: 5000
+  debug: true
+  secret_key: "your-secret-key-here" # Thay đổi trong môi trường production
+
+# Cấu hình vector database
+vector_db:
+  path: "data/gold/db_faiss_phapluat_yte_full_final"
+  embedding_model: "bkai-foundation-models/vietnamese-bi-encoder"
+  similarity_top_k: 5
+
+# Cấu hình sinh câu hỏi đáp
+generation:
+  model: "llama3-70b-8192"  # Mô hình LLM
+  temperature: 0.7
+  max_tokens: 1024
+  top_p: 0.9
+  
+# Cấu hình API
+api:
+  enable: true
+  rate_limit: 100  # Giới hạn số request mỗi phút
+  cors_origins: ["*"]  # Giới hạn các domain có thể gọi API
+
+# Cấu hình logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "outputs/logs/app.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  rotate: true
+  max_size: 10485760  # 10MB 
