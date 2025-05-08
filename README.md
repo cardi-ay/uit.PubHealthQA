@@ -3,12 +3,22 @@
 ## Table of Contents
 - [\[UIT@PubHealthQA\] HCM Public Health Office Procedure Q\&A Dataset](#uitpubhealthqa-hcm-public-health-office-procedure-qa-dataset)
   - [Table of Contents](#table-of-contents)
-  - [🧾 Overview](#-overview)
-  - [🗂️ Project Structure](#️-project-structure)
-  - [Acknowledgement](#acknowledgement)
-  - [🚀 Installation & Usage](#-installation--usage)
+  - [🧾 Tổng quan](#-tổng-quan)
+  - [🗂️ Cấu trúc dự án](#️-cấu-trúc-dự-án)
+  - [🤝 Lời cảm ơn](#-lời-cảm-ơn)
+  - [🚀 Cài đặt & Sử dụng](#-cài-đặt--sử-dụng)
+    - [Yêu cầu](#yêu-cầu)
+    - [Cài đặt](#cài-đặt)
+    - [Quy trình sử dụng](#quy-trình-sử-dụng)
+      - [1. Thu thập dữ liệu](#1-thu-thập-dữ-liệu)
+      - [2. Tiền xử lý dữ liệu](#2-tiền-xử-lý-dữ-liệu)
+      - [3. Tạo vector database](#3-tạo-vector-database)
+      - [4. Sinh câu hỏi và câu trả lời](#4-sinh-câu-hỏi-và-câu-trả-lời)
+      - [5. Chạy ứng dụng](#5-chạy-ứng-dụng)
+    - [API và Tích hợp](#api-và-tích-hợp)
+    - [Đánh giá hiệu suất](#đánh-giá-hiệu-suất)
 
-## 🧾 Overview
+## 🧾 Tổng quan
 **UIT@PubHealthQA** là một hệ thống RAG (Retrieval-Augmented Generation) được phát triển để tìm kiếm và trả lời các câu hỏi liên quan đến luật y tế công cộng tại Việt Nam. Dự án này bao gồm:
 
 1. **Thu thập dữ liệu (Data Acquisition)**: Thu thập các văn bản pháp luật về y tế từ các nguồn chính thống như vbpl.vn/boyte.
@@ -31,35 +41,46 @@ Dự án này sử dụng bộ dữ liệu văn bản pháp luật về y tế c
 - Nội dung văn bản được cấu trúc (các chương, điều, khoản, điểm)
 - Vector embeddings tạo từ các đoạn văn bản
 
-## 🗂️ Project Structure
+## 🗂️ Cấu trúc dự án
 ```tex
 uit.PubHealthQA/
 │
 ├── data/                          # Tất cả dữ liệu được tổ chức theo từng giai đoạn xử lý
 │   ├── bronze/                    # Dữ liệu thô (crawl, thu thập)
+│   │   ├── qa_pthu2_only.csv      # Dữ liệu Q&A thô
+│   │   └── links_vbpl_boyte.json  # Danh sách links các văn bản pháp luật
+│   │
 │   ├── silver/                    # Dữ liệu đã được làm sạch và chuẩn hóa
-│   └── gold/                      # Dữ liệu cuối cùng sẵn sàng cho ML, phân tích
-│       └── db_faiss_phapluat_yte_full_final/     # Vector database FAISS
+│   │   ├── data_vbpl_boyte_full_details.json  # Dữ liệu văn bản đã được chuẩn hóa
+│   │   └── data_vbpl_boyte_full_details_jupyter.json  # Phiên bản cho jupyter
+│   │
+│   ├── gold/                      # Dữ liệu cuối cùng sẵn sàng cho ML, phân tích
+│   │   ├── db_faiss_phapluat_yte_full_final/  # Vector database FAISS
+│   │   └── qa_datasets/           # Bộ dữ liệu câu hỏi đáp được tạo
+│   │
+│   └── topics.txt                 # Danh sách các chủ đề
 │
 ├── notebooks/                     # Jupyter notebooks để khám phá và xử lý
 │   ├── RAG.ipynb                  # Demo sử dụng RAG
+│   ├── extract.ipynb              # Trích xuất chủ đề từ dữ liệu
+│   ├── silver_data_eda.ipynb      # Phân tích khám phá dữ liệu silver
 │   └── question_answer_generation_groq.ipynb     # Sinh câu hỏi-đáp
 │
 ├── src/                           # Mã nguồn Python cho xử lý dữ liệu theo module
 │   ├── __init__.py                # File khởi tạo package
-│   ├── data_acquisition/          # Thu thập dữ liệu (kết hợp từ crawling và ingest)
+│   ├── data_acquisition/          # Thu thập dữ liệu
 │   │   ├── __init__.py
 │   │   ├── crawlLinks.py          # Thu thập links từ trang web
 │   │   ├── crawlContents.py       # Thu thập nội dung văn bản
 │   │   └── data_loader.py         # Tải dữ liệu từ các nguồn
 │   │
-│   ├── preprocessing/             # Tiền xử lý và phân đoạn dữ liệu (từ preprocess và chunking)
+│   ├── preprocessing/             # Tiền xử lý và phân đoạn dữ liệu
 │   │   ├── __init__.py
 │   │   ├── document_processor.py  # Xử lý văn bản
 │   │   ├── text_splitter.py       # Chia nhỏ văn bản
 │   │   └── chunking.py            # Phân đoạn dữ liệu thành chunks
 │   │
-│   ├── vector_store/              # Quản lý vector database (từ embed và retriever)
+│   ├── vector_store/              # Quản lý vector database
 │   │   ├── __init__.py
 │   │   ├── faiss_manager.py       # Quản lý FAISS vector database
 │   │   └── faiss_retriever.py     # Truy xuất thông tin từ vector database
@@ -68,10 +89,19 @@ uit.PubHealthQA/
 │   │   ├── __init__.py
 │   │   └── question_generator.py  # Sinh câu hỏi và câu trả lời
 │   │
+│   ├── api/                       # API cho hệ thống
+│   │   ├── __init__.py
+│   │   └── endpoints.py           # Các endpoints API
+│   │
 │   └── utils/                     # Các tiện ích dùng chung
 │       ├── __init__.py
 │       ├── logging_utils.py       # Tiện ích ghi log
 │       └── evaluation.py          # Đánh giá kết quả
+│
+├── app/                           # Ứng dụng web
+│   ├── static/                    # Tài nguyên tĩnh (CSS, JS, hình ảnh)
+│   ├── templates/                 # Templates HTML
+│   └── components/                # Các thành phần của giao diện
 │
 ├── outputs/                       # Kết quả đầu ra như báo cáo, log
 │   ├── visualizations/
@@ -81,27 +111,28 @@ uit.PubHealthQA/
 │   ├── test.py
 │   └── test_evaluation_topics.py
 │
+├── app.py                         # Ứng dụng chính
 ├── data_pipeline.py               # Pipeline tự động hóa quy trình xử lý dữ liệu
 ├── run_question_generator.py      # Script chạy module sinh câu hỏi
 ├── requirements.txt               # Các thư viện Python cần thiết
 ├── README.md                      # Tài liệu dự án
 ├── .gitignore                     # Luật bỏ qua cho Git
-├── LICENSE                        # Giấy phép (ví dụ: MIT)
+└── LICENSE                        # Giấy phép (ví dụ: MIT)
 ```
 
-## Acknowledgement
-I would like to express my heartfelt gratitude to the following individuals for their invaluable guidance and support throughout this project:
-- Ph.D. Nguyen Gia Tuan Anh – University of Information Technology, VNUHCM
-- Ph.D. Duong Ngoc Hao - University of Information Technology, VNUHCM
-- T.A. Tran Quoc Khanh – University of Information Technology, VNUHCM
+## 🤝 Lời cảm ơn
+Xin chân thành cảm ơn các cá nhân sau đã hướng dẫn và hỗ trợ cho dự án này:
+- TS. Nguyễn Gia Tuấn Anh – Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
+- TS. Dương Ngọc Hảo - Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
+- ThS. Trần Quốc Khánh – Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
 
-Their expertise and encouragement were instrumental in helping us navigate challenges and achieve our objectives.
+Chuyên môn và sự khích lệ của họ đã giúp chúng tôi vượt qua thách thức và đạt được mục tiêu.
 
-I would also like to extend my appreciation to my dedicated teammates for their significant contributions to the successful completion of this project:
-- Dung Ho Tan, 23520327@gm.uit.edu.vn
-- An Pham Dang, 22520027@gm.uit.edu.vn
+Xin gửi lời cảm ơn đến các thành viên trong nhóm đã đóng góp đáng kể vào sự thành công của dự án:
+- Hồ Tấn Dũng, 23520327@gm.uit.edu.vn
+- Phạm Đăng An, 22520027@gm.uit.edu.vn
 
-## 🚀 Installation & Usage
+## 🚀 Cài đặt & Sử dụng
 
 ### Yêu cầu
 - Python 3.8+
@@ -109,6 +140,7 @@ I would also like to extend my appreciation to my dedicated teammates for their 
 - Thư viện FAISS (Facebook AI Similarity Search)
 - Thư viện Sentence Transformers
 - Thư viện Langchain
+- Thư viện Flask (cho web app)
 
 ### Cài đặt
 1. Clone repository:
@@ -117,78 +149,142 @@ git clone https://github.com/yourusername/uit.PubHealthQA.git
 cd uit.PubHealthQA
 ```
 
-2. Cài đặt các thư viện cần thiết:
+2. Tạo và kích hoạt môi trường ảo (khuyến nghị):
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Linux/MacOS
+python -m venv venv
+source venv/bin/activate
+```
+
+3. Cài đặt các thư viện cần thiết:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Tải vector database:
-Đảm bảo thư mục `data/gold/db_faiss_phapluat_yte_full_final` có chứa vector database FAISS hoặc chạy script tạo vector database.
+### Quy trình sử dụng
 
-### Sử dụng
+#### 1. Thu thập dữ liệu
+Thu thập văn bản pháp luật từ nguồn vbpl.vn/boyte:
 
-#### 1. Tìm kiếm thông tin
-Sử dụng notebook `notebooks/RAG.ipynb` để tìm kiếm thông tin từ văn bản pháp luật y tế:
-```python
-from src.vector_store.faiss_manager import initialize_embedding_model, load_vector_db
-from src.vector_store.faiss_retriever import query_documents
+```bash
+# Thu thập links văn bản
+python data_pipeline.py --mode crawl --source_url https://vbpl.vn/boyte --max_pages 20
 
-# Khởi tạo model embedding
-embedding_model = initialize_embedding_model("bkai-foundation-models/vietnamese-bi-encoder")
-
-# Tải vector database
-vector_db = load_vector_db("data/gold/db_faiss_phapluat_yte_full_final", embedding_model)
-
-# Tìm kiếm
-results = query_documents(vector_db, "Quy định về đăng ký thuốc mới", k=3)
+# Thu thập nội dung văn bản
+python data_pipeline.py --mode extract --input_file data/bronze/links_vbpl_boyte.json --output_file data/silver/data_vbpl_boyte_full_details.json
 ```
 
-#### 2. Sinh câu hỏi và câu trả lời
-Sử dụng module `generation` để sinh câu hỏi và câu trả lời từ văn bản:
+Hoặc sử dụng trực tiếp module Python:
 ```python
-from src.generation.question_generator import generate_questions_from_topics
+from src.data_acquisition.crawlLinks import crawl_links
+from src.data_acquisition.crawlContents import extract_contents
 
-# Sinh câu hỏi và câu trả lời từ danh sách chủ đề
-generate_questions_from_topics(
-    topic_file_path="data/sample_topics.txt",
-    vector_db_path="data/gold/db_faiss_phapluat_yte_full_final",
-    groq_model_name="llama3-70b-8192"
+# Thu thập links
+links = crawl_links("https://vbpl.vn/boyte", max_pages=20)
+
+# Thu thập nội dung
+documents = extract_contents(links, output_file="data/silver/data_vbpl_boyte_full_details.json")
+```
+
+#### 2. Tiền xử lý dữ liệu
+Xử lý và phân đoạn văn bản pháp luật:
+
+```bash
+python data_pipeline.py --mode process --input_file data/silver/data_vbpl_boyte_full_details.json --chunk_size 500 --chunk_overlap 100
+```
+
+Hoặc sử dụng trực tiếp module Python:
+```python
+from src.preprocessing.document_processor import process_documents
+from src.preprocessing.chunking import chunk_documents
+
+# Xử lý văn bản
+processed_docs = process_documents("data/silver/data_vbpl_boyte_full_details.json")
+
+# Phân đoạn văn bản
+chunks = chunk_documents(processed_docs, chunk_size=500, chunk_overlap=100)
+```
+
+#### 3. Tạo vector database
+Tạo vector database FAISS từ các đoạn văn bản đã xử lý:
+
+```bash
+python data_pipeline.py --mode vectorize --input_chunks data/silver/processed_chunks.json --embedding_model bkai-foundation-models/vietnamese-bi-encoder --output_dir data/gold/db_faiss_phapluat_yte_full_final
+```
+
+Hoặc sử dụng trực tiếp module Python:
+```python
+from src.vector_store.faiss_manager import create_vector_db
+
+# Tạo vector database
+vector_db = create_vector_db(
+    chunks_file="data/silver/processed_chunks.json",
+    output_dir="data/gold/db_faiss_phapluat_yte_full_final",
+    embedding_model_name="bkai-foundation-models/vietnamese-bi-encoder"
 )
 ```
 
-#### 3. Đánh giá hệ thống
-Sử dụng script test để đánh giá hiệu suất của hệ thống tìm kiếm:
+#### 4. Sinh câu hỏi và câu trả lời
+Tạo câu hỏi và câu trả lời từ các chủ đề:
+
 ```bash
-python tests/test_evaluation_topics.py
+python run_question_generator.py --topic_file data/topics.txt --vector_db data/gold/db_faiss_phapluat_yte_full_final --model llama3-70b-8192 --output_dir data/gold/qa_datasets
 ```
 
-#### 4. Pipeline xử lý dữ liệu
-Sử dụng script `data_pipeline.py` để tự động hóa toàn bộ quy trình xử lý dữ liệu từ thu thập đến vector database:
-
-##### Chạy toàn bộ pipeline
+Hoặc sử dụng notebook:
 ```bash
-python data_pipeline.py
+jupyter notebook notebooks/question_answer_generation_groq.ipynb
 ```
 
-##### Chỉ thu thập dữ liệu
+#### 5. Chạy ứng dụng
+Khởi động web app:
+
 ```bash
-python data_pipeline.py --mode crawl --source_url https://vbpl.vn/boyte --max_pages 20
+python app.py
 ```
 
-##### Chỉ xử lý và phân đoạn dữ liệu
+Mặc định, ứng dụng sẽ chạy tại địa chỉ: http://localhost:5000
+
+Các tham số tùy chỉnh:
 ```bash
-python data_pipeline.py --mode process --chunk_size 500 --chunk_overlap 100
+python app.py --port 8080 --vector_db data/gold/db_faiss_phapluat_yte_full_final --embedding_model bkai-foundation-models/vietnamese-bi-encoder --llm_model llama3-8b-8192
 ```
 
-##### Chỉ tạo vector database
+### API và Tích hợp
+Hệ thống cung cấp API RESTful để tích hợp với các ứng dụng khác:
+
 ```bash
-python data_pipeline.py --mode vectorize --embedding_model bkai-foundation-models/vietnamese-bi-encoder
+# Khởi động API server
+python -m src.api.endpoints
 ```
 
-##### Các tham số tùy chỉnh
-- `--mode`: Chế độ chạy (`full`, `crawl`, `process`, `vectorize`)
-- `--source_url`: URL nguồn để thu thập dữ liệu
-- `--max_pages`: Số trang tối đa để thu thập
-- `--embedding_model`: Mô hình embedding sử dụng
-- `--chunk_size`: Kích thước chunk khi phân đoạn văn bản
-- `--chunk_overlap`: Độ chồng lấp giữa các chunk
+Các endpoints chính:
+- `POST /api/query`: Truy vấn thông tin từ văn bản pháp luật
+- `POST /api/generate_questions`: Sinh câu hỏi từ chủ đề
+- `GET /api/topics`: Lấy danh sách chủ đề
+
+Ví dụ sử dụng:
+```python
+import requests
+import json
+
+# Truy vấn thông tin
+response = requests.post(
+    "http://localhost:5000/api/query",
+    json={"query": "Quy định về đăng ký thuốc mới", "k": 3}
+)
+results = json.loads(response.text)
+```
+
+### Đánh giá hiệu suất
+Đánh giá hiệu suất hệ thống:
+
+```bash
+python tests/test_evaluation_topics.py --vector_db data/gold/db_faiss_phapluat_yte_full_final --qa_dataset data/gold/qa_datasets/qa_dataset.json --metrics precision recall
+```
+
+Kết quả đánh giá sẽ được lưu trong thư mục `outputs/`.
