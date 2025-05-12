@@ -31,23 +31,25 @@ UIT@PubHealthQA/
 │
 ├── data/                          # All dataset files organized by processing stage
 │   ├── bronze/                    # Raw data (scraped, collected, or received)
-│   │   └── raw_building_data.csv
+│   │   │── raw_QAPair.csv
+│   │   └── raw_Policy.csv
 │   ├── silver/                    # Cleaned and normalized (e.g., renamed fields, fixed types)
-│   │   └── normalized_data.csv
+│   │   └── silver_dataset.csv
 │   └── gold/                      # Final dataset ready for ML, analytics, or publishing
-│       └── building_dataset_final.csv
+│       └── gold_dataset.csv
 │
 ├── notebooks/                     # Jupyter notebooks for exploration and processing
 │   ├── 01-exploration.ipynb
 │   ├── 02-cleaning-transform.ipynb
 │   └── 03-feature-engineering.ipynb
 │
-├── src/                           # Python scripts for modular data processing
+├── src/                                                      # Python scripts for modular data processing
 │   ├── __init__.py
-│   ├── ingest.py                  # For downloading or scraping raw data
-│   ├── clean.py                   # For cleaning and transforming data (bronze → silver)
-│   ├── transform.py               # Feature engineering or aggregating (silver → gold)
-│   └── utils.py                   # Reusable functions/utilities
+│   ├── 01-pipeline_ingestingPolicy.py                        # For downloading or scraping raw data
+│   ├── 01-pipeline_ingestingQAPair.py                        # For downloading or scraping raw data
+│   ├── 02-pipeline_cleaning.py                               # For cleaning and transforming data (bronze → silver)
+│   ├── 02-pipeline_generatingQAPair.py                       # For generating question-answer pairs, relying on theirs topics and inference levels
+│   └── utils.py                                              # Reusable functions/utilities
 │
 ├── outputs/                       # Output artifacts like visualizations or logs
 │   ├── visualizations/
