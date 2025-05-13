@@ -32,8 +32,10 @@ UIT@PubHealthQA/
 ├── data/                          # All dataset files organized by processing stage
 │   ├── bronze/                    # Raw data (scraped, collected, or received)
 │   │   │── raw_QAPair.csv
-│   │   └── raw_Policy.csv
+│   │   └── raw_Policy.json
 │   ├── silver/                    # Cleaned and normalized (e.g., renamed fields, fixed types)
+│   │   │── semi-silver_QAPair.csv
+│   │   │── semi-silver_Policy.json
 │   │   └── silver_dataset.csv
 │   └── gold/                      # Final dataset ready for ML, analytics, or publishing
 │       └── gold_dataset.csv
