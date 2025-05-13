@@ -44,8 +44,13 @@ def navigate_to_main_page(driver, url):
     print(f"🌐 Đang truy cập trang chính: {url}")
     try:
         driver.get(url)
-        WebDriverWait(driver, 20).until( # Tăng thời gian chờ một chút
+        # Chờ cho các khối hỏi đáp chính xuất hiện
+        WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, "div.panel.panel-default"))
+        )
+        # Thêm chờ cho phần tử chứa topic xuất hiện trong khối đầu tiên để đảm bảo cấu trúc tải xong
+        WebDriverWait(driver, 20).until(
+             EC.presence_of_element_located((By.CSS_SELECTOR, "div.panel.panel-default:nth-child(1) div.panel-heading div.col-md-9 b"))
         )
         print("✅ Trang chính đã tải xong.")
         return True
@@ -71,7 +76,7 @@ def extract_main_qa_blocks(driver):
         print(f"❌ Lỗi khi trích xuất khối hỏi đáp chính: {e}")
         return []
 
-def process_detail_page(driver, detail_link, main_tab_handle, badge_count):
+def process_detail_page(driver, detail_link, main_tab_handle, badge_count, main_topic):
     """
     Mở trang chi tiết trong tab mới, trích xuất các cặp hỏi-đáp và đóng tab.
 
@@ -80,6 +85,7 @@ def process_detail_page(driver, detail_link, main_tab_handle, badge_count):
         detail_link (str): URL của trang chi tiết.
         main_tab_handle (str): Handle của tab chính để quay lại.
         badge_count (str): Số trao đổi từ trang chính (để lưu vào kết quả).
+        main_topic (str): Chủ đề chính được lấy từ trang danh sách.
 
     Returns:
         list: Danh sách các dictionary, mỗi dictionary là một cặp hỏi-đáp từ trang chi tiết.
@@ -133,6 +139,7 @@ def process_detail_page(driver, detail_link, main_tab_handle, badge_count):
                      answer_text = p_tags_after_span[0].get_text(strip=True)
 
                 qa_pairs.append({
+                    "main_topic": main_topic, # Thêm chủ đề chính vào mỗi cặp QA
                     "question": question_text,
                     "answer": answer_text,
                     "source_link": detail_link,
@@ -184,20 +191,39 @@ def main_scraper(main_url, output_file="./data/bronze/raw_QAPair.csv", headless=
 
         all_qa_details = []
 
+        # Define the specific CSS selector for the main topic within a block
+        # This selector targets the <b> tag containing the topic text
+        main_topic_selector = "div.panel-heading div.col-md-9 b"
+
         # 4. Duyệt qua từng khối và xử lý trang chi tiết
+        count = 0
         for i, block in enumerate(qa_blocks):
+            count = count + 1
+            if count > 10:
+                break
             try:
-                # Lấy link chi tiết và badge count từ khối
+                # Lấy link chi tiết
                 link_el = block.find_element(By.CSS_SELECTOR, "a[href]")
                 detail_link = link_el.get_attribute("href")
+
+                # Lấy CHỦ ĐỀ CHÍNH từ thẻ <b> sử dụng selector được cung cấp
+                try:
+                    topic_el = block.find_element(By.CSS_SELECTOR, main_topic_selector)
+                    main_topic = topic_el.text.strip()
+                except Exception as topic_e:
+                    main_topic = "Không tìm thấy chủ đề chính"
+                    print(f"⚠️ Không tìm thấy chủ đề chính cho khối {i+1}: {topic_e}")
+
+
+                # Lấy số trao đổi (badge count)
                 try:
                     badge_el = block.find_element(By.CSS_SELECTOR, "span.badge.badge-primary.badge-pill")
                     badge_count = badge_el.text.strip()
                 except:
                     badge_count = "0"
 
-                # Xử lý trang chi tiết và thu thập các cặp hỏi-đáp
-                qa_pairs_from_detail = process_detail_page(driver, detail_link, main_tab, badge_count)
+                # Xử lý trang chi tiết và thu thập các cặp hỏi-đáp, truyền kèm main_topic
+                qa_pairs_from_detail = process_detail_page(driver, detail_link, main_tab, badge_count, main_topic)
                 all_qa_details.extend(qa_pairs_from_detail)
 
             except Exception as e:
@@ -227,4 +253,3 @@ if __name__ == "__main__":
     main_page_url = "https://dichvucong.moh.gov.vn/web/guest/hoi-dap?p_p_id=hoidap_WAR_oephoidapportlet&_hoidap_WAR_oephoidapportlet_delta=9999"
     main_scraper(main_page_url, headless=False) # Đặt headless=True nếu muốn chạy ẩn
 
-# run python src/01-pipeline_ingestingQAPair.py
