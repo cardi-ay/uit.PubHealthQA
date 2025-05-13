@@ -31,7 +31,7 @@ TINH_TRANG_HL_VALUES = ["4", "2"]
 # THU_TU_SAP_XEP_VALUE = "False" # Not used in logic
 
 # Output file
-OUTPUT_JSON_FILE = Path("data_vbpl_boyte_full_details_merged_modular.json")
+OUTPUT_JSON_FILE = Path("./data/bronze/raw_Policy.json")
 
 # --- Cấu hình Logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
