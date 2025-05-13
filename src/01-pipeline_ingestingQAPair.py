@@ -196,11 +196,7 @@ def main_scraper(main_url, output_file="./data/bronze/raw_QAPair.csv", headless=
         main_topic_selector = "div.panel-heading div.col-md-9 b"
 
         # 4. Duyệt qua từng khối và xử lý trang chi tiết
-        count = 0
         for i, block in enumerate(qa_blocks):
-            count = count + 1
-            if count > 10:
-                break
             try:
                 # Lấy link chi tiết
                 link_el = block.find_element(By.CSS_SELECTOR, "a[href]")
