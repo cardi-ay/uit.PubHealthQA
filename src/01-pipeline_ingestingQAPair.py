@@ -7,157 +7,224 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 
-# ===== 1. Cấu hình Chrome Options =====
-# Cấu hình các tùy chọn cho trình duyệt Chrome
-options = Options()
-# Uncomment dòng dưới nếu bạn muốn chạy ẩn trình duyệt (không hiển thị giao diện)
-# options.add_argument("--headless")
-options.add_argument("--disable-gpu") # Vô hiệu hóa tăng tốc phần cứng GPU
-options.add_argument("--no-sandbox") # Chạy ở chế độ sandbox (tăng bảo mật)
-options.add_argument("--disable-dev-shm-usage") # Tránh lỗi liên quan đến /dev/shm
+def setup_driver(headless=False):
+    """
+    Cấu hình và khởi tạo Selenium WebDriver cho Chrome.
 
-# Khởi tạo trình duyệt Chrome
-driver = webdriver.Chrome(options=options)
+    Args:
+        headless (bool): Chạy trình duyệt ở chế độ ẩn (không hiển thị giao diện) nếu True.
 
-# ===== 2. Truy cập trang chính chứa danh sách hỏi đáp =====
-# URL của trang danh sách hỏi đáp
-main_url = "https://dichvucong.moh.gov.vn/web/guest/hoi-dap?p_p_id=hoidap_WAR_oephoidapportlet&_hoidap_WAR_oephoidapportlet_delta=9999"
-print(f"🌐 Đang truy cập trang chính: {main_url}")
-driver.get(main_url)
+    Returns:
+        webdriver.Chrome: Đối tượng WebDriver đã được cấu hình.
+    """
+    print("⚙️ Đang cấu hình trình duyệt...")
+    options = Options()
+    if headless:
+        options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--window-size=1920,1080") # Đặt kích thước cửa sổ để đảm bảo các phần tử hiển thị
 
-# Chờ một chút để trang tải hoàn toàn, hoặc chờ một phần tử cụ thể xuất hiện
-try:
-    WebDriverWait(driver, 15).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, "div.panel.panel-default"))
-    )
-    print("✅ Trang chính đã tải xong.")
-except Exception as e:
-    print(f"❌ Lỗi khi chờ trang chính tải: {e}")
-    driver.quit()
-    exit()
+    driver = webdriver.Chrome(options=options)
+    print("✅ Trình duyệt đã khởi tạo.")
+    return driver
 
-# Lấy handle của tab chính để có thể quay lại sau khi xử lý các tab con
-main_tab = driver.current_window_handle
+def navigate_to_main_page(driver, url):
+    """
+    Truy cập trang chính và chờ cho các phần tử chính tải xong.
 
-# ===== 3. Thu thập các liên kết chi tiết từ trang chính =====
-# Tìm tất cả các khối hỏi đáp trên trang chính
-qa_blocks = driver.find_elements(By.CSS_SELECTOR, "div.panel.panel-default")
-print(f"🔍 Tìm thấy {len(qa_blocks)} khối hỏi đáp trên trang chính.")
+    Args:
+        driver (webdriver.Chrome): Đối tượng WebDriver.
+        url (str): URL của trang chính.
 
-# Danh sách lưu trữ tất cả các cặp hỏi-đáp chi tiết
-all_qa_details = []
-
-# Duyệt qua từng khối hỏi đáp tìm được
-for i, block in enumerate(qa_blocks):
+    Returns:
+        bool: True nếu truy cập thành công và các phần tử tải xong, False nếu ngược lại.
+    """
+    print(f"🌐 Đang truy cập trang chính: {url}")
     try:
-        # Lấy liên kết chi tiết từ khối hỏi đáp
-        link_el = block.find_element(By.CSS_SELECTOR, "a[href]")
-        detail_link = link_el.get_attribute("href")
+        driver.get(url)
+        WebDriverWait(driver, 20).until( # Tăng thời gian chờ một chút
+            EC.presence_of_element_located((By.CSS_SELECTOR, "div.panel.panel-default"))
+        )
+        print("✅ Trang chính đã tải xong.")
+        return True
+    except Exception as e:
+        print(f"❌ Lỗi khi chờ trang chính tải: {e}")
+        return False
 
-        # Lấy số câu hỏi con (số trao đổi) từ badge, nếu có
-        try:
-            badge_el = block.find_element(By.CSS_SELECTOR, "span.badge.badge-primary.badge-pill")
-            badge_count = badge_el.text.strip()
-        except:
-            badge_count = "0" # Mặc định là 0 nếu không tìm thấy badge
+def extract_main_qa_blocks(driver):
+    """
+    Trích xuất các khối hỏi đáp chính từ trang hiện tại.
 
-        print(f"\n--- Đang xử lý khối hỏi đáp {i+1}/{len(qa_blocks)} ---")
-        print(f"🔗 Link chi tiết: {detail_link}")
-        print(f"💬 Số trao đổi (dự kiến): {badge_count}")
+    Args:
+        driver (webdriver.Chrome): Đối tượng WebDriver.
 
-        # ===== 4. Mở liên kết chi tiết trong tab mới và trích xuất dữ liệu =====
-        # Mở link chi tiết trong một tab mới của trình duyệt
+    Returns:
+        list: Danh sách các phần tử web đại diện cho các khối hỏi đáp.
+    """
+    try:
+        qa_blocks = driver.find_elements(By.CSS_SELECTOR, "div.panel.panel-default")
+        print(f"🔍 Tìm thấy {len(qa_blocks)} khối hỏi đáp trên trang chính.")
+        return qa_blocks
+    except Exception as e:
+        print(f"❌ Lỗi khi trích xuất khối hỏi đáp chính: {e}")
+        return []
+
+def process_detail_page(driver, detail_link, main_tab_handle, badge_count):
+    """
+    Mở trang chi tiết trong tab mới, trích xuất các cặp hỏi-đáp và đóng tab.
+
+    Args:
+        driver (webdriver.Chrome): Đối tượng WebDriver.
+        detail_link (str): URL của trang chi tiết.
+        main_tab_handle (str): Handle của tab chính để quay lại.
+        badge_count (str): Số trao đổi từ trang chính (để lưu vào kết quả).
+
+    Returns:
+        list: Danh sách các dictionary, mỗi dictionary là một cặp hỏi-đáp từ trang chi tiết.
+    """
+    qa_pairs = []
+    print(f"--- Đang xử lý link chi tiết: {detail_link} ---")
+    try:
+        # Mở link chi tiết trong một tab mới
         driver.execute_script("window.open(arguments[0]);", detail_link)
-        # Chờ một chút để tab mới được mở
-        time.sleep(1)
+        time.sleep(1.5) # Chờ thêm một chút cho tab mới mở
 
-        # Chuyển quyền điều khiển của Selenium sang tab mới nhất
+        # Chuyển quyền điều khiển sang tab mới
         tabs = driver.window_handles
         driver.switch_to.window(tabs[-1])
 
         try:
             # Chờ cho một phần tử đặc trưng của trang chi tiết xuất hiện
-            # Ví dụ: chờ nút "showtraloi" hoặc nội dung câu hỏi chính
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 15).until( # Tăng thời gian chờ
                 EC.presence_of_element_located((By.CSS_SELECTOR, "div.question-content, [onclick*='showtraloi']"))
             )
-            print("✅ Trang chi tiết đã tải xong.")
+            # print("✅ Trang chi tiết đã tải xong.") # Bỏ bớt log chi tiết để gọn hơn
 
-            # Tìm và click tất cả các nút "showtraloi" để hiển thị nội dung trả lời/trao đổi
+            # Tìm và click tất cả các nút "showtraloi"
             show_buttons = driver.find_elements(By.CSS_SELECTOR, '[onclick*="showtraloi"]')
-            print(f"🔘 Tìm thấy {len(show_buttons)} nút 'showtraloi' cần click.")
+            # print(f"🔘 Tìm thấy {len(show_buttons)} nút 'showtraloi' cần click.")
             for btn in show_buttons:
                 try:
-                    # Click bằng JavaScript để đảm bảo hoạt động ngay cả khi nút không hiển thị đầy đủ
                     driver.execute_script("arguments[0].click();", btn)
-                    # Chờ một chút sau mỗi lần click để nội dung hiển thị
-                    time.sleep(0.5)
+                    time.sleep(0.5) # Chờ nội dung hiển thị sau click
                 except Exception as click_e:
-                    print(f"⚠️ Không thể click một nút 'showtraloi': {click_e}")
-                    # Tiếp tục với các nút khác ngay cả khi một nút lỗi
+                    # print(f"⚠️ Không thể click một nút 'showtraloi': {click_e}")
+                    pass # Bỏ qua lỗi click một nút và tiếp tục
 
-            # Lấy toàn bộ mã nguồn HTML của trang sau khi đã click các nút
+            # Lấy mã nguồn HTML sau khi click
             soup = BeautifulSoup(driver.page_source, "html.parser")
 
-            # ===== 5. Trích xuất các cặp Hỏi - Đáp từ trang chi tiết =====
-            # Tìm tất cả các span có class "primary--text" (thường là câu hỏi)
+            # Trích xuất các cặp Hỏi - Đáp
             question_spans = soup.find_all("span", class_="primary--text")
-            print(f"🔍 Tìm thấy {len(question_spans)} cặp Hỏi-Đáp tiềm năng trên trang chi tiết.")
+            # print(f"🔍 Tìm thấy {len(question_spans)} cặp Hỏi-Đáp tiềm năng.")
 
-            # Duyệt qua từng span tìm được để lấy câu hỏi và câu trả lời tương ứng
             for span in question_spans:
                 question_text = span.get_text(strip=True)
-
-                # Tìm thẻ <p> thứ 2 ngay sau thẻ span hiện tại
-                # Dựa trên cấu trúc HTML quan sát được, câu trả lời thường nằm trong thẻ <p> thứ 2
-                p_tags_after_span = span.find_all_next("p", limit=2)
                 answer_text = "Không tìm thấy câu trả lời phù hợp" # Mặc định
 
+                # Tìm thẻ <p> thứ 2 ngay sau thẻ span
+                p_tags_after_span = span.find_all_next("p", limit=2)
+
                 if len(p_tags_after_span) >= 2:
-                    # Lấy nội dung của thẻ <p> thứ 2
                     answer_text = p_tags_after_span[1].get_text(strip=True)
                 elif len(p_tags_after_span) == 1:
-                     # Nếu chỉ có 1 thẻ p, có thể đó là câu trả lời duy nhất
                      answer_text = p_tags_after_span[0].get_text(strip=True)
 
-
-                # Thêm cặp hỏi-đáp và link nguồn vào danh sách kết quả
-                all_qa_details.append({
+                qa_pairs.append({
                     "question": question_text,
                     "answer": answer_text,
                     "source_link": detail_link,
-                    "main_block_badge": badge_count # Giữ lại thông tin badge từ trang chính
+                    "main_block_badge": badge_count
                 })
-                # print(f"  - Trích xuất QA: {question_text[:50]}...") # In ra một phần câu hỏi để theo dõi
 
-        except Exception as detail_e:
-            print(f"❌ Lỗi khi xử lý trang chi tiết {detail_link}: {detail_e}")
-            # Nếu có lỗi ở trang chi tiết, vẫn đóng tab và tiếp tục với link khác
+        except Exception as detail_process_e:
+            print(f"❌ Lỗi khi xử lý nội dung trang chi tiết {detail_link}: {detail_process_e}")
 
-        finally:
-            # Đóng tab chi tiết hiện tại
+    except Exception as detail_open_e:
+        print(f"❌ Lỗi khi mở hoặc chuyển tab cho link {detail_link}: {detail_open_e}")
+
+    finally:
+        # Đóng tab chi tiết và quay lại tab chính
+        try:
             driver.close()
-            # Chuyển quyền điều khiển trở lại tab chính
-            driver.switch_to.window(main_tab)
-            # Chờ một chút trước khi xử lý khối tiếp theo
-            time.sleep(0.5)
+            driver.switch_to.window(main_tab_handle)
+            time.sleep(0.5) # Chờ một chút sau khi quay lại tab chính
+        except Exception as switch_e:
+            print(f"❌ Lỗi khi đóng tab hoặc chuyển về tab chính: {switch_e}")
+            # Nếu không thể quay lại tab chính, có thể cần khởi động lại driver hoặc xử lý lỗi nghiêm trọng hơn
 
-    except Exception as block_e:
-        print(f"❌ Lỗi khi xử lý khối hỏi đáp trên trang chính (index {i}): {block_e}")
-        # Nếu lỗi ở bước này, có thể bỏ qua khối này và tiếp tục
+    return qa_pairs
 
-# ===== 6. Ghi kết quả ra file CSV =====
-# Tạo DataFrame từ danh sách các cặp hỏi-đáp đã thu thập
-df_result = pd.DataFrame(all_qa_details)
+def main_scraper(main_url, output_file="./data/bronze/raw_QAPair.csv", headless=False):
+    """
+    Chức năng chính để thu thập dữ liệu hỏi đáp.
 
-# Tên file đầu ra
-output_file = "qa_dvc_combined.csv"
-# Ghi DataFrame ra file CSV với encoding UTF-8 BOM để hiển thị tiếng Việt chính xác trong Excel
-df_result.to_csv(output_file, index=False, encoding="utf-8-sig")
+    Args:
+        main_url (str): URL của trang danh sách hỏi đáp.
+        output_file (str): Tên file CSV để lưu kết quả.
+        headless (bool): Chạy trình duyệt ở chế độ ẩn nếu True.
+    """
+    driver = None # Khởi tạo driver là None ban đầu
+    try:
+        # 1. Cấu hình và khởi tạo driver
+        driver = setup_driver(headless)
 
-print(f"\n🎉 Hoàn tất quá trình thu thập dữ liệu!")
-print(f"💾 Đã lưu {len(df_result)} cặp Hỏi-Đáp vào file: {output_file}")
+        # 2. Truy cập trang chính
+        if not navigate_to_main_page(driver, main_url):
+            print("❌ Không thể truy cập trang chính. Dừng chương trình.")
+            return
 
-# ===== 7. Đóng trình duyệt =====
-driver.quit()
-print("Browser đã đóng.")
+        # Lấy handle của tab chính
+        main_tab = driver.current_window_handle
+
+        # 3. Trích xuất các khối hỏi đáp từ trang chính
+        qa_blocks = extract_main_qa_blocks(driver)
+
+        all_qa_details = []
+
+        # 4. Duyệt qua từng khối và xử lý trang chi tiết
+        for i, block in enumerate(qa_blocks):
+            try:
+                # Lấy link chi tiết và badge count từ khối
+                link_el = block.find_element(By.CSS_SELECTOR, "a[href]")
+                detail_link = link_el.get_attribute("href")
+                try:
+                    badge_el = block.find_element(By.CSS_SELECTOR, "span.badge.badge-primary.badge-pill")
+                    badge_count = badge_el.text.strip()
+                except:
+                    badge_count = "0"
+
+                # Xử lý trang chi tiết và thu thập các cặp hỏi-đáp
+                qa_pairs_from_detail = process_detail_page(driver, detail_link, main_tab, badge_count)
+                all_qa_details.extend(qa_pairs_from_detail)
+
+            except Exception as e:
+                print(f"❌ Lỗi tổng quát khi xử lý khối {i+1}: {e}")
+                # Tiếp tục vòng lặp ngay cả khi một khối bị lỗi
+
+        # 5. Ghi kết quả ra file CSV
+        if all_qa_details:
+            df_result = pd.DataFrame(all_qa_details)
+            df_result.to_csv(output_file, index=False, encoding="utf-8-sig")
+            print(f"\n🎉 Hoàn tất quá trình thu thập dữ liệu!")
+            print(f"💾 Đã lưu {len(df_result)} cặp Hỏi-Đáp vào file: {output_file}")
+        else:
+            print("\n⚠️ Không thu thập được cặp Hỏi-Đáp nào.")
+
+    except Exception as main_e:
+        print(f"\n❌ Đã xảy ra lỗi nghiêm trọng trong quá trình chính: {main_e}")
+
+    finally:
+        # 6. Đóng trình duyệt
+        if driver:
+            driver.quit()
+            print("Browser đã đóng.")
+
+# ===== Điểm bắt đầu thực thi chương trình =====
+if __name__ == "__main__":
+    main_page_url = "https://dichvucong.moh.gov.vn/web/guest/hoi-dap?p_p_id=hoidap_WAR_oephoidapportlet&_hoidap_WAR_oephoidapportlet_delta=9999"
+    main_scraper(main_page_url, headless=False) # Đặt headless=True nếu muốn chạy ẩn
+
+# run python src/01-pipeline_ingestingQAPair.py
