@@ -30,11 +30,13 @@ We adopt a Bronze–Silver–Gold data quality framework:
 UIT@PubHealthQA/
 │
 ├── data/                          # All dataset files organized by processing stage
-│   ├── bronze/                    # Raw data (scraped, collected, or received)
-│   │   │── raw_QAPair.csv
-│   │   └── raw_Policy.csv
-│   ├── silver/                    # Cleaned and normalized (e.g., renamed fields, fixed types)
-│   │   └── silver_dataset.csv
+│   ├── bronze/                    
+│   │   │── raw_QAPair.csv         # Raw data (question-answer pairs from Ministry of Health - Socialist Republic of Vietnam
+│   │   └── raw_Policy.json        # Raw data (policies of Office Procedure in Public Health - National Database of Legislation
+│   ├── silver/                    # Semi-silver datasets: Cleaned dataset from raw datasets
+│   │   │── semi-silver_QAPair.csv
+│   │   │── semi-silver_Policy.json
+│   │   └── silver_dataset.csv     # Merged dataset from original cleaned dataset (semi-silver Q&A dataset) and LLM-generated dataset.
 │   └── gold/                      # Final dataset ready for ML, analytics, or publishing
 │       └── gold_dataset.csv
 │
