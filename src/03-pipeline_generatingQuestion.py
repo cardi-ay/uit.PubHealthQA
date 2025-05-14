@@ -8,6 +8,11 @@ from datetime import datetime
 from dotenv import load_dotenv
 import argparse # Moved argparse import to the top
 
+# Thêm code để xác định đường dẫn thư mục gốc của dự án
+current_dir = os.path.dirname(os.path.abspath(__file__))  # Thư mục hiện tại (src)
+project_root = os.path.dirname(current_dir)  # Thư mục cha (uit.PubHealthQA)
+log_dir = os.path.join(project_root, "logs")  # Thư mục logs cùng cấp với src
+
 # Attempt to import necessary libraries, especially groq and langchain_core
 try:
     import groq
@@ -112,11 +117,11 @@ load_dotenv()
 # Set up logger
 # Check if setup_logger was imported successfully
 if 'setup_logger' in globals() and callable(setup_logger) and not (hasattr(setup_logger, '__doc__') and setup_logger.__doc__ and "fallback logger" in setup_logger.__doc__):
-    # Create logs directory first if it doesn't exist
-    Path("outputs/logs").mkdir(parents=True, exist_ok=True)
+    # Tạo thư mục log ở ngoài thư mục src (cùng cấp với src)
+    Path(log_dir).mkdir(parents=True, exist_ok=True)
     logger = setup_logger(
         "question_generator",
-        log_file=Path("outputs/logs/question_generation_groq.log")
+        log_file=Path(log_dir) / "question_generation_groq.log"
     )
 else: # Fallback if setup_logger is not defined/imported or is the mock
     if 'logger_fallback' not in globals(): # ensure fallback logger is defined
@@ -341,7 +346,7 @@ Nếu không có context hoặc context không đủ để tạo câu hỏi theo
 def generate_questions_from_topics(
     topic_file_path: Union[str, Path],
     vector_db_path: Union[str, Path],
-    output_dir: Union[str, Path] = "data/gold",
+    output_dir: Union[str, Path] = "../logs",
     embedding_model_name: str = "bkai-foundation-models/vietnamese-bi-encoder",
     groq_model_name: str = "llama3-70b-8192",
     num_questions_per_level: int = 2,
@@ -441,7 +446,7 @@ def main():
     parser.add_argument("--model", type=str, default="llama3-70b-8192", help="Model Groq sử dụng để sinh câu hỏi (mặc định: llama3-70b-8192)")
     parser.add_argument("--questions-per-level", type=int, default=1, help="Số câu hỏi mỗi cấp độ Bloom cho mỗi chủ đề (mặc định: 1 để test nhanh)")
     parser.add_argument("--chunks-per-topic", type=int, default=3, help="Số chunks sử dụng cho mỗi chủ đề (mặc định: 3 để test nhanh)")
-    parser.add_argument("--output-dir", type=str, default="data/gold", help="Thư mục để lưu kết quả (mặc định: data/gold)")
+    parser.add_argument("--output-dir", type=str, default="../logs", help="Thư mục để lưu kết quả (mặc định: ../logs)")
 
     args = parser.parse_args()
 
