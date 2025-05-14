@@ -341,7 +341,7 @@ Nếu không có context hoặc context không đủ để tạo câu hỏi theo
 def generate_questions_from_topics(
     topic_file_path: Union[str, Path],
     vector_db_path: Union[str, Path],
-    output_dir: Union[str, Path] = "outputs",
+    output_dir: Union[str, Path] = "data/gold",
     embedding_model_name: str = "bkai-foundation-models/vietnamese-bi-encoder",
     groq_model_name: str = "llama3-70b-8192",
     num_questions_per_level: int = 2,
@@ -436,12 +436,12 @@ def generate_questions_from_topics(
 
 def main():
     parser = argparse.ArgumentParser(description="Sinh câu hỏi và câu trả lời có trích dẫn từ vector database theo thang đo Bloom")
-    parser.add_argument("--topics", type=str, default="data/sample_topics.txt", help="Đường dẫn đến file chứa danh sách chủ đề (mặc định: data/sample_topics.txt)")
+    parser.add_argument("--topics", type=str, default="data/topics.txt", help="Đường dẫn đến file chứa danh sách chủ đề (mặc định: data/sample_topics.txt)")
     parser.add_argument("--vector-db", type=str, default="data/gold/db_faiss_phapluat_yte_full_final", help="Đường dẫn đến thư mục chứa vector database (mặc định: data/gold/db_faiss_phapluat_yte_full_final)")
     parser.add_argument("--model", type=str, default="llama3-70b-8192", help="Model Groq sử dụng để sinh câu hỏi (mặc định: llama3-70b-8192)")
     parser.add_argument("--questions-per-level", type=int, default=1, help="Số câu hỏi mỗi cấp độ Bloom cho mỗi chủ đề (mặc định: 1 để test nhanh)")
     parser.add_argument("--chunks-per-topic", type=int, default=3, help="Số chunks sử dụng cho mỗi chủ đề (mặc định: 3 để test nhanh)")
-    parser.add_argument("--output-dir", type=str, default="outputs", help="Thư mục để lưu kết quả (mặc định: outputs)")
+    parser.add_argument("--output-dir", type=str, default="data/gold", help="Thư mục để lưu kết quả (mặc định: data/gold)")
 
     args = parser.parse_args()
 
