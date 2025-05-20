@@ -495,3 +495,943 @@
 2025-05-07 20:13:19,754 - question_generator - INFO - Đã sinh 0 cặp câu hỏi-trả lời cấp độ understand cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
 2025-05-07 20:13:21,557 - question_generator - INFO - Thời gian sinh cặp câu hỏi-trả lời cấp độ apply: 1.80 giây
 2025-05-07 20:13:21,572 - question_generator - INFO - Đã sinh 2 cặp câu hỏi-trả lời cấp độ apply cho chủ đề 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-20 22:58:48,160 - question_generator - INFO - Logger 'question_generator' đã được khởi tạo.
+2025-05-20 22:58:48,162 - question_generator - INFO - Using topic file: data/topics.txt
+2025-05-20 22:58:48,163 - question_generator - INFO - Using vector DB path: data/gold/db_faiss_phapluat_yte_full_final
+2025-05-20 22:58:48,163 - question_generator - INFO - Using Groq model: llama3-70b-8192
+2025-05-20 22:58:48,164 - question_generator - INFO - Questions per level: 1
+2025-05-20 22:58:48,164 - question_generator - INFO - Chunks per topic: 3
+2025-05-20 22:58:48,164 - question_generator - INFO - Output directory: outputs
+2025-05-20 22:58:48,165 - question_generator - INFO - Starting process to generate questions from topics.
+2025-05-20 22:58:48,182 - question_generator - INFO - Read 23 topics from file data\topics.txt
+2025-05-20 22:59:36,838 - question_generator - INFO - Vector database loaded successfully (or mock DB). Number of vectors: 15498
+2025-05-20 22:59:37,953 - question_generator - INFO - Initialized Groq Client with model 'llama3-70b-8192' (or mock client if previous warning).
+2025-05-20 22:59:37,954 - question_generator - INFO - Processing topic 1/23: 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-20 22:59:37,954 - question_generator - INFO - Starting question generation for topic: 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-20 22:59:38,586 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-20 22:59:41,122 - question_generator - INFO - Time to generate Q&A for level understand: 2.54s. Model response (first 200 chars): Here is the response in the required JSON format:
+```json
+[
+    {
+      "question": "Ai là người chủ trì, phối hợp với các cơ quan liên quan sửa đổi, bổ sung danh mục dịch vụ kỹ thuật y tế?",
+      "a...
+2025-05-20 22:59:41,123 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-20 22:59:42,332 - question_generator - INFO - Time to generate Q&A for level apply: 1.21s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```json
+[
+  {
+    "question": "Bộ Y tế có trách nhiệm gì trong việc thực hiện danh mục dịch vụ kỹ thuật y tế?",
+    "answer": "Bộ Y tế chủ trì, phối ...
+2025-05-20 22:59:42,333 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-20 22:59:43,784 - question_generator - INFO - Time to generate Q&A for level analyze: 1.45s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Bộ Y tế có trách nhiệm gì trong việc thực hiện và thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế?",
+    "answer": "...
+2025-05-20 22:59:43,785 - question_generator - ERROR - Could not find valid JSON content in API response for level analyze. Response: Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Bộ Y tế có trách nhiệm gì trong việc thực hiện và thanh toán chi phí khám bệnh, chữa bệnh bảo hiểm y tế?",
+    "answer": "Bộ Y tế chủ trì, phối hợp với các cơ quan liên quan sửa đổi, bổ sung danh mục dịch vụ kỹ thuật y tế, bảo đảm nguyên tắc người bệnh được tiếp cận với dịch vụ kỹ thuật y tế có chất lượng, đáp ứng hiệu quả điều trị, phù hợp giữa mức đóng, mức hưởng bảo hiểm y tế, khuyến khích phát triển có kiểm soát sử dụng các dịch vụ kỹ thuật y tế với chi phí hợp lý. Theo Điều 8 của Thông tư này.",
+    "citations": "Thông tư về bảo hiểm y tế",
+    "source_chunks": [1]
+  },
+  {
+    "question": "Cơ quan nào chịu trách nhiệm hướng dẫn và triển khai thực hiện các văn bản pháp luật, chiến lược, quy hoạch, kế hoạch, chính sách, chương trình, dự án quan trọng của lĩnh vực Bảo hiểm y tế?",
+    "answer": "Bộ Y tế chủ trì hướng dẫn triển khai thực hiện các quy định pháp luật, chiến lược, quy hoạch, kế hoạch, chính sách, chương trình, dự án quan trọng của lĩnh vực Bảo hiểm y tế.",
+    "citations": "Không có văn bản pháp luật cụ thể được trích dẫn",
+    "source_chunks": [2]
+  }
+]
+```
+
+Note: Since the context is not specific to a particular law or regulation, the citations are not specific to a particular law or regulation either.
+2025-05-20 22:59:43,786 - question_generator - INFO - Generated 0 Q&A pairs for level analyze, topic 'Thủ tục hành chính lĩnh vực Bảo hiểm y tế'
+2025-05-20 22:59:43,787 - question_generator - INFO - Processing topic 2/23: 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-20 22:59:43,788 - question_generator - INFO - Starting question generation for topic: 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-20 22:59:43,885 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-20 22:59:46,610 - question_generator - INFO - Time to generate Q&A for level understand: 2.72s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Theo thủ tục hành chính lĩnh vực Hợp tác quốc tế, các cơ quan có thẩm quyền quản lý công chức, viên chức thuộc cấp Bộ, ngành và tỉn...
+2025-05-20 22:59:46,611 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-20 23:00:03,229 - question_generator - INFO - Time to generate Q&A for level apply: 16.62s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Trong thủ tục hành chính lĩnh vực Hợp tác quốc tế, Trung tâm hợp tác chuyên gia và nhân lực y tế với nước ngoài có trách nhiệm gửi ...
+2025-05-20 23:00:03,231 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-20 23:00:17,972 - question_generator - INFO - Time to generate Q&A for level analyze: 14.74s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Trong thủ tục hành chính lĩnh vực hợp tác quốc tế, các cơ quan có thẩm quyền quản lý công chức, viên chức thuộc cấp Bộ, ngành và tỉ...
+2025-05-20 23:00:17,974 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Thủ tục hành chính lĩnh vực Hợp tác quốc tế'
+2025-05-20 23:00:17,975 - question_generator - INFO - Processing topic 3/23: 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-20 23:00:17,975 - question_generator - INFO - Starting question generation for topic: 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-20 23:00:18,080 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-20 23:00:34,892 - question_generator - INFO - Time to generate Q&A for level understand: 16.81s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Nhiệm vụ của khoa Dinh dưỡng hoặc bộ phận Dinh dưỡng trong bệnh viện là gì?",
+    "answer": "Nhiệm vụ của khoa Dinh dưỡng hoặc bộ p...
+2025-05-20 23:00:34,893 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-20 23:00:52,979 - question_generator - INFO - Time to generate Q&A for level apply: 18.09s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Trong bệnh viện, khoa Dinh dưỡng hoặc bộ phận Dinh dưỡng có trách nhiệm gì trong việc tổ chức thực hiện các hoạt động khám...
+2025-05-20 23:00:52,980 - question_generator - ERROR - Could not find valid JSON content in API response for level apply. Response: Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Trong bệnh viện, khoa Dinh dưỡng hoặc bộ phận Dinh dưỡng có trách nhiệm gì trong việc tổ chức thực hiện các hoạt động khám, tư vấn và điều trị bằng chế độ dinh dưỡng?",
+    "answer": "Trong bệnh viện, khoa Dinh dưỡng hoặc bộ phận Dinh dưỡng có trách nhiệm tổ chức thực hiện các hoạt động khám, tư vấn và điều trị bằng chế độ dinh dưỡng phù hợp với tình trạng dinh dưỡng và bệnh lý cho người bệnh. Theo Điều 9 của [không rõ nguồn].",
+    "citations": "[không rõ nguồn]",
+    "source_chunks": [1]
+  },
+  {
+    "question": "Các cơ sở sản xuất, kinh doanh thực phẩm chức năng, thực phẩm tăng cường vi chất dinh dưỡng, phụ gia thực phẩm, chất hỗ trợ chế biến, nước khoáng thiên nhiên, nước uống đóng chai và bao bì, dụng cụ tiếp xúc trực tiếp với thực phẩm thuộc phạm vi quản lý của Bộ Y tế bao gồm những cơ sở nào?",
+    "answer": "Các cơ sở sản xuất, kinh doanh thực phẩm chức năng, thực phẩm tăng cường vi chất dinh dưỡng, phụ gia thực phẩm, chất hỗ trợ chế biến, nước khoáng thiên nhiên, nước uống đóng chai và bao bì, dụng cụ tiếp xúc trực tiếp với thực phẩm thuộc phạm vi quản lý của Bộ Y tế bao gồm các cơ sở sản xuất thực phẩm chức năng ban đầu nhỏ lẻ, cơ sở kinh doanh nhỏ lẻ không có yêu cầu bảo quản sản phẩm đặc biệt, cơ sở bán hàng rong, cơ sở kinh doanh bao gói sẵn không yêu cầu điều kiện bảo quản đặc biệt, cơ sở kinh doanh bao bì, dụng cụ tiếp xúc trực tiếp với thực phẩm, và nhà thuốc đã được cấp Giấy chứng nhận đạt GPP có kinh doanh thực phẩm chức năng, thực phẩm tăng cường vi chất dinh dưỡng. Theo Điều 9 của [không rõ nguồn].",
+    "citations": "[không rõ nguồn]",
+    "source_chunks": [3]
+  }
+]
+```
+Note: Since the sources are not specified, I couldn't provide specific citations or regulations.
+2025-05-20 23:00:52,982 - question_generator - INFO - Generated 0 Q&A pairs for level apply, topic 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-20 23:01:10,969 - question_generator - INFO - Time to generate Q&A for level analyze: 17.99s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": "What are the responsibilities of the Nutrition Department or Nutrition Section in a hospital?",
+      "answer": "The Nutrition D...
+2025-05-20 23:01:10,970 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Thủ tục hành chính lĩnh vực Quản lý thực phẩm và sản phẩm dinh dưỡng'
+2025-05-20 23:01:10,971 - question_generator - INFO - Processing topic 4/23: 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-20 23:01:10,972 - question_generator - INFO - Starting question generation for topic: 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-20 23:01:11,078 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-20 23:01:28,660 - question_generator - INFO - Time to generate Q&A for level understand: 17.58s. Model response (first 200 chars): [
+  {
+    "question": "Ai là người quyết định thành lập đoàn thẩm định cấp giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính?",
+    "answer": "Cục trưởng Cục Phòng, chốn...
+2025-05-20 23:01:28,663 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-20 23:01:44,252 - question_generator - INFO - Time to generate Q&A for level apply: 15.59s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": " Khi nào thì giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính được cấp lại?",
+      "answer": "G...
+2025-05-20 23:01:44,253 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-20 23:02:01,050 - question_generator - INFO - Time to generate Q&A for level analyze: 16.80s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Khi nào thì cần cấp lại giấy chứng nhận phòng xét nghiệm khẳng định HIV và hồ sơ, thủ tục nào được áp dụng trong trường hợ...
+2025-05-20 23:02:01,051 - question_generator - ERROR - Could not find valid JSON content in API response for level analyze. Response: Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Khi nào thì cần cấp lại giấy chứng nhận phòng xét nghiệm khẳng định HIV và hồ sơ, thủ tục nào được áp dụng trong trường hợp giấy chứng nhận bị mất hoặc hư hỏng?",
+    "answer": "Cấp lại giấy chứng nhận phòng xét nghiệm khẳng định HIV được áp dụng trong các trường hợp sau: giấy chứng nhận hết hạn, giấy chứng nhận bị mất hoặc hư hỏng, thay đổi người phụ trách hoặc nhân viên trực tiếp thực hiện kỹ thuật xét nghiệm HIV, thay đổi về vị trí cơ sở xét nghiệm, bổ sung kỹ thuật xét nghiệm HIV, giấy chứng nhận bị thu hồi. Trường hợp giấy chứng nhận bị mất hoặc hư hỏng, hồ sơ đề nghị cấp lại giấy chứng nhận phòng xét nghiệm khẳng định HIV gồm văn bản đề nghị cấp lại của cơ sở nơi có phòng xét nghiệm khẳng định HIV theo mẫu quy định tại Phụ lục 8 ban hành kèm theo Thông tư này và Giấy chứng nhận phòng xét nghiệm khẳng định HIV đã được cấp (nếu có). Theo Điều 20 của Thông tư này.",
+    "citations": "Thông tư số .../.../TT-BYT",
+    "source_chunks": [2]
+  }
+]
+```
+
+Note that I used Chunk 2 to create the question and answer. The question requires analysis of the situation and application of the correct procedure for re-issuance of the HIV testing laboratory certification. The answer provides a detailed explanation of the required documents and procedures, citing the relevant article of the Informative Circular.
+2025-05-20 23:02:01,053 - question_generator - INFO - Generated 0 Q&A pairs for level analyze, topic 'Thủ tục cấp, điều chỉnh Giấy chứng nhận đủ điều kiện xét nghiệm khẳng định các trường hợp HIV dương tính'
+2025-05-20 23:02:01,054 - question_generator - INFO - Processing topic 5/23: 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-20 23:02:01,055 - question_generator - INFO - Starting question generation for topic: 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-20 23:02:01,164 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-20 23:02:15,255 - question_generator - INFO - Time to generate Q&A for level understand: 14.09s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": "Cấp nào có thẩm quyền cấp mới, cấp lại, điều chỉnh, gia hạn giấy phép hành nghề trong giai đoạn chuyển tiếp đối với người làm vi...
+2025-05-20 23:02:15,256 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-20 23:02:30,852 - question_generator - INFO - Time to generate Q&A for level apply: 15.59s. Model response (first 200 chars): Here is the response in the required format:
+```json
+[
+    {
+      "question": "Người làm việc tại cơ sở khám bệnh, chữa bệnh trực thuộc Bộ Y tế nộp hồ sơ đề nghị cấp giấy phép hành nghề trong giai đo...
+2025-05-20 23:02:30,853 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-20 23:02:46,439 - question_generator - INFO - Time to generate Q&A for level analyze: 15.59s. Model response (first 200 chars): Here is the response in the required JSON format:
+```json
+[
+    {
+      "question": "Phân tích phạm vi hành nghề của bác sỹ y khoa và dịch vụ chăm sóc sức khoẻ tại nhà?",
+      "answer": "Theo Chunk 1...
+2025-05-20 23:02:46,440 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Thủ tục hành chính lĩnh vực Cấp chứng chỉ hành nghề và giấy phép hoạt động khám bệnh, chữa bệnh'
+2025-05-20 23:02:46,441 - question_generator - INFO - Processing topic 6/23: 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-20 23:02:46,442 - question_generator - INFO - Starting question generation for topic: 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-20 23:02:46,553 - question_generator - INFO - Extracted 3 chunks for topic 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-20 23:03:01,945 - question_generator - INFO - Time to generate Q&A for level understand: 15.39s. Model response (first 200 chars): Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Khi nhập khẩu mẫu bệnh phẩm để phục vụ nghiên cứu, sử dụng cho các chương trình, dự án thì cần chuẩn bị hồ sơ gì?",
+    "answer": "Khi ...
+2025-05-20 23:03:01,948 - question_generator - ERROR - Could not find valid JSON content in API response for level understand. Response: Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Khi nhập khẩu mẫu bệnh phẩm để phục vụ nghiên cứu, sử dụng cho các chương trình, dự án thì cần chuẩn bị hồ sơ gì?",
+    "answer": "Khi nhập khẩu mẫu bệnh phẩm để phục vụ nghiên cứu, sử dụng cho các chương trình, dự án thì cần chuẩn bị công văn đề nghị nhập khẩu. Theo quy định tại điểm 2.2.3.1.",
+    "citations": "Không có văn bản pháp luật cụ thể được trích dẫn trong câu trả lời",
+    "source_chunks": [1]
+  }
+]
+```
+
+In this response, the question is related to importing sample specimens for research purposes, and the answer is based on the information provided in Chunk 1. The source chunks used to create this response are [1].
+2025-05-20 23:03:01,949 - question_generator - INFO - Generated 0 Q&A pairs for level understand, topic 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-20 23:03:18,722 - question_generator - INFO - Time to generate Q&A for level apply: 16.77s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": "Một công ty muốn nhập khẩu mẫu bệnh phẩm để nghiên cứu, họ cần chuẩn bị những hồ sơ gì?",
+      "answer": "Theo Chunk 2.2.3.1, c...
+2025-05-20 23:03:18,723 - question_generator - ERROR - JSON decoding error from Groq API: Expecting ',' delimiter: line 9 column 88 (char 681). Content received: '[
+    {
+      "question": "Một công ty muốn nhập khẩu mẫu bệnh phẩm để nghiên cứu, họ cần chuẩn bị những hồ sơ gì?",
+      "answer": "Theo Chunk 2.2.3.1, công ty cần chuẩn bị công văn đề nghị nhập khẩu. Ngoài ra, họ cũng cần tuân thủ các quy định về thu thập, bảo quản, đóng gói, vận chuyển, lưu giữ, sử dụng, nghiên cứu, trao đổi, tiêu hủy mẫu bệnh phẩm được quy định tại Chương II của Thông tư này.",
+      "citations": "Thông tư về quy định về thu thập, bảo quản, đóng gói, vận chuyển, lưu giữ, sử dụng, nghiên cứu, trao đổi, tiêu hủy mẫu bệnh phẩm",
+      "source_chunks": [2]
+    },
+    {
+      "question": "Một công ty muốn nhập khẩu mẫu bệnh phẩm để đăng ký lưu hành,      "answer": "Theo Chunk 2.2.2, công ty cần chuẩn bị công văn xin nhập mẫu kiểm định, thử thực địa, mẫu lưu và yêu cầu của Cơ quan kiểm định, thử thực địa bằng văn bản.",
+      "citations": "Thông tư về quy định về nhập khẩu vắc xin, sinh phẩm y tế",
+      "source_chunks": [2]
+    }
+  ]'
+Traceback (most recent call last):
+  File "D:\vscodepython\DOAN\uit.PubHealthQA\src\generation\question_generator_new.py", line 306, in _generate_qa_with_citations_for_level
+    qa_pairs = json.loads(json_content_to_load)
+  File "C:\Users\AFMIN\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\AFMIN\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AFMIN\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 9 column 88 (char 681)
+2025-05-20 23:03:18,766 - question_generator - INFO - Generated 0 Q&A pairs for level apply, topic 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-20 23:03:36,372 - question_generator - INFO - Time to generate Q&A for level analyze: 17.61s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": "Đối với mẫu bệnh phẩm nhập khẩu để kiểm định, thử thực địa, dùng làm mẫu đăng ký, quy trình nhập khẩu như thế nào?",
+      "answ...
+2025-05-20 23:03:36,373 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Về nhập khẩu mẫu bệnh phẩm'
+2025-05-20 23:03:36,374 - question_generator - INFO - Processing topic 7/23: 'Về an toàn sinh học'
+2025-05-20 23:03:36,375 - question_generator - INFO - Starting question generation for topic: 'Về an toàn sinh học'
+2025-05-20 23:03:36,469 - question_generator - INFO - Extracted 3 chunks for topic 'Về an toàn sinh học'
+2025-05-20 23:03:52,571 - question_generator - INFO - Time to generate Q&A for level understand: 16.10s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Việc quản lý giấy chứng nhận an toàn sinh học được thực hiện như thế nào?",
+    "answer": "Việc quản lý giấy chứng nhận an toàn sin...
+2025-05-20 23:03:52,572 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Về an toàn sinh học'
+2025-05-20 23:04:08,019 - question_generator - INFO - Time to generate Q&A for level apply: 15.45s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": "Sau khi cấp giấy chứng nhận an toàn sinh học cho cơ sở xét nghiệm, ai sẽ gửi văn bản thông báo đến Ủy ban nhân dân tỉnh và Sở Y ...
+2025-05-20 23:04:08,020 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Về an toàn sinh học'
+2025-05-20 23:04:23,915 - question_generator - INFO - Time to generate Q&A for level analyze: 15.89s. Model response (first 200 chars): Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Analyze the process of managing biosafety certificates in a laboratory. What are the responsibilities of the Ministry of Health, Provin...
+2025-05-20 23:04:23,915 - question_generator - ERROR - Could not find valid JSON content in API response for level analyze. Response: Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Analyze the process of managing biosafety certificates in a laboratory. What are the responsibilities of the Ministry of Health, Provincial Health Department, and district health authority in this process?",
+    "answer": "The process of managing biosafety certificates involves the Ministry of Health, Provincial Health Department, and district health authority. According to Chunk 1, after issuing a biosafety certificate, the Ministry of Health sends a notification to the Provincial Health Department and district health authority where the laboratory is located within 30 days. The Provincial Health Department then sends a notification to the district health authority where the laboratory is located within 30 days.",
+    "citations": "Not specified",
+    "source_chunks": [1]
+  },
+  {
+    "question": "What are the key factors to consider in ensuring a safe and healthy environment in a laboratory?",
+    "answer": "To ensure a safe and healthy environment in a laboratory, several factors must be considered. These include ensuring a clean and green environment, implementing proper waste disposal, having adequate facilities and equipment, and ensuring proper training and personnel management. According to Chunk 3, a laboratory must have a clean and green environment, with proper signage, and must implement proper waste disposal. Additionally, Chunk 2 emphasizes the importance of maintaining a clean and safe environment, with proper sanitation and security measures in place.",
+    "citations": "Not specified",
+    "source_chunks": [2, 3]
+```
+
+Note: Since there is no specific law or regulation mentioned in the provided chunks, I couldn't provide a specific citation.
+2025-05-20 23:04:23,917 - question_generator - INFO - Generated 0 Q&A pairs for level analyze, topic 'Về an toàn sinh học'
+2025-05-20 23:04:23,918 - question_generator - INFO - Processing topic 8/23: 'Về tiêm chủng'
+2025-05-20 23:04:23,919 - question_generator - INFO - Starting question generation for topic: 'Về tiêm chủng'
+2025-05-20 23:04:24,017 - question_generator - INFO - Extracted 3 chunks for topic 'Về tiêm chủng'
+2025-05-20 23:04:38,478 - question_generator - INFO - Time to generate Q&A for level understand: 14.46s. Model response (first 200 chars): Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Tiêm chủng là gì?",
+    "answer": "Tiêm chủng là việc đưa vắc xin vào cơ thể con người với mục đích tạo cho cơ thể khả năng đáp ứng miễ...
+2025-05-20 23:04:38,480 - question_generator - ERROR - Could not find valid JSON content in API response for level understand. Response: Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Tiêm chủng là gì?",
+    "answer": "Tiêm chủng là việc đưa vắc xin vào cơ thể con người với mục đích tạo cho cơ thể khả năng đáp ứng miễn dịch để dự phòng bệnh tật. Theo Thông tư này...",
+    "citations": "Thông tư về tiêm chủng",
+    "source_chunks": [1]
+  },
+  {
+    "question": "Dịch vụ tiêm chủng bao gồm những nội dung nào?",
+    "answer": "Dịch vụ tiêm chủng bao gồm tư vấn trước tiêm chủng, khám sàng lọc, tiêm chủng, theo dõi phản ứng sau tiêm chủng, quản lý đối tượng, thống kê báo cáo. Theo Thông tư này...",
+    "citations": "Thông tư về tiêm chủng",
+    "source_chunks": [2]
+  }
+]
+```
+
+Note: Since the context does not provide specific laws or regulations, the citations and source chunks are based on the provided chunks. If more context is provided, I will create more questions and answers based on the new context.
+2025-05-20 23:04:38,481 - question_generator - INFO - Generated 0 Q&A pairs for level understand, topic 'Về tiêm chủng'
+2025-05-20 23:04:53,021 - question_generator - INFO - Time to generate Q&A for level apply: 14.54s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```json
+[
+  {
+    "question": "Khi thực hiện tiêm chủng, nhân viên y tế cần làm gì trước khi tiêm chủng?",
+    "answer": "Trước khi tiêm chủng, nhân ...
+2025-05-20 23:04:53,023 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Về tiêm chủng'
+2025-05-20 23:05:08,599 - question_generator - INFO - Time to generate Q&A for level analyze: 15.58s. Model response (first 200 chars): Here is the response in JSON format:
+
+[
+  {
+    "question": "Phân tích các bước trong dịch vụ tiêm chủng và giải thích các thuật ngữ liên quan?",
+    "answer": "Dịch vụ tiêm chủng bao gồm các bước như...
+2025-05-20 23:05:08,600 - question_generator - ERROR - Could not find valid JSON content in API response for level analyze. Response: Here is the response in JSON format:
+
+[
+  {
+    "question": "Phân tích các bước trong dịch vụ tiêm chủng và giải thích các thuật ngữ liên quan?",
+    "answer": "Dịch vụ tiêm chủng bao gồm các bước như tư vấn trước tiêm chủng, khám sàng lọc, tiêm chủng, theo dõi phản ứng sau tiêm chủng, quản lý đối tượng, thống kê báo cáo. Tiêm chủng là việc đưa vắc xin vào cơ thể con người với mục đích tạo cho cơ thể khả năng đáp ứng miễn dịch để dự phòng bệnh tật. Phản ứng sau tiêm chủng là hiện tượng bất thường về sức khỏe bao gồm các biểu hiện tại chỗ tiêm chủng hoặc toàn thân xảy ra sau tiêm chủng, không nhất thiết do việc sử dụng vắc xin, bao gồm phản ứng thông thường sau tiêm chủng và tai biến nặng sau tiêm chủng. Theo Thông tư hướng dẫn về tiêm chủng và phòng ngừa bệnh truyền nhiễm.",
+    "citations": "Thông tư hướng dẫn về tiêm chủng và phòng ngừa bệnh truyền nhiễm",
+    "source_chunks": [1, 2]
+  }
+]
+
+Note: Since there is no specific law or regulation mentioned in the context, the citation is a general one.
+2025-05-20 23:05:08,601 - question_generator - INFO - Generated 0 Q&A pairs for level analyze, topic 'Về tiêm chủng'
+2025-05-20 23:05:08,601 - question_generator - INFO - Processing topic 9/23: 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-20 23:05:08,602 - question_generator - INFO - Starting question generation for topic: 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-20 23:05:08,711 - question_generator - INFO - Extracted 3 chunks for topic 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-20 23:05:23,437 - question_generator - INFO - Time to generate Q&A for level understand: 14.73s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo GACP-WHO có hiệu lực đến khi nào?",
+    "answer": "Phiếu tiếp nhận Bản công bố ...
+2025-05-20 23:05:23,438 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-20 23:05:39,194 - question_generator - INFO - Time to generate Q&A for level apply: 15.76s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Cơ sở sản xuất dược liệu đã được cấp Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo GACP-WHO có hiệu lực đến khi nào?",
+    "a...
+2025-05-20 23:05:39,195 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-20 23:05:54,749 - question_generator - INFO - Time to generate Q&A for level analyze: 15.55s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Khi cơ sở đề nghị cấp Giấy chứng nhận dược liệu đạt GACP thay cho Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo GACP...
+2025-05-20 23:05:54,750 - question_generator - ERROR - Could not find valid JSON content in API response for level analyze. Response: Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Khi cơ sở đề nghị cấp Giấy chứng nhận dược liệu đạt GACP thay cho Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo GACP-WHO còn hiệu lực, thì cơ sở thực hiện việc cấp lại Giấy chứng nhận dược liệu đạt GACP theo quy định nào?",
+    "answer": "Theo quy định tại Điều 17 của Thông tư này. Giấy chứng nhận dược liệu đạt GACP có hiệu lực đến hết thời hạn của Phiếu tiếp nhận Bản công bố dược liệu sản xuất theo GACP-WHO trước đó.",
+    "citations": "Thông tư này",
+    "source_chunks": [1, 2]
+  }
+]
+```
+
+In this response, I created a question that requires analysis of the provided chunks. The question asks about the regulation that applies when a facility requests to replace a Certificate of GACP Compliance with a Certificate of GACP-WHO Compliance that is still valid.
+
+The answer references the relevant article of the Circular (Điều 17) and provides additional information about the validity period of the Certificate of GACP Compliance.
+
+The citations section references the Circular (Thông tư này), and the source_chunks section lists the chunks used to create the question and answer (Chunks 1 and 2).
+2025-05-20 23:05:54,751 - question_generator - INFO - Generated 0 Q&A pairs for level analyze, topic 'Cấp phiếu tiếp nhận Bản công bố dược liệu sản xuất theo tiêu chuẩn GACP-WHO'
+2025-05-20 23:05:54,751 - question_generator - INFO - Processing topic 10/23: 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-20 23:05:54,751 - question_generator - INFO - Starting question generation for topic: 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-20 23:05:54,810 - question_generator - INFO - Extracted 3 chunks for topic 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-20 23:06:09,440 - question_generator - INFO - Time to generate Q&A for level understand: 14.63s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Ai có thẩm quyền cấp, cấp lại, thu hồi giấy chứng nhận người có bài thuốc gia truyền, giấy chứng nhận người có phương pháp...
+2025-05-20 23:06:09,440 - question_generator - ERROR - Could not find valid JSON content in API response for level understand. Response: Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Ai có thẩm quyền cấp, cấp lại, thu hồi giấy chứng nhận người có bài thuốc gia truyền, giấy chứng nhận người có phương pháp chữa bệnh gia truyền?",
+    "answer": "Người đứng đầu cơ quan chuyên môn về y tế thuộc Ủy ban nhân dân cấp tỉnh có thẩm quyền cấp, cấp lại, thu hồi giấy chứng nhận người có bài thuốc gia truyền, giấy chứng nhận người có phương pháp chữa bệnh gia truyền. Theo Điều 20 của [không có nguồn cụ thể]",
+    "citations": "Không có nguồn cụ thể",
+    "source_chunks": [1]
+  },
+  {
+    "question": "Điều kiện để được cấp giấy chứng nhận là lương y đối với đối tượng quy định Khoản 5 Điều 1 Thông tư này là gì?",
+    "answer": "Điều kiện để được cấp giấy chứng nhận là lương y là phải có giấy xác nhận đã tham dự lớp bồi dưỡng về y học cổ truyền và phải có kinh nghiệm khám bệnh, chữa bệnh bằng phương pháp y học cổ truyền. Theo Điều 6 của [không có nguồn cụ thể]",
+    "citations": "Không có nguồn cụ thể",
+    "source_chunks": [2]
+  }
+]
+```
+
+Note: Since the provided chunks do not specifically mention the law or regulation being referenced, I was unable to provide a specific citation.
+2025-05-20 23:06:09,441 - question_generator - INFO - Generated 0 Q&A pairs for level understand, topic 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-20 23:06:23,764 - question_generator - INFO - Time to generate Q&A for level apply: 14.32s. Model response (first 200 chars): Here is the response in the required JSON format:
+```json
+[
+    {
+      "question": "Ai có thẩm quyền cấp, cấp lại, thu hồi giấy chứng nhận người có bài thuốc gia truyền, giấy chứng nhận người có phươ...
+2025-05-20 23:06:23,765 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-20 23:06:38,611 - question_generator - INFO - Time to generate Q&A for level analyze: 14.85s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Theo quy định của pháp luật, thẩm quyền cấp, cấp lại, thu hồi giấy chứng nhận người có bài thuốc gia truyền, giấy chứng nhận người ...
+2025-05-20 23:06:38,612 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Cấp Giấy chứng nhận Bài thuốc gia truyền, phương pháp chữa bệnh gia truyền'
+2025-05-20 23:06:38,613 - question_generator - INFO - Processing topic 11/23: 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-20 23:06:38,614 - question_generator - INFO - Starting question generation for topic: 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-20 23:06:38,709 - question_generator - INFO - Extracted 3 chunks for topic 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-20 23:06:55,734 - question_generator - INFO - Time to generate Q&A for level understand: 17.02s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT được quy định như thế nào?",
+    "answer": "Cấp chứng chỉ hành nghề khám, chữ...
+2025-05-20 23:06:55,736 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-20 23:07:11,240 - question_generator - INFO - Time to generate Q&A for level apply: 15.50s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": "Một bác sĩ y học cổ truyền muốn cấp mới giấy phép hành nghề khám bệnh, chữa bệnh trực thuộc Bộ Y tế phải nộp hồ sơ đề nghị cấp g...
+2025-05-20 23:07:11,242 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-20 23:07:27,027 - question_generator - INFO - Time to generate Q&A for level analyze: 15.78s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```json
+[
+  {
+    "question": "Theo quy định của Bộ Y tế, trong lĩnh vực khám bệnh, chữa bệnh thuộc thẩm quyền của Bộ Y tế, Cục Quản lý Y, Dược cổ tr...
+2025-05-20 23:07:27,028 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Cấp chứng chỉ hành nghề khám, chữa bệnh lĩnh vực YHCT'
+2025-05-20 23:07:27,029 - question_generator - INFO - Processing topic 12/23: 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-20 23:07:27,030 - question_generator - INFO - Starting question generation for topic: 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-20 23:07:27,122 - question_generator - INFO - Extracted 3 chunks for topic 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-20 23:07:44,917 - question_generator - INFO - Time to generate Q&A for level understand: 17.79s. Model response (first 200 chars): Here is the response:
+
+```json
+[
+  {
+    "question": "Thẩm quyền cấp Giấy phép nhập khẩu dược liệu là ai?",
+    "answer": "Thẩm quyền cấp Giấy phép nhập khẩu dược liệu là Cục trưởng Cục Quản lý Y, Dượ...
+2025-05-20 23:07:44,918 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-20 23:08:01,374 - question_generator - INFO - Time to generate Q&A for level apply: 16.45s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Một cơ sở nhập khẩu dược liệu cần gửi bao nhiêu bộ hồ sơ đến Cục Quản lý Y, Dược cổ truyền - Bộ Y tế để xin cấp Giấy phép nhập khẩu...
+2025-05-20 23:08:01,375 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-20 23:08:17,978 - question_generator - INFO - Time to generate Q&A for level analyze: 16.60s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "What are the required documents for importing herbal medicines for research and testing purposes?",
+    "answer": "According to the...
+2025-05-20 23:08:17,979 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Cấp phép đơn hàng nhập khẩu dược liệu'
+2025-05-20 23:08:17,980 - question_generator - INFO - Processing topic 13/23: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-20 23:08:17,980 - question_generator - INFO - Starting question generation for topic: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-20 23:08:18,065 - question_generator - INFO - Extracted 3 chunks for topic 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-20 23:08:33,187 - question_generator - INFO - Time to generate Q&A for level understand: 15.12s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Theo quy định, các cơ sở sản xuất thuốc từ dược liệu thành lập mới, bổ sung phạm vi kinh doanh thuốc, hoặc gia hạn giấy chứng nhận ...
+2025-05-20 23:08:33,189 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-20 23:08:50,974 - question_generator - INFO - Time to generate Q&A for level apply: 17.78s. Model response (first 200 chars): Here is the response in the required JSON format:
+```
+[
+  {
+    "question": "Một cơ sở sản xuất thuốc từ dược liệu đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh thuốc và Giấy chứng nhận đạt tiêu...
+2025-05-20 23:08:50,974 - question_generator - ERROR - Could not find valid JSON content in API response for level apply. Response: Here is the response in the required JSON format:
+```
+[
+  {
+    "question": "Một cơ sở sản xuất thuốc từ dược liệu đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh thuốc và Giấy chứng nhận đạt tiêu chuẩn Thực hành tốt sản xuất thuốc (GMP) có thể nhập khẩu nguyên liệu để sản xuất thuốc của chính doanh nghiệp và bán cho các cơ sở sản xuất thuốc khác không?",
+    "answer": "Có, cơ sở sản xuất thuốc đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh thuốc và Giấy chứng nhận đạt tiêu chuẩn Thực hành tốt sản xuất thuốc (GMP) được nhập khẩu nguyên liệu để sản xuất thuốc của chính doanh nghiệp và bán cho các cơ sở sản xuất thuốc khác theo quy định tại điểm c Khoản 1 Điều 3 Thông tư số 47/2010/TT-BYT ngày 29/12/2010 của Bộ trưởng Bộ Y tế.",
+    "citations": "Thông tư số 47/2010/TT-BYT ngày 29/12/2010 của Bộ trưởng Bộ Y tế",
+    "source_chunks": [1]
+  }
+]
+```
+Note:
+
+* The question is created based on the given context and is at the "Apply" level of the Bloom's taxonomy.
+* The answer is accurate and complete, and cites the relevant law/regulation (Thông tư số 47/2010/TT-BYT ngày 29/12/2010 của Bộ trưởng Bộ Y tế).
+* The source chunk used to create the answer is [Chunk 1].
+* If the context was empty or not relevant, I would have created a general question about the topic and mentioned in the answer that it's not based on specific context.
+2025-05-20 23:08:50,975 - question_generator - INFO - Generated 0 Q&A pairs for level apply, topic 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-20 23:09:06,740 - question_generator - INFO - Time to generate Q&A for level analyze: 15.76s. Model response (first 200 chars): Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Theo quy định, các cơ sở sản xuất thuốc từ dược liệu đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh thuốc và Giấy chứng nhận GMP p...
+2025-05-20 23:09:06,741 - question_generator - ERROR - Could not find valid JSON content in API response for level analyze. Response: Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Theo quy định, các cơ sở sản xuất thuốc từ dược liệu đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh thuốc và Giấy chứng nhận GMP phải đáp ứng những nguyên tắc sản xuất thuốc nào?",
+    "answer": "Các cơ sở sản xuất thuốc từ dược liệu đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh thuốc và Giấy chứng nhận GMP phải đáp ứng các nguyên tắc sản xuất thuốc quy định tại Chương II Thông tư số 47/2010/TT-BYT ngày 29/12/2010 của Bộ trưởng Bộ Y tế.",
+    "citations": "Thông tư số 47/2010/TT-BYT ngày 29/12/2010 của Bộ trưởng Bộ Y tế",
+    "source_chunks": [1, 2]
+  }
+]
+```
+
+Note:
+
+* The question is analyzed based on the provided chunks, which requires combining information from multiple chunks.
+* The answer is provided, citing the specific law/decree being referenced (Thông tư số 47/2010/TT-BYT ngày 29/12/2010 của Bộ trưởng Bộ Y tế).
+* The source chunks used to create the answer are [1, 2].
+* If the context is empty or not sufficient to create a question according to the requirements, a general question about the topic is created, and it is noted in the answer that it is not based on a specific context.
+2025-05-20 23:09:06,742 - question_generator - INFO - Generated 0 Q&A pairs for level analyze, topic 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi sản xuất dược liệu, thuốc cổ truyền (GMP)'
+2025-05-20 23:09:06,742 - question_generator - INFO - Processing topic 14/23: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-20 23:09:06,743 - question_generator - INFO - Starting question generation for topic: 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-20 23:09:06,827 - question_generator - INFO - Extracted 3 chunks for topic 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-20 23:09:22,528 - question_generator - INFO - Time to generate Q&A for level understand: 15.70s. Model response (first 200 chars): Here is the response:
+
+```json
+[
+    {
+      "question": "Cơ sở kinh doanh dược liệu đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh dược có kho bảo quản dược liệu đạt GSP sẽ được tiếp tục hoạt độ...
+2025-05-20 23:09:22,529 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-20 23:09:38,036 - question_generator - INFO - Time to generate Q&A for level apply: 15.51s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Cơ sở kinh doanh đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh dược có kho bảo quản dược liệu đạt GSP được tiếp tục ...
+2025-05-20 23:09:38,037 - question_generator - ERROR - Could not find valid JSON content in API response for level apply. Response: Here is the response in the required JSON format:
+
+```
+[
+  {
+    "question": "Cơ sở kinh doanh đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh dược có kho bảo quản dược liệu đạt GSP được tiếp tục hoạt động bảo quản dược liệu xuất nhập khẩu trong bao lâu?",
+    "answer": "Cơ sở kinh doanh dược có kho bảo quản dược liệu đạt GSP được tiếp tục hoạt động bảo quản dược liệu xuất nhập khẩu đến hết 3 năm kể từ ngày công bố trên Trang thông tin điện tử của Cục Quản lý Y, Dược cổ truyền.",
+    "citations": "Thông tư số 03/2016/TT-BYT ngày 21 tháng 01 năm 2016 của Bộ trưởng Bộ Y tế",
+    "source_chunks": [1]
+  }
+]
+```
+
+Note:
+
+* The question is created based on the content of Chunk 1.
+* The answer is based on the same chunk and provides the specific duration of 3 years.
+* The citation is the Informative Circular No. 03/2016/TT-BYT dated January 21, 2016, of the Minister of Health.
+* The source chunk is Chunk 1.
+2025-05-20 23:09:38,038 - question_generator - INFO - Generated 0 Q&A pairs for level apply, topic 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-20 23:09:54,718 - question_generator - INFO - Time to generate Q&A for level analyze: 16.68s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Đối với cơ sở kinh doanh đã được cấp Giấy chứng nhận đủ điều kiện kinh doanh dược có kho bảo quản dược liệu đạt GSP, thời hạn hoạt ...
+2025-05-20 23:09:54,719 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Cấp Giấy chứng nhận đủ điều kiện kinh doanh phạm vi bảo quản dược liệu (GSP)'
+2025-05-20 23:09:54,720 - question_generator - INFO - Processing topic 15/23: 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-20 23:09:54,720 - question_generator - INFO - Starting question generation for topic: 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-20 23:09:54,806 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-20 23:10:07,507 - question_generator - INFO - Time to generate Q&A for level understand: 12.70s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": "Phạm vi hoạt động hỗ trợ nghiên cứu thử nghiệm lâm sàng bao gồm những nội dung nào?",
+      "answer": "Phạm vi hoạt động hỗ trợ ...
+2025-05-20 23:10:07,508 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-20 23:10:22,558 - question_generator - INFO - Time to generate Q&A for level apply: 15.05s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Trong quá trình hỗ trợ nghiên cứu thử nghiệm lâm sàng, người hành nghề cần thực hiện những công việc gì?",
+    "answer": "Trong quá...
+2025-05-20 23:10:22,559 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-20 23:10:38,597 - question_generator - INFO - Time to generate Q&A for level analyze: 16.04s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```json
+[
+  {
+    "question": "Trong phạm vi hoạt động hỗ trợ nghiên cứu thử nghiệm lâm sàng, người hành nghề có trách nhiệm gì?",
+    "answer": "Tro...
+2025-05-20 23:10:38,598 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Thủ tục hành chính lĩnh vực Đào tạo, nghiên cứu khoa học và thử nghiệm lâm sàng'
+2025-05-20 23:10:38,598 - question_generator - INFO - Processing topic 16/23: 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-20 23:10:38,599 - question_generator - INFO - Starting question generation for topic: 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-20 23:10:38,658 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-20 23:10:56,478 - question_generator - INFO - Time to generate Q&A for level understand: 17.82s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Thủ tục bổ nhiệm giám định viên pháp y và giám định viên pháp y tâm thần được thực hiện như thế nào?",
+    "answer": "Thủ tục bổ nh...
+2025-05-20 23:10:56,480 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-20 23:11:12,050 - question_generator - INFO - Time to generate Q&A for level apply: 15.57s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": "Trong thủ tục bổ nhiệm giám định viên pháp y và giám định viên pháp y tâm thần, ai là người có trách nhiệm tiếp nhận và kiểm tra...
+2025-05-20 23:11:12,051 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-20 23:11:27,869 - question_generator - INFO - Time to generate Q&A for level analyze: 15.82s. Model response (first 200 chars): Here is a pair of question and answer that meet the requirements:
+
+```
+[
+  {
+    "question": "What are the steps involved in the appointment of a forensic medical examiner and a forensic psychiatric e...
+2025-05-20 23:11:27,870 - question_generator - ERROR - Could not find valid JSON content in API response for level analyze. Response: Here is a pair of question and answer that meet the requirements:
+
+```
+[
+  {
+    "question": "What are the steps involved in the appointment of a forensic medical examiner and a forensic psychiatric examiner?",
+    "answer": "The steps involved in the appointment of a forensic medical examiner and a forensic psychiatric examiner include the selection and completion of documents by the Ministry of Defense, Ministry of Public Security, National Institute of Forensic Medicine, National Institute of Forensic Psychiatry, and other relevant agencies. The documents are then sent to the Ministry of Health, which reviews and checks the legality of the documents. If the documents are incomplete or illegal, the Ministry of Health will guide the agencies to complete the documents. After receiving the complete and legal documents, the Ministry of Health will appraise and decide on the appointment of the forensic medical examiner and forensic psychiatric examiner. According to Article 4 of the Ministry of Health's Circular No. 18/2015/TT-BYT dated July 14, 2015",
+    "citations": "Circular No. 18/2015/TT-BYT dated July 14, 2015",
+    "source_chunks": [1, 3]
+  }
+]
+```
+
+Note:
+
+* The question is at the "analyze" level, requiring the learner to synthesize information from multiple sources.
+* The answer is based on the provided chunks, specifically Chunk 1 and Chunk 3.
+* The answer cites the specific circular and article number from the Ministry of Health's Circular No. 18/2015/TT-BYT dated July 14, 2015.
+2025-05-20 23:11:27,871 - question_generator - INFO - Generated 0 Q&A pairs for level analyze, topic 'Thủ tục bổ nhiệm Giám định viên pháp y và Giám định viên pháp y tâm thần'
+2025-05-20 23:11:27,871 - question_generator - INFO - Processing topic 17/23: 'Trang thiết bị và sinh phẩm y tế'
+2025-05-20 23:11:27,872 - question_generator - INFO - Starting question generation for topic: 'Trang thiết bị và sinh phẩm y tế'
+2025-05-20 23:11:27,935 - question_generator - INFO - Extracted 3 chunks for topic 'Trang thiết bị và sinh phẩm y tế'
+2025-05-20 23:11:43,578 - question_generator - INFO - Time to generate Q&A for level understand: 15.64s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Trang thiết bị y tế phải đáp ứng những yêu cầu nào để được phép kinh doanh?",
+    "answer": "Trang thiết bị y tế phải đạt các yêu c...
+2025-05-20 23:11:43,579 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Trang thiết bị và sinh phẩm y tế'
+2025-05-20 23:11:58,434 - question_generator - INFO - Time to generate Q&A for level apply: 14.85s. Model response (first 200 chars): Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Một doanh nghiệp kinh doanh xuất nhập khẩu thiết bị, dụng cụ y tế phải thực hiện các quy định nào?",
+    "answer": "Một doanh nghiệp ki...
+2025-05-20 23:11:58,434 - question_generator - ERROR - Could not find valid JSON content in API response for level apply. Response: Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Một doanh nghiệp kinh doanh xuất nhập khẩu thiết bị, dụng cụ y tế phải thực hiện các quy định nào?",
+    "answer": "Một doanh nghiệp kinh doanh xuất nhập khẩu thiết bị, dụng cụ y tế phải thực hiện đúng các quy định của Thông tư này. Tuỳ mức độ vi phạm nhẹ hay nặng mà chủ các doanh nghiệp kinh doanh xuất nhập khẩu sẽ bị xử phạt vi phạm hành chính hoặc truy cứu trách nhiệm hình sự. Nếu gây thiệt hại đến sức khoẻ, tính mạng của con người thì phải bồi thường thiệt hại theo quy định của pháp luật. Theo Điều 5 của Thông tư không rõ nguồn.",
+    "citations": "Thông tư không rõ nguồn",
+    "source_chunks": [2]
+  },
+  {
+    "question": "Các mặt hàng trang thiết bị y tế được phép kinh doanh phải đạt các yêu cầu nào?",
+    "answer": "Các mặt hàng trang thiết bị y tế được phép kinh doanh phải đạt các yêu cầu sau: Phải đạt tiêu chuẩn chất lượng (tối thiểu là tiêu chuẩn cơ sở - TC). Phải qua thử nghiệm lâm sàng tại một số cơ sở y tế và có xác nhận kết quả hợp pháp. Những thiết bị, dụng cụ có tiếp xúc trực tiếp với cơ thể con người phải được các cơ quan kiểm nghiệm hợp pháp xác nhận chất lượng và độ an toàn. Theo Điều 5 của một văn bản không rõ nguồn.",
+    "citations": "Văn bản không rõ nguồn",
+    "source_chunks": [3]
+  }
+]
+```
+
+Note that the citations are not specific to a particular law or regulation, as the provided context chunks do not provide explicit references to specific laws or regulations.
+2025-05-20 23:11:58,435 - question_generator - INFO - Generated 0 Q&A pairs for level apply, topic 'Trang thiết bị và sinh phẩm y tế'
+2025-05-20 23:12:14,904 - question_generator - INFO - Time to generate Q&A for level analyze: 16.47s. Model response (first 200 chars): Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Khi nhập khẩu trang thiết bị y tế, doanh nghiệp cần phải đáp ứng các yêu cầu nào?",
+    "answer": "Khi nhập khẩu trang thiết bị y tế, d...
+2025-05-20 23:12:14,905 - question_generator - ERROR - Could not find valid JSON content in API response for level analyze. Response: Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Khi nhập khẩu trang thiết bị y tế, doanh nghiệp cần phải đáp ứng các yêu cầu nào?",
+    "answer": "Khi nhập khẩu trang thiết bị y tế, doanh nghiệp cần phải đáp ứng các yêu cầu sau: đối tượng trang thiết bị y tế sản xuất trong nước phải đạt tiêu chuẩn chất lượng và qua thử nghiệm lâm sàng tại một số cơ sở y tế; đối với mặt hàng trang thiết bị y tế sản xuất ở nước ngoài phải đáp ứng đúng đường lối y tế của Nhà nước Việt Nam và được phép lưu hành tại nước sản xuất. Theo Điều 5 của Thông tư này.",
+    "citations": "Thông tư số không rõ số ngày tháng năm",
+    "source_chunks": [2, 3]
+  }
+]
+```
+
+Note: The question is designed to require analysis of multiple sources of information, and the answer provides a comprehensive response based on the provided chunks. The citations and source chunks are accurately referenced.
+2025-05-20 23:12:14,905 - question_generator - INFO - Generated 0 Q&A pairs for level analyze, topic 'Trang thiết bị và sinh phẩm y tế'
+2025-05-20 23:12:14,906 - question_generator - INFO - Processing topic 18/23: 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-20 23:12:14,906 - question_generator - INFO - Starting question generation for topic: 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-20 23:12:14,960 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-20 23:12:28,375 - question_generator - INFO - Time to generate Q&A for level understand: 13.41s. Model response (first 200 chars): [
+  {
+    "question": "Nguyên tắc xét tặng danh hiệu Thầy thuốc và Thầy thuốc Ưu tú là gì?",
+    "answer": "Nguyên tắc xét tặng danh hiệu Thầy thuốc và Thầy thuốc Ưu tú là bảo đảm công khai, dân chủ t...
+2025-05-20 23:12:28,376 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-20 23:12:43,154 - question_generator - INFO - Time to generate Q&A for level apply: 14.78s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```json
+[
+  {
+    "question": "Một thầy thuốc muốn được xét tặng danh hiệu Thầy thuốc Nhân dân, cần đáp ứng những điều kiện nào?",
+    "answer": "The...
+2025-05-20 23:12:43,155 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-20 23:12:58,903 - question_generator - INFO - Time to generate Q&A for level analyze: 15.75s. Model response (first 200 chars): Here is a pair of question and answer that meet the requirements:
+
+```json
+[
+  {
+    "question": "What are the principles of awarding the title of Thầy thuốc Nhân dân and Thầy thuốc Ưu tú, and how oft...
+2025-05-20 23:12:58,905 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Thủ tục xét tặng Thầy thuốc Nhân dân, Thầy thuốc Ưu tú'
+2025-05-20 23:12:58,906 - question_generator - INFO - Processing topic 19/23: 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-20 23:12:58,907 - question_generator - INFO - Starting question generation for topic: 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-20 23:12:59,030 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-20 23:13:15,474 - question_generator - INFO - Time to generate Q&A for level understand: 16.44s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Thủ tục cấp Giấy chứng sinh cho trẻ sơ sinh được quy định như thế nào?",
+    "answer": "Thủ tục cấp Giấy chứng sinh cho trẻ sơ sinh...
+2025-05-20 23:13:15,476 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-20 23:13:30,819 - question_generator - INFO - Time to generate Q&A for level apply: 15.34s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Khi một phụ nữ mang thai có kết quả xét nghiệm HIV dương tính, cơ sở khám bệnh, chữa bệnh phải làm gì?",
+    "answer": "Trường hợp ...
+2025-05-20 23:13:30,821 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-20 23:13:45,390 - question_generator - INFO - Time to generate Q&A for level analyze: 14.57s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Theo thủ tục xét thưởng hỗ trợ sinh con đúng chính sách dân số, cơ sở khám bệnh, chữa bệnh có trách nhiệm gì trước khi trẻ sơ sinh ...
+2025-05-20 23:13:45,391 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Thủ tục Xét thưởng hỗ trợ sinh con đúng chính sách dân số'
+2025-05-20 23:13:45,393 - question_generator - INFO - Processing topic 20/23: 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-20 23:13:45,393 - question_generator - INFO - Starting question generation for topic: 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-20 23:13:45,512 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-20 23:14:00,455 - question_generator - INFO - Time to generate Q&A for level understand: 14.94s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": "Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế được quy định trong văn bản ...
+2025-05-20 23:14:00,457 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-20 23:14:16,329 - question_generator - INFO - Time to generate Q&A for level apply: 15.87s. Model response (first 200 chars): Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế bao gồm những bước nào?",
+    "answ...
+2025-05-20 23:14:16,331 - question_generator - ERROR - Could not find valid JSON content in API response for level apply. Response: Here is the response in JSON format:
+
+```
+[
+  {
+    "question": "Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế bao gồm những bước nào?",
+    "answer": "Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế bao gồm các bước như: ban hành Danh Mục hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong gia dụng và y tế theo mã số HS trong Biểu thuế xuất khẩu, thuế nhập khẩu thuộc diện quản lý chuyên ngành của Bộ Y tế. Theo Điều 1 của Thông tư [Thông tư không rõ nguồn].",
+    "citations": "Thông tư không rõ nguồn",
+    "source_chunks": [1]
+  },
+  {
+    "question": "Hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế được sử dụng như thế nào?",
+    "answer": "Hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế được sử dụng để phun tồn lưu hóa chất, chế phẩm diệt côn trùng lên các bề mặt tại các khu vực có rệp giường xuất hiện để phòng, chống rệp giường. Theo Điều 68 của [Chunk 2].",
+    "citations": "Chunk 2",
+    "source_chunks": [2]
+  }
+]
+```
+
+Note: Since the context is not clear about the specific law or regulation, I created a general question and answer based on the provided chunks. If more context is provided, I can create more specific questions and answers with accurate citations.
+2025-05-20 23:14:16,333 - question_generator - INFO - Generated 0 Q&A pairs for level apply, topic 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-20 23:14:32,484 - question_generator - INFO - Time to generate Q&A for level analyze: 16.15s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Trong thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế, các hóa chất, chế phẩm d...
+2025-05-20 23:14:32,485 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Thủ tục cấp phép hóa chất, chế phẩm diệt côn trùng, diệt khuẩn dùng trong lĩnh vực gia dụng và y tế'
+2025-05-20 23:14:32,486 - question_generator - INFO - Processing topic 21/23: 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-20 23:14:32,486 - question_generator - INFO - Starting question generation for topic: 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-20 23:14:32,570 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-20 23:14:50,564 - question_generator - INFO - Time to generate Q&A for level understand: 17.99s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```json
+[
+  {
+    "question": "Trách nhiệm của Cục Quản lý Dược trong việc thi hành Thông tư này là gì?",
+    "Theo Điều 18 của Thông tư này, Cục Quả...
+2025-05-20 23:14:50,566 - question_generator - ERROR - JSON decoding error from Groq API: Expecting ':' delimiter: line 4 column 311 (char 408). Content received: '[
+  {
+    "question": "Trách nhiệm của Cục Quản lý Dược trong việc thi hành Thông tư này là gì?",
+    "Theo Điều 18 của Thông tư này, Cục Quản lý Dược có trách nhiệm chủ trì, phối hợp với các đơn vị liên quan tổ chức phổ biến Thông tư này; làm đầu mối, phối hợp với các đơn vị có liên quan hướng dẫn triển khai Thông tư cho Sở Y tế, Y tế ngành và cơ sở phân phối thuộc phạm vi chức năng, nhiệm vụ được giao.",
+    "citations": "Thông tư hướng dẫn hoạt động dược lâm sàng trong các bệnh viện có khoa Dược với cơ cấu đầy đủ theo quy định",
+    "source_chunks": [1]
+  },
+  {
+    "question": "Thủ tục cấp giấy đăng ký lưu hành thuốc gia công, thuốc chuyển giao công nghệ trong trường hợp thuốc đặt gia công, thuốc trước chuyển giao công nghệ đã có giấy đăng ký lưu hành tại Việt Nam còn hiệu lực tại thời điểm nộp hồ sơ là gì?",
+    "answer": "Theo Điều 17 của Thông tư này, thủ tục cấp giấy đăng ký lưu hành thuốc gia công, thuốc chuyển giao công nghệ trong trường hợp thuốc đặt gia công, thuốc trước chuyển giao công nghệ đã có giấy đăng ký lưu hành tại Việt Nam còn hiệu lực tại thời điểm nộp hồ sơ là trong thời hạn 03 tháng kể từ ngày nhận đủ hồ sơ, Cục Quản lý Dược cấp giấy đăng ký lưu hành lưu hành thuốc gia công, thuốc chuyển giao công nghệ.",
+    "citations": "Thông tư hướng dẫn hoạt động dược lâm sàng trong các bệnh viện có khoa Dược với cơ cấu đầy đủ theo quy định",
+    "source_chunks": [2]
+  }
+]'
+Traceback (most recent call last):
+  File "D:\vscodepython\DOAN\uit.PubHealthQA\src\generation\question_generator_new.py", line 306, in _generate_qa_with_citations_for_level
+    qa_pairs = json.loads(json_content_to_load)
+  File "C:\Users\AFMIN\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\AFMIN\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AFMIN\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ':' delimiter: line 4 column 311 (char 408)
+2025-05-20 23:14:50,569 - question_generator - INFO - Generated 0 Q&A pairs for level understand, topic 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-20 23:15:07,395 - question_generator - INFO - Time to generate Q&A for level apply: 16.83s. Model response (first 200 chars): Here is a pair of question and answer in the "Apply" level, related to the theme "Thủ tục hành chính lĩnh vực Dược":
+
+```json
+[
+  {
+    "question": "Cục Quản lý Dược có trách nhiệm gì trong việc triển...
+2025-05-20 23:15:07,396 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-20 23:15:23,317 - question_generator - INFO - Time to generate Q&A for level analyze: 15.92s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Trong thủ tục cấp giấy đăng ký lưu hành thuốc gia công, thuốc chuyển giao công nghệ, ai là đơn vị đầu mối thực hiện kiểm tra, thanh...
+2025-05-20 23:15:23,319 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Thủ tục hành chính lĩnh vực Dược'
+2025-05-20 23:15:23,319 - question_generator - INFO - Processing topic 22/23: 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-20 23:15:23,320 - question_generator - INFO - Starting question generation for topic: 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-20 23:15:23,402 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-20 23:15:40,163 - question_generator - INFO - Time to generate Q&A for level understand: 16.76s. Model response (first 200 chars): Here is the response in JSON format:
+```json
+[
+    {
+      "question": "Các tổ chức, cá nhân chịu trách nhiệm đưa sản phẩm mỹ phẩm ra thị trường cần phải làm gì trước khi đưa mỹ phẩm ra lưu thông,
+   ...
+2025-05-20 23:15:40,164 - question_generator - ERROR - JSON decoding error from Groq API: Invalid control character at: line 3 column 144 (char 151). Content received: '[
+    {
+      "question": "Các tổ chức, cá nhân chịu trách nhiệm đưa sản phẩm mỹ phẩm ra thị trường cần phải làm gì trước khi đưa mỹ phẩm ra lưu thông,
+      "answer": "Các tổ chức, cá nhân chịu trách nhiệm đưa sản phẩm mỹ phẩm ra thị trường chỉ được phép đưa mỹ phẩm ra lưu thông khi đã được cơ quan quản lý nhà nước có thẩm quyền cấp số tiếp nhận Phiếu công bố sản phẩm mỹ phẩm và phải hoàn toàn chịu trách nhiệm về tính an toàn, hiệu quả và chất lượng sản phẩm. Theo Điều 3 của Thông tư về quản lý mỹ phẩm",
+      "citations": "Thông tư về quản lý mỹ phẩm",
+      "source_chunks": [1]
+    },
+    {
+      "question": "Ai sẽ kiểm tra việc thực hiện các văn bản quy phạm pháp luật về mỹ phẩm?",
+      "answer": "Cơ quan nhà nước có thẩm quyền sẽ tiến hành kiểm tra hậu mại khi sản phẩm lưu thông trên thị trường. Theo Điều 3 của Thông tư về quản lý mỹ phẩm",
+      "citations": "Thông tư về quản lý mỹ phẩm",
+      "source_chunks": [1]
+    }
+  ]'
+Traceback (most recent call last):
+  File "D:\vscodepython\DOAN\uit.PubHealthQA\src\generation\question_generator_new.py", line 306, in _generate_qa_with_citations_for_level
+    qa_pairs = json.loads(json_content_to_load)
+  File "C:\Users\AFMIN\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\AFMIN\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AFMIN\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Invalid control character at: line 3 column 144 (char 151)
+2025-05-20 23:15:40,168 - question_generator - INFO - Generated 0 Q&A pairs for level understand, topic 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-20 23:15:57,678 - question_generator - INFO - Time to generate Q&A for level apply: 17.51s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```json
+[
+  {
+    "question": "Một tổ chức muốn đưa sản phẩm mỹ phẩm ra thị trường Việt Nam cần phải làm gì?",
+    "answer": "Theo Điều 3 của Chương ...
+2025-05-20 23:15:57,680 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-20 23:16:13,565 - question_generator - INFO - Time to generate Q&A for level analyze: 15.89s. Model response (first 200 chars): Here is the response in the required JSON format:
+
+```json
+[
+  {
+    "question": "What are the requirements for organizations and individuals responsible for bringing cosmetic products to market?",
+  ...
+2025-05-20 23:16:13,566 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Thủ tục hành chính lĩnh vực Mỹ phẩm'
+2025-05-20 23:16:13,567 - question_generator - INFO - Processing topic 23/23: 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-20 23:16:13,567 - question_generator - INFO - Starting question generation for topic: 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-20 23:16:13,634 - question_generator - INFO - Extracted 3 chunks for topic 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-20 23:16:29,362 - question_generator - INFO - Time to generate Q&A for level understand: 15.73s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Thông tư nào quy định về tiêu chuẩn sức khỏe của người được thực hiện kỹ thuật thụ tinh trong ống nghiệm?",
+    "answer": "Thông tư...
+2025-05-20 23:16:29,364 - question_generator - INFO - Generated 1 Q&A pairs for level understand, topic 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-20 23:16:45,297 - question_generator - INFO - Time to generate Q&A for level apply: 15.93s. Model response (first 200 chars): Here is the response in JSON format:
+
+```json
+[
+  {
+    "question": "Cơ sở khám bệnh, chữa bệnh nào được phép thực hiện kỹ thuật thụ tinh trong ống nghiệm?",
+    "answer": "Cơ sở khám bệnh, chữa bệnh ...
+2025-05-20 23:16:45,298 - question_generator - INFO - Generated 1 Q&A pairs for level apply, topic 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-20 23:17:01,233 - question_generator - INFO - Time to generate Q&A for level analyze: 15.93s. Model response (first 200 chars): Here is the response in the required JSON format:
+```json
+[
+    {
+      "question": "What are the key steps involved in the in vitro fertilization process, and what are the requirements for healthcare...
+2025-05-20 23:17:01,234 - question_generator - INFO - Generated 1 Q&A pairs for level analyze, topic 'Thủ tục hành chính lĩnh vực thụ tinh ống nghiệm, mang thai hộ vì mục đích nhân đạo và can thiệp y tế để xác định lại giới tính'
+2025-05-20 23:17:01,241 - question_generator - INFO - Saved generated questions and answers with citations to file outputs\question_generation\questions_with_citations_groq_20250520_231701.json
