@@ -216,8 +216,6 @@ We extend our sincere gratitude to:
 - An Pham Dang, 22520027@gm.uit.edu.vn
 
 We also acknowledge the support of:
-- Vietnam National University Ho Chi Minh City
-- University of Information Technology
 - GROQ for providing advanced language model access
 
 ## 📄 License
