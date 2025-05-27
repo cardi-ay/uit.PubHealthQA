@@ -1,6 +1,10 @@
 # 🩺 [UIT@PubHealthQA] HCM Public Health Office Procedure Q&A Dataset
 
-<img src="https://www.uit.edu.vn/sites/vi/files/banner_uit.png" alt="Trường Đại học Công nghệ Thông tin" role="presentation">
+<!---<img src="" alt="Trường Đại học Công nghệ Thông tin" role="presentation">
+--->
+<div align="center">
+  <img src="https://www.uit.edu.vn/sites/vi/files/banner_uit.png" alt="UIT@PubHealthQA logo" width="200"  onerror="this.style.display='none'">
+</div>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -13,7 +17,6 @@
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
 - [Acknowledgements](#-acknowledgements)
 - [License](#-license)
 
@@ -192,16 +195,6 @@ UIT@PubHealthQA/
 ├── setup_groq_key.py              # API key setup utility
 └── README.md                      # This documentation
 ```
-
-## 👥 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 🙏 Acknowledgements
 
