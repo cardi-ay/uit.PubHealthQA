@@ -79,7 +79,7 @@ The architecture employs several optimizations:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/uit.PubHealthQA.git
+   git clone https://github.com/nguyenlong205/uit.PubHealthQA.git
    cd uit.PubHealthQA
    ```
 
