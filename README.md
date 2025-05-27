@@ -1,8 +1,6 @@
 # 🩺 [UIT@PubHealthQA] HCM Public Health Office Procedure Q&A Dataset
 
-<div align="center">
-  <img src="img/logo.png" alt="UIT@PubHealthQA Logo" width="200" height="200" onerror="this.style.display='none'">
-</div>
+<img src="https://www.uit.edu.vn/sites/vi/files/banner_uit.png" alt="Trường Đại học Công nghệ Thông tin" role="presentation">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -219,8 +217,6 @@ We extend our sincere gratitude to:
 - An Pham Dang, 22520027@gm.uit.edu.vn
 
 We also acknowledge the support of:
-- Vietnam National University Ho Chi Minh City
-- University of Information Technology
 - GROQ for providing advanced language model access
 
 ## 📄 License
