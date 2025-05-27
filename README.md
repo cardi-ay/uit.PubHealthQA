@@ -55,6 +55,9 @@ We adopt a Bronze–Silver–Gold data quality framework:
 ## 🏗 System Architecture
 
 The UIT@PubHealthQA system is built as a modular pipeline:
+<div align="center">
+  <img src="img/pipeline.png" alt="UIT@PubHealthQA logo" width="700"  onerror="this.style.display='none'">
+</div>
 
 1. **Data Acquisition** - Collecting data from official sources
 2. **Preprocessing** - Cleaning and structuring documents
