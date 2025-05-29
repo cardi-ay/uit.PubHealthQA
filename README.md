@@ -148,7 +148,7 @@ python app.py
 
 Then open your browser and navigate to `http://localhost:8000`
 This is a Demo for system:
-[demo](./img/demo.png)
+![demo](./img/demo.png)
 ## 🗂️ Project Structure
 
 ```
