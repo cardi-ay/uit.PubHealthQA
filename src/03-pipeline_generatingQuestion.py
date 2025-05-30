@@ -283,7 +283,7 @@ Chỉ trả lời với cấu trúc JSON theo định dạng trên, không cần
 def generate_questions_from_topics(
     topic_file_path: Union[str, Path],
     vector_db_path: Union[str, Path],
-    output_dir: Union[str, Path] = "outputs",
+    output_dir: Union[str, Path] = "data",
     embedding_model_name: str = "bkai-foundation-models/vietnamese-bi-encoder",
     groq_model_name: str = "llama3-70b-8192",
     num_questions_per_level: int = 2,
@@ -345,11 +345,11 @@ def generate_questions_from_topics(
                 }
                 all_questions.append(qa_item)
 
-    output_path = Path(output_dir) / "question_generation"
+    output_path = Path(output_dir) / "silver"
     output_path.mkdir(parents=True, exist_ok=True)
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_file = output_path / f"questions_with_citations_groq_{timestamp}.json"
+    output_file = output_path / f"LLM_generated_question_answer_{timestamp}.json"
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(all_questions, f, ensure_ascii=False, indent=2)
@@ -389,7 +389,7 @@ def main():
     generate_questions_from_topics(
         topic_file_path=args.topics,
         vector_db_path=args.vector_db,
-        output_dir=args.output_dir,
+        # output_dir=args.output_dir,
         groq_model_name=args.model,
         num_questions_per_level=args.questions_per_level,
         chunks_per_topic=args.chunks_per_topic
