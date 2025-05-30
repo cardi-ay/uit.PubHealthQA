@@ -1,4 +1,4 @@
-"""
+'''"""
 Module xử lý vector và truy xuất thông tin cho hệ thống RAG UIT@PubHealthQA.
 
 Bao gồm:
@@ -29,4 +29,4 @@ __all__ = [
     "load_vector_db",
     "query_documents",
     "preprocess_text_for_embedding"
-]
+]'''

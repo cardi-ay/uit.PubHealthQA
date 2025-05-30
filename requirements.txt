@@ -39,3 +39,6 @@ uvicorn>=0.23.0
 jinja2>=3.1.2
 pydantic>=2.4.2
 starlette>=0.31.1
+
+# For fine-tunning
+datasets

@@ -23,40 +23,20 @@ from vector_store.faiss_manager import initialize_embedding_model, load_vector_d
 # Load environment variables from .env file
 load_dotenv()
 
-# Set up logger
+# Setup logger
 logger = setup_logger(
     "question_generator",
     log_file=Path("outputs/logs/question_generation_groq.log")
 )
 
 class GroqQuestionGenerator:
-    """
-    Lớp sinh câu hỏi và câu trả lời từ chunks trong vector database sử dụng Groq API.
-    Bao gồm trích dẫn nguồn và thông tin về chunks được sử dụng.
-    """
-
     def __init__(self, model_name: str = "llama3-70b-8192", api_key: Optional[str] = None):
-        """
-        Khởi tạo generator.
-
-        Args:
-            model_name: Tên model Groq API muốn sử dụng
-            api_key: Khóa API của Groq (nếu không cung cấp, sẽ lấy từ biến môi trường GROQ_API_KEY)
-        """
         self.model_name = model_name
         self.api_key = api_key or os.getenv("GROQ_API_KEY")
-
         if not self.api_key:
-            raise ValueError(
-                "Không tìm thấy Groq API key. Hãy đặt biến môi trường GROQ_API_KEY "
-                "hoặc cung cấp api_key khi khởi tạo."
-            )
-
-        # Khởi tạo client
+            raise ValueError("Không tìm thấy Groq API key. Đặt biến môi trường GROQ_API_KEY hoặc truyền api_key.")
         self.client = groq.Client(api_key=self.api_key)
         logger.info(f"Đã khởi tạo Groq Client với model '{model_name}'")
-
-        # Định nghĩa các cấp độ của Bloom
         self.bloom_levels = {
             "remember": "Ghi nhớ (Remembering): Nhớ lại thông tin cơ bản, khái niệm, hoặc sự kiện.",
             "understand": "Thông hiểu (Understanding): Diễn giải, giải thích, và so sánh các khái niệm đã học.",
@@ -73,84 +53,63 @@ class GroqQuestionGenerator:
         temperature: float = 0.7,
         max_tokens: int = 1500
     ) -> Dict[str, List[Dict[str, Any]]]:
-        """
-        Sinh câu hỏi và câu trả lời có trích dẫn cho một chủ đề.
-
-        Args:
-            topic: Chủ đề cần sinh câu hỏi
-            vector_db: Vector database (FAISS)
-            num_questions_per_level: Số câu hỏi cho mỗi cấp độ Bloom
-            chunks_per_topic: Số chunks sử dụng để sinh câu hỏi
-            temperature: Độ sáng tạo [0-1]
-            max_tokens: Số tokens tối đa cho mỗi response
-
-        Returns:
-            Dict chứa câu hỏi và câu trả lời theo từng cấp độ Bloom, kèm thông tin chunks
-        """
         logger.info(f"Bắt đầu sinh câu hỏi cho chủ đề: '{topic}'")
 
-        # Truy vấn chunks từ vector database
         retrieval_results = query_documents(
             vector_db=vector_db,
             query=topic,
             k=chunks_per_topic,
-            use_mmr=True,  # Sử dụng MMR để đa dạng kết quả
-            with_score=True  # Lấy điểm tương đồng để đánh giá độ liên quan
+            use_mmr=True,
+            with_score=True
         )
-
         if not retrieval_results:
             logger.warning(f"Không tìm thấy chunks phù hợp cho chủ đề: '{topic}'")
             return {level: [] for level in self.bloom_levels.keys()}
 
-        # Ghép nội dung các chunks và lưu thông tin về nguồn
         context = ""
         chunk_sources = []
 
-        if isinstance(retrieval_results, list) and len(retrieval_results) > 0:
-            first_item = retrieval_results[0]
+        first_item = retrieval_results[0]
+        if isinstance(first_item, tuple) and len(first_item) == 2:
+            for i, (chunk, score) in enumerate(retrieval_results, 1):
+                metadata = getattr(chunk, "metadata", {})
+                source_info = {
+                    "chunk_id": i,
+                    "content": chunk.page_content,
+                    "score": float(score),
+                    "metadata": metadata
+                }
+                chunk_sources.append(source_info)
 
-            if isinstance(first_item, tuple) and len(first_item) == 2:
-                for i, (chunk, score) in enumerate(retrieval_results, 1):
-                    metadata = chunk.metadata if hasattr(chunk, "metadata") else {}
-                    source_info = {
-                        "chunk_id": i,
-                        "content": chunk.page_content,
-                        "score": float(score),
-                        "metadata": metadata
-                    }
-                    chunk_sources.append(source_info)
+                context += f"[Chunk {i}] "
+                if "title" in metadata:
+                    context += f"Nguồn: {metadata.get('title', 'Không rõ nguồn')}"
+                if "law_id" in metadata:
+                    context += f", Số hiệu: {metadata.get('law_id', '')}"
+                context += "\n"
+                context += chunk.page_content + "\n\n"
+        else:
+            for i, chunk in enumerate(retrieval_results, 1):
+                metadata = getattr(chunk, "metadata", {})
+                source_info = {
+                    "chunk_id": i,
+                    "content": chunk.page_content,
+                    "score": 1.0,
+                    "metadata": metadata
+                }
+                chunk_sources.append(source_info)
 
-                    context += f"[Chunk {i}] "
-                    if "title" in metadata:
-                        context += f"Nguồn: {metadata.get('title', 'Không rõ nguồn')}"
-                    if "law_id" in metadata:
-                        context += f", Số hiệu: {metadata.get('law_id', '')}"
-                    context += "\n"
-                    context += chunk.page_content + "\n\n"
-
-            elif hasattr(first_item, 'page_content'):
-                for i, chunk in enumerate(retrieval_results, 1):
-                    metadata = chunk.metadata if hasattr(chunk, "metadata") else {}
-                    source_info = {
-                        "chunk_id": i,
-                        "content": chunk.page_content,
-                        "score": 1.0,
-                        "metadata": metadata
-                    }
-                    chunk_sources.append(source_info)
-
-                    context += f"[Chunk {i}] "
-                    if "title" in metadata:
-                        context += f"Nguồn: {metadata.get('title', 'Không rõ nguồn')}"
-                    if "law_id" in metadata:
-                        context += f", Số hiệu: {metadata.get('law_id', '')}"
-                    context += "\n"
-                    context += chunk.page_content + "\n\n"
+                context += f"[Chunk {i}] "
+                if "title" in metadata:
+                    context += f"Nguồn: {metadata.get('title', 'Không rõ nguồn')}"
+                if "law_id" in metadata:
+                    context += f", Số hiệu: {metadata.get('law_id', '')}"
+                context += "\n"
+                context += chunk.page_content + "\n\n"
 
         logger.info(f"Đã trích xuất {len(chunk_sources)} chunks cho chủ đề '{topic}'")
 
         result_questions = {}
-
         for level, description in self.bloom_levels.items():
             try:
                 qa_pairs = self._generate_qa_with_citations_for_level(
@@ -166,7 +125,7 @@ class GroqQuestionGenerator:
                 result_questions[level] = qa_pairs
                 logger.info(f"Đã sinh {len(qa_pairs)} cặp câu hỏi-trả lời cấp độ {level} cho chủ đề '{topic}'")
             except Exception as e:
-                logger.error(f"Lỗi khi sinh câu hỏi cấp độ {level} cho chủ đề '{topic}': {e}")
+                logger.error(f"Lỗi khi sinh câu hỏi cấp độ {level} cho chủ đề '{topic}': {e}", exc_info=True)
                 result_questions[level] = []
 
         return result_questions
@@ -182,60 +141,48 @@ class GroqQuestionGenerator:
         temperature: float = 0.7,
         max_tokens: int = 1500
     ) -> List[Dict[str, Any]]:
-        """
-        Sinh câu hỏi và câu trả lời có trích dẫn cho một cấp độ Bloom cụ thể.
-        """
-        level_guidance = ""
-        if level == "remember":
-            level_guidance = """
-Định nghĩa: Cấp độ này yêu cầu người học nhớ lại hoặc nhận diện thông tin đã học trước đó. Nói đơn giản là câu trả lời copy paste những gì có sẵn trong văn bản.
+        level_guidance_map = {
+            "remember": """Định nghĩa: Cấp độ này yêu cầu người học nhớ lại hoặc nhận diện thông tin đã học trước đó. Nói đơn giản là câu trả lời copy paste những gì có sẵn trong văn bản.
 Dấu hiệu nhận biết:
 - Câu hỏi yêu cầu người học liệt kê, nhắc lại hoặc gọi tên các yếu tố cụ thể mà không yêu cầu phân tích hay giải thích.
 - Các câu hỏi này có thể yêu cầu các sự kiện, các danh mục hoặc khái niệm cụ thể.
 - Câu trả lời chứa các thông tin giống hệt như trong văn bản sẵn có hoặc trích các điều luật văn bản.
 Ví dụ câu hỏi:
-- "Bảo hiểm y tế là gì?"
-"""
-        elif level == "understand":
-            level_guidance = """
-Định nghĩa: Cấp độ này yêu cầu người học hiểu và có thể diễn giải lại thông tin, khái niệm, quy trình hoặc mối quan hệ giữa các yếu tố. Đây là cấp độ thể hiện khả năng giải thích hoặc so sánh, tóm tắt.
+- "Bảo hiểm y tế là gì?\"""",
+            "understand": """Định nghĩa: Cấp độ này yêu cầu người học hiểu và có thể diễn giải lại thông tin, khái niệm, quy trình hoặc mối quan hệ giữa các yếu tố. Đây là cấp độ thể hiện khả năng giải thích hoặc so sánh, tóm tắt.
 Dấu hiệu nhận biết:
 - Câu hỏi yêu cầu người học diễn giải lại kiến thức, không chỉ đơn thuần là ghi nhớ.
 - Câu hỏi có thể yêu cầu giải thích một khái niệm hoặc so sánh giữa các yếu tố.
 - Các câu hỏi này không yêu cầu áp dụng kiến thức vào tình huống mới, mà chỉ yêu cầu hiểu các khái niệm cơ bản.
 - Câu trả lời không sẵn có trong văn bản mà xoay quanh việc hiểu và diễn giải các quy định có sẵn trong văn bản.
 Ví dụ câu hỏi:
-- "Tóm tắt điều X thông tư Y."
-"""
-        elif level == "apply":
-            level_guidance = """
-Định nghĩa: Cấp độ này yêu cầu người học sử dụng kiến thức và kỹ năng đã học để giải quyết các vấn đề trong các tình huống mới, đặc biệt là trong các bối cảnh thực tế. Mức độ này yêu cầu áp dụng, thường là trong các tình huống thực tế.
+- "Tóm tắt điều X thông tư Y.\"""",
+            "apply": """Định nghĩa: Cấp độ này yêu cầu người học sử dụng kiến thức và kỹ năng đã học để giải quyết các vấn đề trong các tình huống mới, đặc biệt là trong các bối cảnh thực tế. Mức độ này yêu cầu áp dụng, thường là trong các tình huống thực tế.
 Dấu hiệu nhận biết:
 - Câu hỏi yêu cầu người học sử dụng kiến thức vào các tình huống thực tế.
 - Câu hỏi yêu cầu người học triển khai kiến thức để giải quyết vấn đề thực tế hoặc thực hiện các tác vụ cụ thể.
 - Câu hỏi yêu cầu thực hiện các kỹ năng đã học vào tình huống mới.
 - Câu trả lời không sẵn có trong văn bản, đòi hỏi ứng dụng các quy định có sẵn để giải quyết các trường hợp thực tế.
 Ví dụ câu hỏi:
-- "Vận dụng điều A, B vào tình huống thực tế."
-"""
-        elif level == "analyze":
-            level_guidance = """
-Định nghĩa: Cấp độ này yêu cầu người học phân tích các yếu tố trong một vấn đề, tách biệt chúng và tìm ra mối quan hệ giữa các yếu tố. Người học sẽ phân tích thông tin để tìm ra các mẫu, sự tương đồng hoặc sự khác biệt. Ở level này, câu trả lời từ các thông tin từ 2 văn bản trở lên, yêu cầu kết hợp thông tin, suy luận từ văn bản.
+- "Vận dụng điều A, B vào tình huống thực tế.\"""",
+            "analyze": """Định nghĩa: Cấp độ này yêu cầu người học phân tích các yếu tố trong một vấn đề, tách biệt chúng và tìm ra mối quan hệ giữa các yếu tố. Người học sẽ phân tích thông tin để tìm ra các mẫu, sự tương đồng hoặc sự khác biệt. Ở level này, câu trả lời từ các thông tin từ 2 văn bản trở lên, yêu cầu kết hợp thông tin, suy luận từ văn bản.
 Dấu hiệu nhận biết:
 - Câu hỏi yêu cầu người học phân tích các yếu tố hoặc xác định mối quan hệ giữa các yếu tố.
 - Các câu hỏi này thường yêu cầu người học tách biệt các phần, so sánh hoặc xác định nguyên nhân và hệ quả.
 - Các câu hỏi có thể yêu cầu người học phân tích dữ liệu, xác định xu hướng hoặc phát hiện vấn đề tiềm ẩn.
 - Câu trả lời không sẵn có trong văn bản mà phải suy luận, kết hợp thông tin.
 Ví dụ câu hỏi:
-- "Điều 8 thông tư Y khác gì điều 8 thông tư X?"
-"""
+- "Điều 8 thông tư Y khác gì điều 8 thông tư X.\""""
+        }
+
+        level_guidance = level_guidance_map.get(level, "")
 
         prompt = f"""
-Bạn là một chuyên gia giáo dục y tế công cộng và luật. Nhiệm vụ của bạn là tạo ra những câu hỏi chất lượng cao và câu trả lời đầy đủ về chủ đề "{topic}" dựa trên thông tin được cung cấp dưới đây. 
+Bạn là một chuyên gia giáo dục y tế công cộng và luật. Nhiệm vụ của bạn là tạo ra những câu hỏi chất lượng cao và câu trả lời đầy đủ về chủ đề "{topic}" dựa trên thông tin được cung cấp dưới đây.
 
 Hãy tạo ra {num_questions} cặp câu hỏi và câu trả lời ở cấp độ: **{level_description}**
 
-{level_guidance.strip()}
+{level_guidance}
 
 Thông tin tham khảo được chia thành các chunks, mỗi chunk có định danh riêng [Chunk X]:
 \"\"\"
@@ -329,8 +276,9 @@ Chỉ trả lời với cấu trúc JSON theo định dạng trên, không cần
             return qa_pairs[:num_questions]
 
         except Exception as e:
-            logger.error(f"Lỗi khi gọi Groq API hoặc xử lý kết quả: {e}")
+            logger.error(f"Lỗi khi gọi Groq API hoặc xử lý kết quả: {e}", exc_info=True)
             return []
+
 
 def generate_questions_from_topics(
     topic_file_path: Union[str, Path],
@@ -341,21 +289,6 @@ def generate_questions_from_topics(
     num_questions_per_level: int = 2,
     chunks_per_topic: int = 5
 ) -> List[Dict[str, Any]]:
-    """
-    Đọc danh sách chủ đề và sinh câu hỏi và câu trả lời có trích dẫn cho từng chủ đề.
-
-    Args:
-        topic_file_path: Đường dẫn đến file chủ đề
-        vector_db_path: Đường dẫn đến vector database
-        output_dir: Thư mục lưu kết quả
-        embedding_model_name: Tên model embedding
-        groq_model_name: Tên model Groq
-        num_questions_per_level: Số câu hỏi cho mỗi cấp độ Bloom
-        chunks_per_topic: Số chunks sử dụng để sinh câu hỏi
-
-    Returns:
-        Danh sách các câu hỏi-câu trả lời có trích dẫn với metadata
-    """
     logger.info("Bắt đầu quá trình sinh câu hỏi từ các chủ đề")
 
     topic_path = Path(topic_file_path)
@@ -425,6 +358,7 @@ def generate_questions_from_topics(
 
     return all_questions
 
+
 def main():
     import argparse
 
@@ -460,6 +394,7 @@ def main():
         num_questions_per_level=args.questions_per_level,
         chunks_per_topic=args.chunks_per_topic
     )
+
 
 if __name__ == "__main__":
     main()
