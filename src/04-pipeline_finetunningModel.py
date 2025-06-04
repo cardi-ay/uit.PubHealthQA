@@ -1,6 +1,7 @@
 import pandas as pd
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import torch
+from datasets import Dataset
 
 from transformers import (
     AutoModelForCausalLM,
@@ -26,14 +27,13 @@ def load_dataset() -> pd.DataFrame | None:
         A `pd.DataFrame` dataset if successful. Otherwise, it returns `None`.
     '''
     try:
-        df = pd.read_json(r'data\gold\question_answer_pairs.json')
+        df = pd.read_json('data/gold/question_answer_pairs.json')
     except FileNotFoundError:
-        print('Training dataset can not be found!')
+        print('Training dataset cannot be found!')
         return None
     except Exception as e:
-        print(f'There is an error while loading dataset for fine-tunning as: {e}')
+        print(f'Error loading dataset: {e}')
         return None
-    
     return df
 
 def load_model(model_name: str = 'google/gemma-3-1b-it') -> tuple:
@@ -77,79 +77,54 @@ def load_model(model_name: str = 'google/gemma-3-1b-it') -> tuple:
         print(f'Error while loading model for fine-tuning: {str(e)}')
         return None, None
 
-def preprocess_data(df: pd.DataFrame, tokenizer, text_column: str = "text", max_length: int = 512) -> dict:
-    """
-    Tokenize và định dạng dataset
+def preprocess_data(df: pd.DataFrame, tokenizer, max_length: int = 512):
+    df["text"] = df["question"].str.strip() + "\nTrả lời: " + df["answer"].str.strip()
     
-    Args:
-        df: DataFrame chứa dữ liệu
-        tokenizer: Tokenizer đã load
-        text_column: Tên cột chứa văn bản
-        max_length: Độ dài tối đa của input
+    # Kiểm tra độ dài trước khi tokenize
+    df["text_length"] = df["text"].apply(lambda x: len(tokenizer.tokenize(x)))
+    if (df["text_length"] > max_length).any():
+        print(f"Warning: Some texts exceed max length {max_length} and will be truncated")
     
-    Returns:
-        Dict chứa tokenized datasets
-    """
+    dataset = Dataset.from_pandas(df[["text"]])
+    
     def tokenize_function(examples):
-        return tokenizer(examples[text_column], truncation=True, max_length=max_length)
+        return tokenizer(
+            examples["text"],
+            truncation=True,
+            max_length=max_length,
+            padding="max_length",
+            return_tensors="pt"  # Thêm để đảm bảo đầu ra là tensor
+        )
     
-    return {
-        "train": df.apply(tokenize_function, axis=1).tolist()  # Giả sử toàn bộ df là train
-    }
+    tokenized_dataset = dataset.map(tokenize_function, batched=True)
+    return tokenized_dataset
 
 # 2. Function thiết lập LoRA
-def setup_lora(model, lora_r: int = 8, lora_alpha: int = 16) -> torch.nn.Module:
-    """
-    Áp dụng LoRA cho model
-    
-    Args:
-        model: Model gốc
-        lora_r: Rank của LoRA
-        lora_alpha: Scaling factor
-        
-    Returns:
-        Model đã áp dụng LoRA
-    """
-    lora_config = LoraConfig(
-        r=lora_r,
-        lora_alpha=lora_alpha,
-        target_modules=["q_proj", "v_proj"],
-        lora_dropout=0.05,
-        bias="none",
-        task_type="CAUSAL_LM"
-    )
-    return get_peft_model(model, lora_config)
+def setup_lora(model, lora_r: int = 8, lora_alpha: int = 16):
+    # Nên kiểm tra model có hỗ trợ LoRA không
+    try:
+        lora_config = LoraConfig(
+            r=lora_r,
+            lora_alpha=lora_alpha,
+            target_modules=["q_proj", "v_proj"],  # Cần phù hợp với kiến trúc Gemma
+            lora_dropout=0.05,
+            bias="none",
+            task_type="CAUSAL_LM"
+        )
+        model = get_peft_model(model, lora_config)
+        print(f"LoRA configured. Trainable params: {sum(p.numel() for p in model.parameters() if p.requires_grad)}/{sum(p.numel() for p in model.parameters())}")
+        return model
+    except Exception as e:
+        print(f"Error setting up LoRA: {e}")
+        return model  # Trả về model gốc nếu LoRA fail
 
 # 3. Function thiết lập Trainer
-def setup_trainer(
-    model,
-    tokenizer,
-    train_dataset,
-    output_dir: str = "./results",
-    batch_size: int = 4,
-    learning_rate: float = 2e-5,
-    epochs: int = 3
-) -> Trainer:
-    """
-    Tạo Trainer object cho fine-tuning
-    
-    Args:
-        model: Model đã load
-        tokenizer: Tokenizer đã load
-        train_dataset: Dataset đã tokenize
-        output_dir: Thư mục output
-        batch_size: Batch size
-        learning_rate: Tốc độ học
-        epochs: Số epoch
-        
-    Returns:
-        Trainer object
-    """
+def setup_trainer(model, tokenizer, train_dataset, output_dir="./results", batch_size=4, learning_rate=2e-5, epochs=3):
     data_collator = DataCollatorForLanguageModeling(
         tokenizer=tokenizer,
         mlm=False
     )
-    
+
     training_args = TrainingArguments(
         output_dir=output_dir,
         per_device_train_batch_size=batch_size,
@@ -161,7 +136,7 @@ def setup_trainer(
         logging_steps=100,
         report_to="tensorboard"
     )
-    
+
     return Trainer(
         model=model,
         args=training_args,
@@ -172,72 +147,77 @@ def setup_trainer(
 
 # 4. Main function
 def fine_tune_pipeline(
-    model_name: str = "google/gemma-2b-it",
+    model_name: str = "google/gemma-3-1b-it",
     dataset_path: str = "data/gold/question_answer_pairs.json",
-    output_dir: str = "./fine_tuned_model"
-) -> None:
-    """
-    End-to-end fine-tuning pipeline
-    
-    Args:
-        model_name: Tên model trên Hugging Face
-        dataset_path: Đường dẫn dataset
-        output_dir: Thư mục lưu model
-    """
+    output_dir: str = "./fine_tuned_model",
+    use_lora: bool = True,
+    max_length: int = 512
+) -> bool:  # Thay None bằng bool để biết kết quả
     try:
-        # Load model và tokenizer
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
-        model = AutoModelForCausalLM.from_pretrained(
-            model_name,
-            device_map="auto",
-            torch_dtype=torch.float16
-        )
-        
-        # Load và tiền xử lý dữ liệu
+        # 1. Load model
+        model, tokenizer = load_model(model_name)
+        if model is None or tokenizer is None:
+            return False
+
+        # 2. Load và validate dataset
         df = pd.read_json(dataset_path)
-        tokenized_data = preprocess_data(df, tokenizer)
-        
-        # Áp dụng LoRA
-        model = setup_lora(model)
-        print(f"Trainable parameters: {sum(p.numel() for p in model.parameters() if p.requires_grad)}")
-        
-        # Huấn luyện
-        trainer = setup_trainer(model, tokenizer, tokenized_data["train"])
+        if df.empty or len(df) < 10:  # Kiểm tra dataset đủ lớn
+            print("Dataset too small or empty")
+            return False
+
+        # 3. Tiền xử lý
+        tokenized_data = preprocess_data(df, tokenizer, max_length)
+        if len(tokenized_data) == 0:
+            return False
+
+        # 4. LoRA
+        if use_lora:
+            model = setup_lora(model)
+            if model is None:
+                return False
+
+        # 5. Training
+        trainer = setup_trainer(model, tokenizer, tokenized_data, output_dir)
         trainer.train()
-        
-        # Lưu model
+
+        # 6. Lưu model
         model.save_pretrained(output_dir)
         tokenizer.save_pretrained(output_dir)
-        print(f"Model saved to {output_dir}")
+        
+        # 7. Đánh giá sau training
+        print("Training completed successfully")
+        return True
+
+    except Exception as e:
+        print(f"Fine-tuning failed: {e}")
+        return False
+
+
+
+
+
+
+
+
+def main() -> int:
+    try:
+        dataset = load_dataset()
+        if dataset is None:
+            return 1  # Error code
+        
+        success = fine_tune_pipeline(
+            model_name="google/gemma-3-4b-it",
+            dataset_path="data/gold/question_answer_pairs.json",
+            output_dir="./fine_tuned_model",
+            use_lora=True,
+            max_length=512
+        )
+        
+        return 0 if success else 1
         
     except Exception as e:
-        print(f"Error in fine-tuning pipeline: {str(e)}")
-        raise
-
-
-
-
-
-
-
-
-def main():
-    dataset = load_dataset()
-    if dataset is None:
-        return None
+        print(f"Unexpected error: {e}")
+        return 1
     
-    model, tokenizer = load_model()  # Đổi tên biến thành 'tokenizer'
-    if model is None or tokenizer is None:  # Kiểm tra cả tokenizer
-        return None
-    
-    print(dataset.head(10))
-
-    return 0
-
 if __name__ == '__main__':
-    logicCode = main()
-    if logicCode is None:
-        print('0')
-        # print('The programming encountered an error so it has been stopped immidiately!)
-    else:
-        print('1')
+    main()
