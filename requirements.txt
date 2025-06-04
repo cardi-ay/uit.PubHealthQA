@@ -42,3 +42,8 @@ starlette>=0.31.1
 
 # For fine-tunning
 datasets
+accelerate
+
+# For RAG-implementation
+fastapi
+bitsandbytes
