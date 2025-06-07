@@ -31,7 +31,7 @@ TINH_TRANG_HL_VALUES = ["4", "2"]
 # THU_TU_SAP_XEP_VALUE = "False" # Not used in logic
 
 # Output file
-OUTPUT_JSON_FILE = Path("./data/bronze/raw_Policy.json")
+OUTPUT_JSON_FILE = Path("../data/bronze/raw_Policy.json")
 
 # --- Cấu hình Logging ---
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -169,8 +169,22 @@ def scrape_list_page_data(driver: webdriver.Chrome, page_num: int) -> Tuple[List
         )
         results_ul_ref = results_ul # Store the reference
 
-        time.sleep(0.8) # Small pause after visibility might help with element stability
-        document_items = results_ul.find_elements(By.XPATH, "./li")
+        time.sleep(1.5) # Increased pause to ensure DOM stability
+        
+        # Re-find the UL element to avoid stale reference
+        try:
+            # Use absolute XPath from driver to avoid stale container reference
+            results_ul = driver.find_element(By.XPATH, "//div[@id='grid_vanban']//ul[contains(@class,'listLaw')]")
+            document_items = WebDriverWait(driver, WAIT_TIMEOUT).until(
+                EC.presence_of_all_elements_located((By.CSS_SELECTOR, "#grid_vanban ul.listLaw > li"))
+            )
+        except StaleElementReferenceException:
+            logging.warning("scrape_list_page_data: Stale element detected, retrying...")
+            time.sleep(1)
+            document_items = WebDriverWait(driver, WAIT_TIMEOUT).until(
+                EC.presence_of_all_elements_located((By.CSS_SELECTOR, "#grid_vanban ul.listLaw > li"))
+            )
+        
         logging.info(f"scrape_list_page_data: Tìm thấy {len(document_items)} văn bản trên trang {page_num}.")
 
         if not document_items:
@@ -180,20 +194,27 @@ def scrape_list_page_data(driver: webdriver.Chrome, page_num: int) -> Tuple[List
         for item_index, item in enumerate(document_items):
             item_data = {}
             try:
-                # Re-find/verify item visibility to reduce StaleElementReferenceException possibility
-                item = WebDriverWait(driver, 5).until(EC.visibility_of(item))
-
-                title_link_element = item.find_element(By.CSS_SELECTOR, "p.title > a")
+                # Get item info using index to avoid stale reference
+                item_selector = f"#grid_vanban ul.listLaw > li:nth-child({item_index + 1})"
+                
+                # Get title and link
+                title_link_selector = f"{item_selector} p.title > a"
+                title_link_element = WebDriverWait(driver, 5).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, title_link_selector))
+                )
                 item_data['TenVanBan'] = title_link_element.text.strip()
                 item_data['DuongLink'] = title_link_element.get_attribute('href')
                 item_data['NgayHieuLuc'] = "Không tìm thấy" # Default value
 
                 try:
-                    # Find the 'Hiệu lực' paragraph within this specific item
-                    date_p_element = item.find_element(By.XPATH, ".//div[@class='right']/p[contains(., 'Hiệu lực:')]")
-                    full_text = date_p_element.text
-                    if ":" in full_text:
-                        item_data['NgayHieuLuc'] = full_text.split(":")[-1].strip()
+                    # Find the 'Hiệu lực' paragraph using CSS selector
+                    date_selector = f"{item_selector} div.right p"
+                    date_elements = driver.find_elements(By.CSS_SELECTOR, date_selector)
+                    for date_elem in date_elements:
+                        if "Hiệu lực:" in date_elem.text:
+                            full_text = date_elem.text
+                            item_data['NgayHieuLuc'] = full_text.split(":")[-1].strip()
+                            break
                 except NoSuchElementException:
                     pass # Keep default value if not found
 
