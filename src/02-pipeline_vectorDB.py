@@ -42,9 +42,9 @@ logger = setup_logger("vectordb_pipeline")
 def parse_args():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description='Pipeline phân đoạn và tạo vector database pháp luật y tế.')
-    parser.add_argument('--input_file', default='../data/silver/Policy.json', 
+    parser.add_argument('--input_file', default='./data/silver/Policy.json', 
                         help='Đường dẫn đến file dữ liệu đã xử lý (mặc định: ../data/silver/Policy.json)')
-    parser.add_argument('--output_dir', default='../data/gold', 
+    parser.add_argument('--output_dir', default='./data/gold', 
                         help='Thư mục lưu vector database (mặc định: ../data/gold)')
     parser.add_argument('--embedding_model', default='bkai-foundation-models/vietnamese-bi-encoder', 
                         help='Mô hình embedding sử dụng (mặc định: bkai-foundation-models/vietnamese-bi-encoder)')

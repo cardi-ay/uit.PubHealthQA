@@ -1,0 +1,14 @@
+{
+  "name": "VectorDB",
+  "path": "data\\gold\\VectorDB",
+  "created_at": "20250608_003728",
+  "embedding_model": "bkai-foundation-models/vietnamese-bi-encoder",
+  "num_chunks": 12030,
+  "num_vectors": 12030,
+  "metadata": {
+    "index_type": "faiss",
+    "description": "Vector database cho văn bản pháp luật y tế",
+    "source_file": "Policy.json",
+    "preprocessing_pipeline": "02-pipeline_preprocessing.py"
+  }
+}
