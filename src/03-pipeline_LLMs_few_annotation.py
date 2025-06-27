@@ -5,8 +5,9 @@ import argparse
 from dotenv import load_dotenv
 import groq # Ensure this is 'groq' for the client, not 'openai'
 import pandas as pd
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List # Đã thêm List ở đây nếu cần cho type hints
 import re # Import regex for robust JSON extraction
+from pathlib import Path # <-- Đảm bảo dòng này có ở đây
 
 # Tải các biến môi trường từ file .env
 load_dotenv()
@@ -47,8 +48,7 @@ def setup_logger(name: str, log_file: Path, level: int = logging.INFO) -> loggin
     
     return logger
 
-# --- Cấu hình Logger của bạn sử dụng hàm mới ---
-# Giả sử script nằm trong 'src/', chúng ta sẽ đặt log trong 'logs/question_generation/'
+# --- Cấu hình Logger của sử dụng hàm mới ---
 log_file_path = Path(__file__).parent.parent / "logs" / "bloom_annotation.log"
 
 # Khởi tạo logger bằng hàm tùy chỉnh
@@ -144,7 +144,7 @@ Ví dụ câu hỏi:
             response = self.client.chat.completions.create(
                 model=self.model_name,
                 messages=[{"role": "system", "content": "Bạn là trợ lý trí tuệ nhân tạo giúp gắn nhãn Bloom cho câu hỏi và câu trả lời. Chỉ trả về JSON hợp lệ, không thêm bất kỳ văn bản nào khác."}, # Even stronger instruction
-                          {"role": "user", "content": prompt}],
+                                 {"role": "user", "content": prompt}],
                 temperature=0.7,
                 max_tokens=1500,
                 response_format={"type": "json_object"} # Explicitly request JSON object

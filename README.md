@@ -126,6 +126,7 @@ The project follows a sequential pipeline approach:
 2. **Data Preprocessing**:
    ```bash
    python src/02-pipeline_preprocessing.py
+   python src/03-pipeline_prepro.py
    ```
 
 3. **Vector Database Creation**:
@@ -137,7 +138,10 @@ The project follows a sequential pipeline approach:
    ```bash
    python src/03-pipeline_generatingQuestion.py
    ```
-
+5. **Question annotation
+   ```bash
+   python src/03-pipeline_LLMs_few_annotation.py --input-file data/silver/silver_data.csv --output-file labeled_output_LLMs_few.json
+   ```
 ### Running the Web Interface
 
 Launch the interactive QA chatbot:
