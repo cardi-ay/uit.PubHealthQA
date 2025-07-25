@@ -9,7 +9,6 @@ langchain-huggingface>=0.0.1
 langchain-community>=0.0.10
 langchain-core>=0.1.10
 langchain-text-splitters>=0.0.1
-langchain-faiss>=0.0.1
 faiss-cpu>=1.7.4
 
 # Embedding models
@@ -48,3 +47,4 @@ tensorboardX
 # For RAG-implementation
 fastapi
 bitsandbytes
+faiss-cpu
